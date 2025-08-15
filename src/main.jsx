@@ -4,6 +4,6 @@ import Site from "./Site/Site";
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Site />
+    <Site />;
   </StrictMode>
-)
+);
