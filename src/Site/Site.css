@@ -193,7 +193,7 @@ table {
   --motion-basic-duration: '350ms';
 
   /* Accelerate */
-  --motion-æccelerate-cubic-bezier: '0.39, 1.29, 0.35, 0.98';
+  --motion-accelerate-cubic-bezier: '0.39, 1.29, 0.35, 0.98';
   --motion-accelerate-duration: '650ms';
 
   /* Smooth */
