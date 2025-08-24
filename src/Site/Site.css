@@ -87,27 +87,12 @@ mark,
 audio,
 video {
   margin: 0;
-  padding: 0;
   border: 0;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
 }
 
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
 
 body {
   line-height: 1;
@@ -184,21 +169,23 @@ table {
   --black-color: #000000;
 
   /* Couleurs de composants */
-  --component-over-brand-color: 'rgba(168, 52, 50, 0.60)';
+  --component-over-brand-color: rgba(168, 52, 50, 0.60);
+  --header-default-color: rgba(51, 44, 39, 0.50);
 
 
   /* Motion */
   /* Basic */
-  --motion-basic-cubic-bezier: '0.42, 1.67, 0.21, 0.9';
-  --motion-basic-duration: '350ms';
+  --motion-basic-cubic-bezier: 0.42, 1.67, 0.21, 0.9;
+  --motion-basic-duration: 350ms;
 
   /* Accelerate */
-  --motion-accelerate-cubic-bezier: '0.39, 1.29, 0.35, 0.98';
-  --motion-accelerate-duration: '650ms';
+  --motion-accelerate-cubic-bezier: 0.39, 1.29, 0.35, 0.98;
+  --motion-accelerate-duration: 650ms;
 
   /* Smooth */
-  --motion-smooth-cubic-bezier: '0.27, 1.06, 0.18, 1';
-  --motion-smooth-duration: '750ms';
+  --motion-smooth-cubic-bezier: 0.27, 1.06, 0.18, 1;
+  --motion-smooth-duration: 750ms;
+
 }
 
 
@@ -300,6 +287,15 @@ h3 {
   font-size: 2rem;
   font-style: normal;
   font-weight: 400;
+  line-height: normal;
+
+}
+
+li {
+  font-family: Tra1;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
   line-height: normal;
 
 }

@@ -1,4 +1,8 @@
-import { ButtonPrimary, ButtonSecondary } from "../components/Button/Button";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Header from "../components/header/Header";
+import Home from "./routes/home/Home";
+import Restaurant from "./routes/Restaurant/Restaurant";
 
 import './Site.css';
 
@@ -6,9 +10,13 @@ const Site = () => {
 
   return (
     <>
-      <h1>Hello</h1>
-      <ButtonPrimary content={'Commander / Réserver'} showIconRight={true} />
-      <ButtonSecondary content={'I am the secondary !!!'} showIconRight={true} />
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/restaurant" element={<Restaurant />} />
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }
