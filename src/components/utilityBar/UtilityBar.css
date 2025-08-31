@@ -1,0 +1,34 @@
+.utility-wrapper {
+  display: flex;
+  padding: 1rem 2rem;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: var(--black-color);
+
+  @media (max-width: 1080px) {
+    display: flex;
+    padding: 0.5rem 1rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .left-content {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+
+    @media (max-width: 1080px) {
+      .trip-logo {
+        display: none;
+      }
+    }
+  }
+
+  .right-content {
+    @media (max-width: 1080px) {
+      display: none;
+    }
+  }
+}

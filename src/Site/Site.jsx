@@ -1,6 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Header from "../components/header/Header";
+import UtilityBar from "../components/utilityBar/UtilityBar";
+
 import Home from "./pages/home/Home";
 import Restaurant from "./pages/Restaurant/Restaurant";
 import Ciccheti from "./pages/cicchetti/Cicchetti";
@@ -24,6 +26,7 @@ const Site = () => {
   return (
     <>
       <BrowserRouter>
+        <UtilityBar />
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />

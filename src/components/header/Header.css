@@ -53,6 +53,8 @@ header {
   gap: 1rem;
 
   background: var(--header-default-color);
+
+  border-top: 1px solid var(--header-default-color);
   border-bottom: 1px solid inset var(--secondary-color-60);
 
 
@@ -61,7 +63,7 @@ header {
 
   &:hover {
     background: var(--black-color);
-    border-top: 1px solid inset var(--gray-color-90);
+    border-top: 1px solid var(--gray-color-90);
   }
 
 

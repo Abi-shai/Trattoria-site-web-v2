@@ -37,4 +37,23 @@ const ButtonSecondary = ({ content, showIconRight }) => {
 };
 
 
-export { ButtonPrimary, ButtonSecondary };
+// Bouton de style link (comme celle sur la utility bar)
+const LinkButton = ({ content, icon, href }) => {
+  return (
+    <a
+      href={href}
+      target="_blank"
+      className="cta link-button">
+
+      {/* Logique pour construire un boolean qui va se charger de l'affichage de l'icône lorsqu'il est true */}
+
+      {icon}
+
+      {content}
+
+    </a>
+  );
+};
+
+
+export { ButtonPrimary, ButtonSecondary, LinkButton };
