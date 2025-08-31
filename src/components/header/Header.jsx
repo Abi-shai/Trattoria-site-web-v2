@@ -11,13 +11,20 @@ import TrattoriaLogo from '../../assets/images/trattoria.png';
 
 import './Header.css';
 
-const ListNavOption = ({ navContent, showDivider }) => {
+
+// Each option of the card mennu component
+const ListNavOption = ({ navContent, showDivider, navLink }) => {
 
   return (
     <div className="listNavWrapper">
-      <div className="content-wrapper">
+      <NavLink
+        to={navLink}
+        end
+        className={({ isActive }) =>
+          isActive ? " content-wrapper nav-active" : "content-wrapper nav-link"
+        }>
         <p className="cta">{navContent}</p>
-      </div>
+      </NavLink>
 
       {
         showDivider
@@ -29,17 +36,18 @@ const ListNavOption = ({ navContent, showDivider }) => {
 }
 
 
+// The copponent lsiting the menu inside the card, while whovering
 const MenuPopOver = () => {
   return (
     <div className="menu-popover">
-      <ListNavOption navContent={'Cicchetti'} />
-      <ListNavOption navContent={'Antipasti'} />
-      <ListNavOption navContent={'Primi'} />
-      <ListNavOption navContent={'Secondi'} />
-      <ListNavOption navContent={'Desserts'} showDivider={true} />
-      <ListNavOption navContent={'Apéritifs'} />
-      <ListNavOption navContent={'Cocktails'} />
-      <ListNavOption navContent={'Vins'} />
+      <ListNavOption navLink='/carte/cicchetti' navContent={'Cicchetti'} />
+      <ListNavOption navLink='/carte/antipasti' navContent={'Antipasti'} />
+      <ListNavOption navLink='/carte/primi' navContent={'Primi'} />
+      <ListNavOption navLink='/carte/secondi' navContent={'Secondi'} />
+      <ListNavOption navLink='/carte/desserts' navContent={'Desserts'} showDivider={true} />
+      <ListNavOption navLink='/carte/aperitifs' navContent={'Apéritifs'} />
+      <ListNavOption navLink='/carte/cocktails' navContent={'Cocktails'} />
+      <ListNavOption navLink='/carte/vins' navContent={'Vins'} />
     </div>
   )
 }
@@ -50,6 +58,8 @@ const Header = () => {
   const [MenuOpened, setMenuOpened] = useState('closed');
   const [CartOpened, setCartOpen] = useState('closed');
 
+
+  // Checking the state of the nav menu, mobile version
   const setterMenuOpened = () => {
     if (MenuOpened === 'closed') {
       setMenuOpened('open');
@@ -59,6 +69,7 @@ const Header = () => {
 
     console.log(MenuOpened);
   }
+
 
   // Checking the state of the cart menu
   const setterCartOpened = () => {
@@ -73,7 +84,8 @@ const Header = () => {
 
 
   return (
-    <header style={MenuOpened === 'closed' ? { height: '72px' } : MenuOpened === 'open' ? { height: '348px' } : MenuOpened === 'expanded' ? { height: '726px' } : null}>
+    <header
+      style={MenuOpened === 'closed' ? { height: '72px' } : MenuOpened === 'open' ? { height: '348px' } : MenuOpened === 'expanded' ? { height: '726px' } : null}>
 
       <div className="principal-wrapper">
 
@@ -109,7 +121,7 @@ const Header = () => {
             </li>
             <li>
               <NavLink
-                to="/restaurant"
+                to="/pizza"
                 end
                 className={({ isActive }) =>
                   isActive ? "nav-active" : "nav-link"
@@ -119,7 +131,7 @@ const Header = () => {
               </NavLink></li>
             <li className="special-link">
               <NavLink
-                to="/restaurant"
+                to="/carte/"
                 className={({ isActive }) =>
                   isActive ? "nav-active" : "nav-link"
                 }
@@ -131,7 +143,7 @@ const Header = () => {
             </li>
             <li>
               <NavLink
-                to="/restaurant"
+                to="/gallery"
                 end
                 className={({ isActive }) =>
                   isActive ? "nav-active" : "nav-link"
@@ -141,7 +153,7 @@ const Header = () => {
               </NavLink></li>
             <li>
               <NavLink
-                to="/restaurant"
+                to="/contacts"
                 end
                 className={({ isActive }) =>
                   isActive ? "nav-active" : "nav-link"
@@ -155,6 +167,8 @@ const Header = () => {
 
         <ButtonPrimary content='Commander / Réserver' showIconRight={true} />
 
+
+
         <div className="ham-menu" onClick={setterMenuOpened}>
           {
             MenuOpened === 'closed'
@@ -165,7 +179,12 @@ const Header = () => {
           }
         </div>
 
+
+
+
       </div>
+
+
 
       {/* Navigation secondaire, Mobile */}
 
@@ -195,7 +214,7 @@ const Header = () => {
           </li>
           <li>
             <NavLink
-              to="/restaurant"
+              to="/pizza"
               end
               className={({ isActive }) =>
                 isActive ? "nav-active" : "nav-link"
@@ -207,7 +226,7 @@ const Header = () => {
 
             <div className="wrapper-1">
               <NavLink
-                to="/restaurant"
+                to="/carte"
                 className={({ isActive }) =>
                   isActive ? "nav-active" : "nav-link"
                 }
@@ -217,11 +236,15 @@ const Header = () => {
               </NavLink>
             </div>
 
+
+
             {
               CartOpened === 'open'
                 ? <div className="divider"></div>
                 : null
             }
+
+
 
 
             {
@@ -230,45 +253,55 @@ const Header = () => {
                   <ul>
                     <li>
                       <NavLink
-                        to="/"
+                        to="/carte/cicchetti"
                         end
-                        className="nav-link"
+                        className={({ isActive }) =>
+                          isActive ? "nav-active" : "nav-link"
+                        }
                       >
                         Cicchetti
                       </NavLink>
                     </li>
                     <li>
                       <NavLink
-                        to="/"
+                        to="/carte/antipasti"
                         end
-                        className="nav-link"
+                        className={({ isActive }) =>
+                          isActive ? "nav-active" : "nav-link"
+                        }
                       >
                         Antipasti
                       </NavLink>
                     </li>
                     <li>
                       <NavLink
-                        to="/"
+                        to="/carte/primi"
                         end
-                        className="nav-link"
+                        className={({ isActive }) =>
+                          isActive ? "nav-active" : "nav-link"
+                        }
                       >
                         Primi
                       </NavLink>
                     </li>
                     <li>
                       <NavLink
-                        to="/"
+                        to="/carte/secondi"
                         end
-                        className="nav-link"
+                        className={({ isActive }) =>
+                          isActive ? "nav-active" : "nav-link"
+                        }
                       >
                         Secondi
                       </NavLink>
                     </li>
                     <li>
                       <NavLink
-                        to="/"
+                        to="/carte/desserts"
                         end
-                        className="nav-link"
+                        className={({ isActive }) =>
+                          isActive ? "nav-active" : "nav-link"
+                        }
                       >
                         Desserts
                       </NavLink>
@@ -276,27 +309,33 @@ const Header = () => {
                     <div className="divider"></div>
                     <li>
                       <NavLink
-                        to="/"
+                        to="/carte/aperitifs"
                         end
-                        className="nav-link"
+                        className={({ isActive }) =>
+                          isActive ? "nav-active" : "nav-link"
+                        }
                       >
                         Apéritifs
                       </NavLink>
                     </li>
                     <li>
                       <NavLink
-                        to="/"
+                        to="/carte/cocktails"
                         end
-                        className="nav-link"
+                        className={({ isActive }) =>
+                          isActive ? "nav-active" : "nav-link"
+                        }
                       >
                         Cocktails
                       </NavLink>
                     </li>
                     <li>
                       <NavLink
-                        to="/"
+                        to="/carte/vins"
                         end
-                        className="nav-link"
+                        className={({ isActive }) =>
+                          isActive ? "nav-active" : "nav-link"
+                        }
                       >
                         Vins
                       </NavLink>
@@ -309,7 +348,7 @@ const Header = () => {
           </li>
           <li>
             <NavLink
-              to="/restaurant"
+              to="/gallery"
               end
               className={({ isActive }) =>
                 isActive ? "nav-active" : "nav-link"
@@ -319,7 +358,7 @@ const Header = () => {
             </NavLink></li>
           <li>
             <NavLink
-              to="/restaurant"
+              to="/contacts"
               end
               className={({ isActive }) =>
                 isActive ? "nav-active" : "nav-link"
@@ -331,7 +370,7 @@ const Header = () => {
         </ul>
       </nav>
 
-    </header >
+    </header>
   );
 };
 
