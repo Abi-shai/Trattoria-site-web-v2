@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Header from "../components/header/Header";
 import UtilityBar from "../components/utilityBar/UtilityBar";
+import Footer from '../components/footer/Footer'
 
 import Home from "./pages/home/Home";
 import Restaurant from "./pages/Restaurant/Restaurant";
@@ -24,7 +25,7 @@ import './Site.css';
 const Site = () => {
 
   return (
-    <>
+    <main>
       <BrowserRouter>
         <UtilityBar />
         <Header />
@@ -45,8 +46,9 @@ const Site = () => {
           <Route path="/gallery" element={<Lagallery />} />
           <Route path="/contacts" element={<Contacts />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
-    </>
+    </main>
   )
 }
 

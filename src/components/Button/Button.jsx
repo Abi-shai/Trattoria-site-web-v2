@@ -38,9 +38,10 @@ const ButtonSecondary = ({ content, showIconRight }) => {
 
 
 // Bouton de style link (comme celle sur la utility bar)
-const LinkButton = ({ content, icon, href }) => {
+const LinkButton = ({ content, icon, href, style }) => {
   return (
     <a
+      style={style}
       href={href}
       target="_blank"
       className="cta link-button">

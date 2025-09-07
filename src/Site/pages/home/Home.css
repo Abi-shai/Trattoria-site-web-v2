@@ -1,0 +1,68 @@
+.home-content {
+  section {
+    height: 48.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 54px;
+    gap: 2em;
+
+    position: relative;
+
+    .pitch-wrapper {
+      display: flex;
+      width: 36.25rem;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+      text-align: center;
+
+
+      z-index: 3;
+
+
+      .text-wrapper {
+        display: flex;
+        width: 36.25rem;
+        max-width: 36.25rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+
+        h2 {
+          width: 100%;
+          color: var(--gray-color-05);
+        }
+
+        p {
+          color: var(--gray-color-30);
+        }
+      }
+    }
+
+    .image {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.50);
+      z-index: 2;
+
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+    }
+  }
+}

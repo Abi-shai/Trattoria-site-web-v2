@@ -303,3 +303,7 @@ li {
 html {
   background: var(--primary-color-50);
 }
+
+main {
+  position: relative;
+}
