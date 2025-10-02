@@ -1,3 +1,5 @@
+import { useScrollDirection } from "../../utility/HidingElementScroll";
+
 import { useState } from "react";
 
 import { NavLink } from "react-router-dom";
@@ -55,6 +57,9 @@ const MenuPopOver = () => {
 
 const Header = () => {
 
+
+  const scrollDirection = useScrollDirection();
+
   const [MenuOpened, setMenuOpened] = useState('closed');
   const [CartOpened, setCartOpen] = useState('closed');
 
@@ -85,6 +90,7 @@ const Header = () => {
 
   return (
     <header
+      className={`site-header ${scrollDirection === 'down' ? 'hidden' : ''}`}
       style={MenuOpened === 'closed' ? { height: '72px' } : MenuOpened === 'open' ? { height: '348px' } : MenuOpened === 'expanded' ? { height: '726px' } : null}>
 
       <div className="principal-wrapper">
@@ -165,7 +171,11 @@ const Header = () => {
           </ul>
         </nav>
 
-        <ButtonPrimary content='Commander / Réserver' showIconRight={true} />
+        <div className="reserve-and-order">
+          <a href="https://trattoriadaalex.mon-restau.com/" target="blank" className="buttonPrimary click-button">
+            <p className="cta">Commander / Réserver</p>
+          </a>
+        </div>
 
 
 

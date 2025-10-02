@@ -234,7 +234,7 @@ h3 {
   font-family: Tra1;
   font-size: 2rem;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   line-height: normal;
   font-variant: all-small-caps;
 }
@@ -253,7 +253,7 @@ h3 {
   font-family: Tra1;
   font-size: 1.25rem;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: normal;
 }
 
@@ -300,10 +300,111 @@ li {
 }
 
 
-html {
+body {
   background: var(--primary-color-50);
-}
-
-main {
   position: relative;
 }
+
+.top-bars {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 16;
+  height: auto;
+}
+
+/* le style de la partie main de toutes les pages de la carte */
+.menu-body-main-wrapper {
+  display: flex;
+  padding: 3rem 11.25rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  align-self: stretch;
+
+  @media (min-width: 1081px) and (max-width: 1180px) {
+    padding: 3rem 6rem;
+  }
+
+  @media (min-width: 1401px) and (max-width: 1700px) {
+    padding: 3rem 11.25rem;
+  }
+
+
+  @media (max-width: 1080px) {
+    display: flex;
+    padding: 1.5rem 1.25rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    align-self: stretch;
+  }
+}
+
+.menu-group-wrapper {
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 1.5rem;
+  align-self: stretch;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @media (max-width: 1080px) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+    align-self: stretch;
+  }
+}
+
+
+.menu-more-infos-wrapper {
+  display: flex;
+  padding: 0 11.25rem;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem 2rem;
+  align-self: stretch;
+  flex-wrap: wrap;
+
+  @media (min-width: 1081px) and (max-width: 1400px) {
+    padding: 0 4em;
+  }
+
+  @media (min-width: 1401px) and (max-width: 1700px) {
+    padding: 0 5em;
+  }
+
+  @media (max-width: 1080px) {
+    padding: 0 1.25rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    align-self: stretch;
+  }
+
+  p {
+    color: var(--primary-color-05);
+    text-align: center;
+    font-family: Tra1;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: fit-content;
+  }
+}
+
+
+
+html {
+  overscroll-behavior: none;
+}
+
+/* .site-page {
+  height: 100vh;
+  overflow: hidden;
+} */

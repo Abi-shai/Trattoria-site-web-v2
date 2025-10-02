@@ -4,13 +4,15 @@
   justify-content: space-between;
   align-items: center;
 
-  position: sticky;
-  top: 0;
+  /* position: sticky;
+  top: -80px;
   left: 0;
   right: 0;
-  z-index: 6;
+  position: sticky; */
 
   background-color: var(--black-color);
+
+  transition: all 750ms cubic-bezier(0.27, 1.06, 0.18, 1);
 
   @media (max-width: 1080px) {
     display: flex;
@@ -36,5 +38,18 @@
     @media (max-width: 1080px) {
       display: none;
     }
+  }
+}
+
+
+/* Une classe qu'on ajoutera pour cacher la barre */
+.utility-wrapper.hidden {
+  transform: translateY(-72px);
+  /* On la déplace vers le haut de sa propre hauteur pour la cacher */
+}
+
+@media (max-width: 1080px) {
+  .utility-wrapper.hidden {
+    transform: translateY(-56px);
   }
 }

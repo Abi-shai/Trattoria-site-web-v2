@@ -21,9 +21,9 @@ const ButtonPrimary = ({ content, showIconRight }) => {
 
 
 // Style de button 2 / Avec les bordures
-const ButtonSecondary = ({ content, showIconRight }) => {
+const ButtonSecondary = ({ type, content, showIconRight }) => {
   return (
-    <button className="cta buttonSecondary">
+    <button type={type} className="cta buttonSecondary">
       {content}
 
       {/* Logique pour construire un boolean qui va se charger de l'affichage de l'icône lorsqu'il est true */}

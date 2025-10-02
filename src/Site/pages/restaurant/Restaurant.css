@@ -1,0 +1,56 @@
+.restaurant-main {
+  display: flex;
+  padding: 3rem 11.25rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  align-self: stretch;
+
+  color: var(--gray-color-05);
+
+  @media (max-width: 1080px) {
+    padding: 3em 8em;
+  }
+
+  @media (max-width: 768px) {
+    display: flex;
+    padding: 1.5rem 1.25rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+    align-self: stretch;
+
+    p {
+      font-family: Tra1;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+
+  .on-restaurant-page-image {
+    height: 28.75rem;
+    width: 100%;
+    flex: 1 0 0;
+    object-fit: cover;
+  }
+
+  .images-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.25rem;
+    flex: 1 0 0;
+    align-self: stretch;
+    height: 28.75rem;
+
+    .on-restaurant-page-image-2 {
+      flex: 1 0 0;
+      align-self: stretch;
+      width: 50%;
+      object-fit: cover;
+    }
+  }
+}

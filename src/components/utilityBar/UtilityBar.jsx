@@ -1,3 +1,5 @@
+import { useScrollDirection } from "../../utility/HidingElementScroll";
+
 import TripNotation from '../../assets/images/trip-notation.svg?react';
 import Commenting from '../../assets/icons/commenting.svg?react'
 import Location from '../../assets/icons/location.svg?react'
@@ -14,8 +16,12 @@ const UtilityBar = () => {
     trip_advisor: "https://www.tripadvisor.fr/Restaurant_Review-g293831-d9604600-Reviews-Trattoria_da_Alex-Dakar_Dakar_Region.html"
   };
 
+  const scrollDirection = useScrollDirection();
+
   return (
-    <div className="utility-wrapper">
+    <div
+      className={`utility-wrapper ${scrollDirection === 'down' ? 'hidden' : ''}`}
+    >
 
       <div className="left-content">
         <a

@@ -1,0 +1,45 @@
+.on-brand-bg-divider-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.625rem;
+  align-self: stretch;
+  justify-content: center;
+  padding: 0em 1.25em 0em 1.25em;
+
+  .on-brand-bg-divider {
+    /* width: 21.875rem; */
+    width: 100%;
+    height: 0.0625rem;
+    max-width: 57.5rem;
+
+    background-color: var(--primary-color-40);
+
+    @media (max-width: 1080px) {
+      /* max-width: 21.875rem;
+      height: 0.0625rem;
+      background-color: var(--primary-color-40);
+      width: 100%; */
+      max-width: 21.875em;
+      width: 100%;
+    }
+  }
+}
+
+.on-brand-bg-divider-wrapper-pages {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.625rem;
+  align-self: stretch;
+  justify-content: center;
+
+  .on-brand-bg-divider-pages {
+    width: 100%;
+    height: 0.0625rem;
+
+    background-color: var(--primary-color-40);
+
+    @media (max-width: 1080px) {
+      width: 100%;
+    }
+  }
+}
