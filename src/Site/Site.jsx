@@ -8,7 +8,7 @@ import UtilityBar from "../components/utilityBar/UtilityBar";
 import Footer from '../components/footer/Footer'
 
 import Home from "./pages/home/Home";
-import Restaurant from "./pages/Restaurant/Restaurant";
+import Restaurant from "./pages/restaurant/Restaurant";
 import Ciccheti from "./pages/cicchetti/Cicchetti";
 import Antipasti from "./pages/antipasti/Antipasti";
 import Primi from "./pages/primi/Primi";
@@ -19,7 +19,7 @@ import Cocktails from "./pages/cocktails/Cocktails";
 import Vins from "./pages/vins/Vins";
 import Lagallery from "./pages/laGallery/Lagallery";
 import Contacts from "./pages/contacts/Contacts";
-import Pizza from "./pages/Pizza/Pizza";
+import Pizza from "./pages/pizza/Pizza";
 
 
 
