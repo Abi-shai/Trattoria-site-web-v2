@@ -4,7 +4,7 @@ import TripNotation from '../../assets/images/trip-notation.svg?react';
 import Commenting from '../../assets/icons/commenting.svg?react'
 import Location from '../../assets/icons/location.svg?react'
 
-import { LinkButton } from "../button/Button";
+import { LinkButton } from "../Button/Button";
 
 import './UtilityBar.css';
 
