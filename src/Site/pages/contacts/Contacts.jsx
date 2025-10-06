@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 import UseWindowSize from "../../../utility/useWindowSize";
 
@@ -14,6 +14,40 @@ import './Contacts.css';
 
 const Contacts = () => {
   const currentWith = UseWindowSize().width;
+
+  const [status, setStatus] = useState('');
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    setStatus('Envoi en cours...');
+
+    const formData = {
+      firstName: event.target.firstName.value,
+      lastName: event.target.lastName.value,
+      email: event.target.email.value,
+    };
+
+    try {
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setStatus('Message envoyé avec succès !');
+        console.log('All good !')
+        event.target.reset(); // Vide le formulaire
+      } else {
+        const data = await response.json();
+        setStatus(`Erreur : ${data.error || 'Une erreur est survenue.'}`);
+      }
+    } catch (error) {
+      setStatus('Erreur réseau. Veuillez réessayer.');
+    }
+  };
 
   useEffect(() => {
     document.title = 'Contacts — Trattoria Da Alex';
@@ -31,7 +65,7 @@ const Contacts = () => {
       <main className="menu-body-main-wrapper">
         <section className="contacts-wrapper">
 
-          <form className="left-content">
+          <form className="left-content" onSubmit={handleSubmit}>
             <div className="user-inputs">
               <div className="grouped-inputs">
                 <InputField typeOfInput="Field" label="Nom" htmlFor="lastName" id="lastName" name="lastName" type="text" />

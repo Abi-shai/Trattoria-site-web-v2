@@ -4,7 +4,8 @@
   align-items: center;
 
   .hero-section {
-    height: 50em;
+    /* height: 50em; */
+    height: 95svh;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -15,7 +16,7 @@
     position: relative;
 
     @media (max-width: 1080px) {
-      height: 36.25rem;
+      height: 75svh;
       align-items: flex-end;
       gap: 25.625rem;
       padding-bottom: 3.25em;

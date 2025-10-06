@@ -1,6 +1,8 @@
 .page-header-wrapper {
   display: flex;
-  height: 38.75rem;
+  /* height: 38.75rem; */
+
+  height: 75svh;
   justify-content: center;
   align-items: flex-end;
 

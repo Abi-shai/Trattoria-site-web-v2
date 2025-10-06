@@ -11,15 +11,15 @@ export default async function handler(req, res) {
   }
 
   // On récupère les données du formulaire depuis le corps de la requête
-  const { name, email, message } = req.body;
+  const { firstName, lastName, email } = req.body;
 
   try {
     // On utilise Resend pour envoyer l'e-mail
     const { data, error } = await resend.emails.send({
       from: 'Contact Form <abishaiyp.dev@gmail.com>', // Adresse d'envoi (doit être vérifiée ou onboarding@resend.dev)
       to: ['ton-adresse-email@gmail.com'],      // L'adresse où tu veux recevoir les e-mails
-      subject: `Nouveau message de ${name} via ton site !`,
-      html: `<p>Vous avez reçu un nouveau message de <strong>${name}</strong> (${email}).</p><p>Message :</p><p>${message}</p>`,
+      subject: `Nouveau message de ${lastName} via ton site !`,
+      html: `<p>Vous avez reçu un nouveau message de <strong>${lastName}</strong> (${email}).</p><p>Message :</p><p>${message}</p>`,
     });
 
     if (error) {
