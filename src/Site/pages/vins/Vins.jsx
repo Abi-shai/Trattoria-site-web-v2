@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import UseWindowSize from "../../../utility/useWindowSize";
 
 import PageHeader from "../../../components/pageHeader/PageHeader";
-import MenuSectionHeader from "../../../components/menuSectionHeader/menuSectionHeader";
+import MenuSectionHeader from "../../../components/menuSectionHeader/MenuSectionHeader";
 import MenuItem from "../../../components/MenuItem/MenuItem";
 import { DividerOnOtherPages } from "../../../components/divider/Divider";
 

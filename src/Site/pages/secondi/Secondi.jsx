@@ -5,7 +5,7 @@ import UseWindowSize from "../../../utility/useWindowSize";
 import PageHeader from "../../../components/pageHeader/PageHeader";
 import { DividerOnOtherPages } from "../../../components/divider/Divider";
 import MenuItem from "../../../components/MenuItem/MenuItem";
-import MenuSectionHeader from "../../../components/menuSectionHeader/menuSectionHeader";
+import MenuSectionHeader from "../../../components/menuSectionHeader/MenuSectionHeader";
 
 import { viandeData, poissonData, secondiMoreInfos } from "../../../menu-data";
 

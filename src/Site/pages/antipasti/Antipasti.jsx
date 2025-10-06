@@ -5,7 +5,7 @@ import { antipastiData, antipastiMoreInfos } from "../../../menu-data";
 import PageHeader from "../../../components/pageHeader/PageHeader";
 import MenuItem from "../../../components/MenuItem/MenuItem";
 import { DividerOnOtherPages } from "../../../components/divider/Divider";
-import MenuSectionHeader from "../../../components/menuSectionHeader/menuSectionHeader";
+import MenuSectionHeader from "../../../components/menuSectionHeader/MenuSectionHeader";
 
 
 import AntipastiImage from '../../../assets/images/carte/antipasti.png';

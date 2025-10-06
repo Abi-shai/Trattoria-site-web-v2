@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 
 import PageHeader from "../../../components/pageHeader/PageHeader";
-import MenuSectionHeader from "../../../components/menuSectionHeader/menuSectionHeader";
+import MenuSectionHeader from "../../../components/menuSectionHeader/MenuSectionHeader";
 import MenuItem from "../../../components/MenuItem/MenuItem";
 
 import { aperitifsData } from "../../../menu-data";
