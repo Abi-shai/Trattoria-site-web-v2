@@ -7,7 +7,7 @@ import Header from "../components/header/Header";
 import UtilityBar from "../components/utilityBar/UtilityBar";
 import Footer from '../components/footer/Footer'
 
-import Home from "./pages/Home/Home";
+import Home from "./pages/home/Home";
 import Restaurant from "./pages/Restaurant/Restaurant";
 import Ciccheti from "./pages/cicchetti/Cicchetti";
 import Antipasti from "./pages/antipasti/Antipasti";
