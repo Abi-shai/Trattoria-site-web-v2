@@ -346,6 +346,10 @@
       align-items: center;
       gap: 0.25rem;
       align-self: stretch;
+
+      @media (max-width: 680px) {
+        flex-direction: column;
+      }
     }
 
     .row-2 {
@@ -357,11 +361,20 @@
       flex: 1 0 0;
       height: 830px;
 
+      @media (max-width: 680px) {
+        flex-direction: column;
+        height: unset;
+      }
+
       .big-wrapper {
         display: flex;
         width: 60%;
         justify-content: center;
         height: 100%;
+
+        @media (max-width: 680px) {
+          width: unset;
+        }
       }
 
       .inside-row {
@@ -372,6 +385,10 @@
         gap: 0.25rem;
         flex: 1 0 0;
         height: 100%;
+
+        .menu-category-wrapper {
+          height: 100%;
+        }
       }
     }
 
@@ -380,6 +397,10 @@
       align-items: center;
       gap: 0.25rem;
       align-self: stretch;
+
+      @media (max-width: 680px) {
+        flex-direction: column;
+      }
     }
   }
 }

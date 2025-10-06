@@ -144,7 +144,7 @@ footer .payment-wrapper .services-wrapper img {
 
 @media (max-width: 860px) {
 
-  footer {
+  /* footer {
     padding: 2rem 1.25rem;
   }
 
@@ -158,7 +158,6 @@ footer .payment-wrapper .services-wrapper img {
     align-items: flex-start;
     gap: 2rem;
     align-self: stretch;
-    align-content: start;
   }
 
   footer .second-footer {
@@ -170,5 +169,56 @@ footer .payment-wrapper .services-wrapper img {
   footer .second-footer .copygright {
     width: 100%;
     text-align: center;
+  } */
+
+
+
+  footer {
+    padding: 2rem 1.25rem;
+  }
+
+  /* --- Pour .main-footer --- */
+  footer .main-footer {
+    flex-direction: column-reverse;
+    gap: 2rem;
+    /* ON RETIRE GAP */
+  }
+
+  /* --- Pour .right-section --- */
+  footer .right-section {
+    /* flex-direction: column;
+      align-items: flex-start;
+      align-self: stretch; */
+    gap: 2rem;
+    /* ON RETIRE GAP */
+  }
+
+
+  footer .footer-block {
+    height: unset;
+    min-height: auto;
+  }
+
+
+
+  /* --- Pour .second-footer --- */
+  footer .second-footer {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 2rem;
+    /* ON RETIRE GAP */
+  }
+
+
+  footer .second-footer .copygright {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (min-width: 466px) {
+  footer .footer-block {
+    height: unset;
+    min-height: 165px;
   }
 }
