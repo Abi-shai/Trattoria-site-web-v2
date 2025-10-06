@@ -91,7 +91,7 @@ const Header = () => {
   return (
     <header
       className={`site-header ${scrollDirection === 'down' ? 'hidden' : ''}`}
-      style={MenuOpened === 'closed' ? { height: '72px' } : MenuOpened === 'open' ? { height: '348px' } : MenuOpened === 'expanded' ? { height: '726px' } : null}>
+      style={MenuOpened === 'closed' ? { height: '72px' } : MenuOpened === 'open' ? { height: '100vh', backgroundColor: 'var(--black-color)' } : MenuOpened === 'expanded' ? { height: '100vh', backgroundColor: 'var(--black-color)' } : null}>
 
       <div className="principal-wrapper">
 
