@@ -11,7 +11,7 @@ import { roséData, blancData, rougeData, bulleData } from "../../../menu-data";
 
 import VinsImage from '../../../assets/images/carte/vins.png';
 
-import './Vins.css';
+import './VIns.css';
 
 const Vins = () => {
 
