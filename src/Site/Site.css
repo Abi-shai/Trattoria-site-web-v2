@@ -346,7 +346,7 @@ body {
   display: flex;
   align-items: flex-start;
   align-content: flex-start;
-  gap: 1.5rem;
+  gap: 3.5rem;
   align-self: stretch;
   flex-wrap: wrap;
   justify-content: center;
