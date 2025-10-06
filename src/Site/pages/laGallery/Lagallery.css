@@ -1,4 +1,10 @@
 .gallery-page {
+  padding-top: 178px;
+
+  @media (max-width: 1080px) {
+    padding-top: 154px;
+  }
+
   .gallery-wrapper {
     display: grid;
     padding: 0.25rem;

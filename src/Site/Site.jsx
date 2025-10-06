@@ -67,7 +67,8 @@ const Site = () => {
   const [state, setState] = useState('closed');
 
   const toggleState = () => {
-    setState(currentState => (currentState === 'opened' ? 'closed' : 'closed'));
+    setState(currentState => (currentState === 'opened' ? 'closed' : 'opened'));
+    console.log(state);
   };
 
   return (

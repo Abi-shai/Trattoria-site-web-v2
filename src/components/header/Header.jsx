@@ -91,7 +91,7 @@ const Header = () => {
   return (
     <header
       className={`site-header ${scrollDirection === 'down' ? 'hidden' : ''}`}
-      style={MenuOpened === 'closed' ? { height: '72px' } : MenuOpened === 'open' ? { height: '100vh', backgroundColor: 'var(--black-color)' } : MenuOpened === 'expanded' ? { height: '100vh', backgroundColor: 'var(--black-color)' } : null}>
+      style={MenuOpened === 'closed' ? { height: '72px' } : MenuOpened === 'open' ? { height: '100svh', backgroundColor: 'var(--black-color)' } : MenuOpened === 'expanded' ? { height: '100svh', backgroundColor: 'var(--black-color)' } : null}>
 
       <div className="principal-wrapper">
 
@@ -237,9 +237,6 @@ const Header = () => {
             <div className="wrapper-1">
               <a
                 to="/carte"
-                className={({ isActive }) =>
-                  isActive ? "nav-active" : "nav-link"
-                }
               >
                 La carte
                 <ChevronDown style={CartOpened === 'open' ? { transform: 'rotateZ(-180deg)' } : null} />

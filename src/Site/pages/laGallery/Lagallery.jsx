@@ -28,7 +28,7 @@ const Lagallery = () => {
       <div
         className="gallery-image"
         onMouseEnter={() => setterHoveredIndex(imgIndex)}
-        onMouseLeave={() => setHoveredIndex(undefined)}
+        onMouseLeave={() => setHoveredIndex(null)}
         onClick={toggleState}
       >
         <img src={imageSrc} alt="Photo de gallery" />
