@@ -3,10 +3,13 @@
   justify-content: center;
   align-items: flex-start;
   align-self: stretch;
+  padding: 0em 25%;
+  gap: 25%;
 
   @media (max-width: 1080px) {
     flex-direction: column;
     gap: 2em;
+    padding: unset
   }
 
   .wine-category {

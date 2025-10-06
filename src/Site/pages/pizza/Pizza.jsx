@@ -16,7 +16,7 @@ import './Pizza.css';
 const Pizza = () => {
 
   useEffect(() => {
-    document.title = 'Trattoria Da Alex — Pizza';
+    document.title = 'Pizza — Trattoria Da Alex';
   }, []);
 
   const removedSpecialiLastItem = specialiData.slice(0, -1);

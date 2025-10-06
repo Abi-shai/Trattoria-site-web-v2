@@ -16,7 +16,7 @@ import './VIns.css';
 const Vins = () => {
 
   useEffect(() => {
-    document.title = 'Trattoria Da Alex — Vins';
+    document.title = 'Vins — Trattoria Da Alex';
   }, []);
 
   const currentWith = UseWindowSize().width;

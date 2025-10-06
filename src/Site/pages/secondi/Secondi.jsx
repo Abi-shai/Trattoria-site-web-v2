@@ -19,7 +19,7 @@ const Secondi = () => {
   const currentWith = UseWindowSize().width;
 
   useEffect(() => {
-    document.title = 'Trattoria Da Alex — Secondi';
+    document.title = 'Secondi — Trattoria Da Alex';
   }, []);
 
   return (

@@ -15,7 +15,7 @@ import './Antipasti.css';
 const Antipasti = () => {
 
   useEffect(() => {
-    document.title = 'Trattoria Da Alex — Antipasti';
+    document.title = 'Antipasti — Trattoria Da Alex';
   }, []);
 
   return (

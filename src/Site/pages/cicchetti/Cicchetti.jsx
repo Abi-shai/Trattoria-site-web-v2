@@ -17,13 +17,13 @@ const Ciccheti = () => {
   const currentWith = UseWindowSize().width;
 
   useEffect(() => {
-    document.title = 'Trattoria Da Alex — Cicchetti';
+    document.title = 'Cicchetti — Trattoria Da Alex';
   }, []);
 
 
   return (
     <>
-      <PageHeader img={CicchettiImage} title="CHICCHETI" description="Amuses-bouche" />
+      <PageHeader img={CicchettiImage} title="CICCHETI" description="Amuses-bouche" />
       <main className="menu-body-main-wrapper">
         <section className="menu-group-wrapper">
           {
