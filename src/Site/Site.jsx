@@ -74,7 +74,7 @@ const Site = () => {
   return (
     <FullScreenStateContext.Provider value={{ state, toggleState }} >
       <div
-        style={state === 'opened' ? { height: '100vh', overflow: 'hidden' } : {}}
+        style={state === 'opened' ? { height: '100svh', overflow: 'hidden' } : {}}
         className="site-page"
       >
         <BrowserRouter>

@@ -1,3 +1,5 @@
+import UseWindowSize from "../../../utility/useWindowSize";
+
 import { useState, useEffect } from "react";
 import { useContext } from "react";
 import FullScreenStateContext from "../../../context/FullscreenContext";
@@ -14,6 +16,8 @@ const Lagallery = () => {
   const [hoveredIndex, setHoveredIndex] = useState(0);
   const { state, toggleState } = useContext(FullScreenStateContext);
 
+  const currentWith = UseWindowSize().width;
+
   useEffect(() => {
     document.title = 'Trattoria Da Alex — Gallery';
   }, []);
@@ -21,24 +25,41 @@ const Lagallery = () => {
   const setterHoveredIndex = (index) => {
     setHoveredIndex(index);
     console.log(hoveredIndex);
+    console.log(state)
   }
 
   const GalleryImage = ({ imageSrc, imgIndex }) => {
     return (
-      <div
-        className="gallery-image"
-        onMouseEnter={() => setterHoveredIndex(imgIndex)}
-        onMouseLeave={() => setHoveredIndex(null)}
-        onClick={toggleState}
-      >
-        <img src={imageSrc} alt="Photo de gallery" />
-        <div
-          style={hoveredIndex === imgIndex ? { opacity: 1 } : { opacity: 0 }}
-          className="gallery-image-overlay"
-        >
-          <SearchIcon />
-        </div>
-      </div>
+      <>
+        {
+          currentWith > 1080
+
+            ? < div
+              className="gallery-image"
+              onMouseEnter={() => setterHoveredIndex(imgIndex)}
+              onMouseLeave={() => setHoveredIndex(null)}
+              onClick={toggleState}
+            >
+              <img src={imageSrc} alt="Photo de gallery" />
+              <div
+                style={hoveredIndex === imgIndex ? { opacity: 1 } : { opacity: 0 }}
+                className="gallery-image-overlay"
+              >
+                <SearchIcon />
+              </div>
+
+
+            </div >
+
+            : < div
+              className="gallery-image"
+              onClick={() => { toggleState(), setterHoveredIndex(imgIndex) }}
+            >
+              <img src={imageSrc} alt="Photo de gallery" />
+
+            </div >
+        }
+      </>
     );
   };
 
