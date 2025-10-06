@@ -279,8 +279,20 @@
             background-color: var(--gray-color-90);
           }
 
+          .wrapper-1 {
+            color: var(--gray-color-40);
+
+
+          }
+
           .wrapper-2 {
             width: 100%;
+
+            ul {
+              li {
+                color: var(--gray-color-20);
+              }
+            }
           }
         }
       }

@@ -137,7 +137,7 @@ const Header = () => {
               </NavLink></li>
             <li className="special-link">
               <NavLink
-                to="/carte/"
+                to="/carte"
                 className={({ isActive }) =>
                   isActive ? "nav-active" : "nav-link"
                 }
@@ -235,7 +235,7 @@ const Header = () => {
           <li className="special-link" onClick={setterCartOpened} style={CartOpened === 'open' ? { height: '398px', padding: '0.5em' } : { height: '36px' }}>
 
             <div className="wrapper-1">
-              <NavLink
+              <a
                 to="/carte"
                 className={({ isActive }) =>
                   isActive ? "nav-active" : "nav-link"
@@ -243,7 +243,7 @@ const Header = () => {
               >
                 La carte
                 <ChevronDown style={CartOpened === 'open' ? { transform: 'rotateZ(-180deg)' } : null} />
-              </NavLink>
+              </a>
             </div>
 
 
