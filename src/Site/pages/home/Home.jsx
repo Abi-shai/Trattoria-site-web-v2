@@ -221,7 +221,7 @@ const Home = () => {
   }, [])
 
   useEffect(() => {
-    document.title = 'Trattoria Da Alex — Accueil';
+    document.title = 'Accueil | Trattoria Da Alex';
   }, []);
 
 

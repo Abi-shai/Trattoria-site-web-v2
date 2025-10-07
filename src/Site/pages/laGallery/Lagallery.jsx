@@ -19,7 +19,7 @@ const Lagallery = () => {
   const currentWith = UseWindowSize().width;
 
   useEffect(() => {
-    document.title = 'Gallery — Trattoria Da Alex';
+    document.title = 'Gallery | Trattoria Da Alex';
   }, []);
 
   const setterHoveredIndex = (index) => {

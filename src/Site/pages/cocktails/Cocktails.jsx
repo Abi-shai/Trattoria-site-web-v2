@@ -13,7 +13,7 @@ import './Cocktails.css';
 const Cocktails = () => {
 
   useEffect(() => {
-    document.title = 'Cocktails — Trattoria Da Alex';
+    document.title = 'Cocktails | Trattoria Da Alex';
   }, []);
 
   return (

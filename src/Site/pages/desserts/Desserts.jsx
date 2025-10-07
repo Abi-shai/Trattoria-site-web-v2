@@ -16,7 +16,7 @@ const Desserts = () => {
   const currentWith = UseWindowSize().width;
 
   useEffect(() => {
-    document.title = 'Desserts — Trattoria Da Alex';
+    document.title = 'Desserts | Trattoria Da Alex';
   }, []);
 
   return (

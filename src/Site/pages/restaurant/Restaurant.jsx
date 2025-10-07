@@ -14,7 +14,7 @@ import './Restaurant.css';
 const Restaurant = () => {
 
   useEffect(() => {
-    document.title = 'Restaurant — Trattoria Da Alex';
+    document.title = 'Le restaurant | Trattoria Da Alex';
   }, []);
 
   return (

@@ -19,7 +19,7 @@ const Primi = () => {
   const currentWith = UseWindowSize().width;
 
   useEffect(() => {
-    document.title = 'Primi — Trattoria Da Alex';
+    document.title = 'Primi | Trattoria Da Alex';
   }, []);
 
   return (

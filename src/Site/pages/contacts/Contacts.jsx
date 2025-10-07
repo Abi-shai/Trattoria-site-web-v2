@@ -28,7 +28,7 @@ const Contacts = () => {
     };
 
     try {
-      const response = await fetch('/api/send-email', {
+      const response = await fetch('https://trattoria-site-web-v2.vercel.app/api/send-email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -50,7 +50,7 @@ const Contacts = () => {
   };
 
   useEffect(() => {
-    document.title = 'Contacts — Trattoria Da Alex';
+    document.title = 'Contacts | Trattoria Da Alex';
   }, []);
 
 

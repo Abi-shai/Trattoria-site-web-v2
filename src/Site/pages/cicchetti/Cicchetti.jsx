@@ -17,7 +17,7 @@ const Ciccheti = () => {
   const currentWith = UseWindowSize().width;
 
   useEffect(() => {
-    document.title = 'Cicchetti — Trattoria Da Alex';
+    document.title = 'Cicchetti | Trattoria Da Alex';
   }, []);
 
 
