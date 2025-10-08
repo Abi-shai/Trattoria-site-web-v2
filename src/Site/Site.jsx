@@ -27,7 +27,9 @@ import Pizza from "./pages/pizza/Pizza";
 
 import './Site.css';
 
-ReactGA.initialize(import.meta.env.VITE_GA_MEASUREMENT_ID);
+// Remplace par ton ID de mesure
+const MEASUREMENT_ID = "G-HJ01PSJ2SP";
+ReactGA.initialize(MEASUREMENT_ID);
 
 const PageLayout = () => {
   const location = useLocation();
