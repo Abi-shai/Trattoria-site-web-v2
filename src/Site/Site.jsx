@@ -1,8 +1,10 @@
 import { useState } from "react";
+import ReactGA from 'react-ga4';
 
 import FullScreenStateContext from "../context/FullscreenContext";
 import ScrollToTop from "../utility/ScrollToTop";
 import { BrowserRouter, Routes, Route, useLocation, Outlet, Navigate } from "react-router-dom";
+import RouteChangeTracker from "../utility/RouteChangeTracker";
 
 import Header from "../components/header/Header";
 import UtilityBar from "../components/utilityBar/UtilityBar";
@@ -25,11 +27,14 @@ import Pizza from "./pages/pizza/Pizza";
 
 import './Site.css';
 
+ReactGA.initialize(import.meta.env.VITE_GA_MEASUREMENT_ID);
+
 const PageLayout = () => {
   const location = useLocation();
 
   return (
     <>
+      <RouteChangeTracker />
       <ScrollToTop />
       {/* On applique la clé sur le conteneur des barres de navigation */}
       <div className="top-bars" key={location.pathname}>
