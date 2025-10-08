@@ -22,7 +22,7 @@ const Desserts = () => {
   return (
 
     <>
-      <PageHeader img={DessertsImage} title="Desserts" description="Desserts" />
+      <PageHeader img={DessertsImage} title="Desserts" />
       <main className="menu-body-main-wrapper">
 
         <section className="menu-group-wrapper">
