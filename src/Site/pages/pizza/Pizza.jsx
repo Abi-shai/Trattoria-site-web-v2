@@ -34,9 +34,9 @@ const Pizza = () => {
         <MenuSectionHeader title="Pizza du mois" />
 
         <section className="pizza-du-mois">
-          <p className="mois">Juillet</p>
+          <p className="mois">Octobre</p>
           <p className="pizza">
-            Ricotta, soppressata calabra, pleurotes grises, tomates cerises, écorce de citron
+            Crème fraîche, mozzarella, gorgonzola, speck et noix
           </p>
         </section>
 

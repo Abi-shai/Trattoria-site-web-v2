@@ -65,7 +65,7 @@ const Contacts = () => {
       <main className="menu-body-main-wrapper">
         <section className="contacts-wrapper">
 
-          <form className="left-content" onSubmit={handleSubmit}>
+          {/* <form className="left-content" onSubmit={handleSubmit}>
             <div className="user-inputs">
               <div className="grouped-inputs">
                 <InputField typeOfInput="Field" label="Nom" htmlFor="lastName" id="lastName" name="lastName" type="text" />
@@ -75,7 +75,7 @@ const Contacts = () => {
               <InputField label="Message" htmlFor="message" id="message" name="message" />
             </div>
             <ButtonSecondary type="submit" content="Envoyer" />
-          </form>
+          </form> */}
 
           {
             currentWith < 780
