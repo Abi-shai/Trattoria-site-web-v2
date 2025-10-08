@@ -77,11 +77,11 @@ const Contacts = () => {
             <ButtonSecondary type="submit" content="Envoyer" />
           </form> */}
 
-          {
+          {/* {
             currentWith < 780
               ? <DividerOnOtherPages />
               : null
-          }
+          } */}
 
           <div className="right-content">
 
