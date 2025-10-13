@@ -35,7 +35,6 @@ const galleryData = [
     photoId: 9,
     imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmYhZZLG8JHsDQ2AyM1jWom86SuqG4N3bj22t4wb8t56NH"
   },
-
   {
     photoId: 10,
     imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmapAAa9KRGasPCwTEKAofQkesfnqpoCmUaDUvSRNGFmfd"
@@ -153,10 +152,6 @@ const galleryData = [
     photoId: 38,
     imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmesADKHDoPuemAEZg95G1Lsky4DuDRL27yBnFwbUkqLEN"
   },
-  // {
-  //   photoId: 39,
-  //   imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmcCVnX45pC5WLnR7sCG3ToY9CJaBtT6JX7VbjTyLwhfab"
-  // },
   {
     photoId: 40,
     imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmaCwvFo7hgQCPjfgCMhYKWTTrU8Gi6zkw7njckoq9pjdB"
@@ -195,7 +190,7 @@ const galleryData = [
   },
   {
     photoId: 49,
-    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmReTsifVT43mJwJSyxEPAmYAbyiAAd5SkAPpjc7Gb4XEr5"
+    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmReTsifVT43mJwJSyxEPAmYAbyiAAd5SkAPpjc7Gb4XEr"
   },
 ];
 
