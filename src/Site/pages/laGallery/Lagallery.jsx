@@ -40,7 +40,7 @@ const Lagallery = () => {
               onMouseLeave={() => setHoveredIndex(null)}
               onClick={toggleState}
             >
-              <img src={imageSrc} alt="Photo de gallery" />
+              <img src={imageSrc} alt="Photo de gallery" loading="lazy" />
               <div
                 style={hoveredIndex === imgIndex ? { opacity: 1 } : { opacity: 0 }}
                 className="gallery-image-overlay"
@@ -55,7 +55,7 @@ const Lagallery = () => {
               className="gallery-image"
               onClick={() => { toggleState(), setterHoveredIndex(imgIndex) }}
             >
-              <img src={imageSrc} alt="Photo de gallery" />
+              <img src={imageSrc} alt="Photo de gallery" loading="lazy" />
 
             </div >
         }
