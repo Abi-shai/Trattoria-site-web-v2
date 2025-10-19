@@ -61,7 +61,7 @@ const ActivityDot = ({ index, selectedIndex, scrollTo }) => {
 
 
 
-const MenuDay = ({ day, daySpot, mainDish, secondDish, thirdDish, currentDay }) => {
+const MenuDay = ({ day, daySpot, mainDish, secondDish, thirdDish, currentDay, bold }) => {
   return (
     <div
       className="menu-day-wrapper"
@@ -69,7 +69,7 @@ const MenuDay = ({ day, daySpot, mainDish, secondDish, thirdDish, currentDay }) 
     >
       <p className="day">{day}</p>
       <p className="main-dish">{mainDish}</p>
-      <p className="second-dish">{secondDish}</p>
+      <p className={bold ? "second-dish special-bold" : "second-dish"}>{secondDish}</p>
       {
         thirdDish
           ? <p className="second-dish">{thirdDish}</p>
@@ -136,7 +136,7 @@ const MenuAndTestimonials = ({ currentDay }) => {
           <MenuDay currentDay={currentDay} day='Mardi' daySpot={2} mainDish='Filet de cabillaud au four' secondDish='Pommes au four' />
           <MenuDay currentDay={currentDay} day='Mercredi' daySpot={3} mainDish='Fricassé de poulet aux champignons' secondDish='Purée' />
           <MenuDay currentDay={currentDay} day='Jeudi' daySpot={4} mainDish='Gratin de calamars' secondDish='Couscous' />
-          <MenuDay currentDay={currentDay} day='Vendredi' daySpot={5} mainDish='Paella' secondDish='Poivrons farcis à la viande' thirdDish="Galettes de pomme de terre" />
+          <MenuDay currentDay={currentDay} day='Vendredi' daySpot={5} mainDish='Paella' secondDish='Poivrons farcis à la viande' thirdDish="Galettes de pomme de terre" bold={true} />
         </div>
       </div>
 

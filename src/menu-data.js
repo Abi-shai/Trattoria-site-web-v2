@@ -1083,22 +1083,6 @@ export const bulleData = [
 
 export const pizzaGlobalData = [
   {
-    title: "Margherita",
-    description: "(Sauce tomate, mozzarella)",
-    overlay: {
-      first: null,
-      second: null
-    }
-  },
-  {
-    title: "Frutti di mare",
-    description: "(Sauce tomate, mozzarella, calamars, crevettes, moules)",
-    overlay: {
-      first: null,
-      second: null
-    }
-  },
-  {
     title: "Napoli",
     description: "(Sauce tomate, mozzarella, câpres, anchois)",
     overlay: {
@@ -1107,25 +1091,8 @@ export const pizzaGlobalData = [
     }
   },
   {
-    title: "Chef Aziz by COWAF",
-    moreInfo: "*",
-    description: "(Sauce tomate, mozzarella, saucisse, oignons, œuf, piment frais)",
-    overlay: {
-      first: "Possibilité halal",
-      second: null
-    }
-  },
-  {
     title: "Vegetariana",
     description: "(Tomates fraîches, mozzarella, courgettes, aubergines, poivrons)",
-    overlay: {
-      first: null,
-      second: null
-    }
-  },
-  {
-    title: "Formaggi",
-    description: "(Sauce tomate, mozzarella, gorgonzola, provola fumée, chèvre)",
     overlay: {
       first: null,
       second: null
@@ -1140,28 +1107,10 @@ export const pizzaGlobalData = [
     }
   },
   {
-    title: "Prosciutto e funghi",
-    moreInfo: "*",
-    description: "(Sauce tomate, mozzarella, aubergines, grana padano)",
-    overlay: {
-      first: "Possibilité halal",
-      second: null
-    }
-  },
-  {
     title: "Tonno",
     description: "(Sauce tomate, mozzarella, thon, oignons)",
     overlay: {
       first: null,
-      second: null
-    }
-  },
-  {
-    title: "Rustica",
-    moreInfo: "*",
-    description: "(Sauce tomate, mozzarella, lardons fumés, cèpes)",
-    overlay: {
-      first: "Possibilité halal",
       second: null
     }
   },
@@ -1175,24 +1124,8 @@ export const pizzaGlobalData = [
     }
   },
   {
-    title: "Funghi",
-    description: "(Sauce tomate, mozzarella, cèpes, pleurotes grises)",
-    overlay: {
-      first: null,
-      second: null
-    }
-  },
-  {
     title: "Bianca",
     description: "(Crème fraîche, mozzarella, fromage de chèvre, miel)",
-    overlay: {
-      first: null,
-      second: null
-    }
-  },
-  {
-    title: "Verderosa",
-    description: "(Crème de courgettes, mozzarella, courgettes grillées, saumon fumé)",
     overlay: {
       first: null,
       second: null
@@ -1208,14 +1141,6 @@ export const pizzaGlobalData = [
     }
   },
   {
-    title: "Deliziosa",
-    description: "(Crème fraîche, mozzarella, saumon fumé)",
-    overlay: {
-      first: null,
-      second: null
-    }
-  },
-  {
     title: "Italia",
     description: "(Crème fraîche, mozzarellas cerises, épinards, tomates cerises)",
     overlay: {
@@ -1224,27 +1149,9 @@ export const pizzaGlobalData = [
     }
   },
   {
-    title: "Axel",
-    moreInfo: "*",
-    description: "(Sauce tomate, mozzarella, saucisson sec, gorgonzola, crème de noix)",
-    overlay: {
-      first: "Possibilité halal",
-      second: null
-    }
-  },
-  {
     title: "Mediterranea",
     moreInfo: "*",
     description: "(Sauce tomate, mozzarella, saucisson sec, poivrons, olives)",
-    overlay: {
-      first: "Possibilité halal",
-      second: null
-    }
-  },
-  {
-    title: "Campagnola",
-    moreInfo: "*",
-    description: "(Sauce tomate, mozzarella, pleurotes grises, gorgonzola, jambon blanc)",
     overlay: {
       first: "Possibilité halal",
       second: null
@@ -1260,28 +1167,12 @@ export const pizzaGlobalData = [
     }
   },
   {
-    title: "Colorado",
-    description: "(Sauce tomate, mozzarella, mascarpone, speck, noix, roquette**)",
-    overlay: {
-      first: null,
-      second: "Disponible en stock selon arrivage"
-    }
-  },
-  {
     title: "Orientale",
     moreInfo: "*",
     description: "(Sauce tomate, mozzarella, saucisse, poivrons)",
     overlay: {
       first: "Possibilité halal",
       second: null
-    }
-  },
-  {
-    title: "Colorado al salmone",
-    description: "(Sauce tomate, mozzarella, mascarpone, saumon fumé, noix, roquette**))",
-    overlay: {
-      first: null,
-      second: "Disponible en stock selon arrivage"
     }
   },
   {
@@ -1294,11 +1185,120 @@ export const pizzaGlobalData = [
     }
   },
   {
+    title: "Frutti di mare",
+    description: "(Sauce tomate, mozzarella, calamars, crevettes, moules)",
+    overlay: {
+      first: null,
+      second: null
+    }
+  },
+  {
+    title: "Chef Aziz by COWAF",
+    moreInfo: "*",
+    description: "(Sauce tomate, mozzarella, saucisse, oignons, œuf, piment frais)",
+    overlay: {
+      first: "Possibilité halal",
+      second: null
+    }
+  },
+  {
+    title: "Formaggi",
+    description: "(Sauce tomate, mozzarella, gorgonzola, provola fumée, chèvre)",
+    overlay: {
+      first: null,
+      second: null
+    }
+  },
+  {
+    title: "Prosciutto e funghi",
+    moreInfo: "*",
+    description: "(Sauce tomate, mozzarella, aubergines, grana padano)",
+    overlay: {
+      first: "Possibilité halal",
+      second: null
+    }
+  },
+  {
+    title: "Rustica",
+    moreInfo: "*",
+    description: "(Sauce tomate, mozzarella, lardons fumés, cèpes)",
+    overlay: {
+      first: "Possibilité halal",
+      second: null
+    }
+  },
+  {
+    title: "Funghi",
+    description: "(Sauce tomate, mozzarella, cèpes, pleurotes grises)",
+    overlay: {
+      first: null,
+      second: null
+    }
+  },
+  {
+    title: "Verderosa",
+    description: "(Crème de courgettes, mozzarella, courgettes grillées, saumon fumé)",
+    overlay: {
+      first: null,
+      second: null
+    }
+  },
+  {
+    title: "Deliziosa",
+    description: "(Crème fraîche, mozzarella, saumon fumé)",
+    overlay: {
+      first: null,
+      second: null
+    }
+  },
+  {
+    title: "Axel",
+    moreInfo: "*",
+    description: "(Sauce tomate, mozzarella, saucisson sec, gorgonzola, crème de noix)",
+    overlay: {
+      first: "Possibilité halal",
+      second: null
+    }
+  },
+  {
+    title: "Campagnola",
+    moreInfo: "*",
+    description: "(Sauce tomate, mozzarella, pleurotes grises, gorgonzola, jambon blanc)",
+    overlay: {
+      first: "Possibilité halal",
+      second: null
+    }
+  },
+  {
+    title: "Colorado",
+    description: "(Sauce tomate, mozzarella, mascarpone, speck, noix, roquette**)",
+    overlay: {
+      first: null,
+      second: "Disponible en stock selon arrivage"
+    }
+  },
+  {
+    title: "Colorado al salmone",
+    description: "(Sauce tomate, mozzarella, mascarpone, saumon fumé, noix, roquette**))",
+    overlay: {
+      first: null,
+      second: "Disponible en stock selon arrivage"
+    }
+  },
+  {
     title: "Trattoria",
     description: "(Sauce tomate, gorgonzola, grana padano, pecorino, jambon cru, noix, roquette**)",
     overlay: {
       first: null,
       second: "Disponible en stock selon arrivage"
+    }
+  },
+  {
+    title: "Margherita",
+    description: "(Sauce tomate, mozzarella)",
+    overlay: {
+      first: null,
+      second: null
     }
   },
 ];

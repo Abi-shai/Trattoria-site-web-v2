@@ -41,7 +41,6 @@ footer .left-section img {
 
 footer .right-section {
   display: flex;
-  align-items: center;
   align-content: center;
   gap: 2.5em 0;
   flex: 1 0 0;

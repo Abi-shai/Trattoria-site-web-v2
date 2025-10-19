@@ -17,6 +17,7 @@ const Footer = () => {
     {
       label: 'La carte',
       links: [
+        { title: 'Pizza', route: '/pizza' },
         { title: 'Cicchetti', route: '/carte/cicchetti' },
         { title: 'Antipasti', route: '/carte/antipasti' },
         { title: 'Primi', route: '/carte/primi' },

@@ -425,12 +425,11 @@
     color: var(--primary-color-10);
     text-align: center;
     font-family: Tra2;
-    font-size: 2rem;
-    font-style: normal;
-    font-weight: 400;
+    font-size: 2.3rem;
+    font-style: italic;
+    font-weight: 100;
     line-height: 2.5rem;
-    /* 125% */
-    font-variant: all-small-caps;
+    font-variant-caps: titling-caps;
     align-self: stretch;
   }
 
@@ -454,6 +453,10 @@
     font-weight: 400;
     line-height: normal;
     align-self: stretch;
+  }
+
+  .special-bold {
+    font-weight: 700;
   }
 }
 
