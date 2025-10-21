@@ -153,45 +153,45 @@ const galleryData = [
     imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmesADKHDoPuemAEZg95G1Lsky4DuDRL27yBnFwbUkqLEN"
   },
   {
-    photoId: 40,
+    photoId: 39,
     imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmaCwvFo7hgQCPjfgCMhYKWTTrU8Gi6zkw7njckoq9pjdB"
   },
   {
-    photoId: 41,
+    photoId: 40,
     imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmNnu4TGthQVxUDBJHknWaCqwbfxYNsq1nBKmSUydwseHx"
   },
   {
-    photoId: 42,
+    photoId: 41,
     imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmQZcPwH4ZiG9HeaqZqL1n6WMy5Y5uCk3xKxk7UWdieJ9S"
   },
   {
-    photoId: 43,
+    photoId: 42,
     imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmewfgsTiv412sqhdHw4sYuy9NoXeygTWTfXgu1i5Gmt68"
   },
   {
-    photoId: 44,
+    photoId: 43,
     imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmNN92jzJ1CKWoFcXuFrCUDPccWhtas5PtYfbeCctyJ72B"
   },
+  // {
+  //   photoId: 45,
+  //   imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmWrTJJhuSiKp1kJcCYSCvhRXJBoL9SSEhfnuV4C1YBLYg"
+  // },
+  // {
+  //   photoId: 46,
+  //   imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmP5R9Edz9qYWmJcfxUKpw94XLc4RXnkjhwakqM1SPtugN"
+  // },
+  // {
+  //   photoId: 47,
+  //   imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmVgt4JAUEe5bmrbWmiqTfYc55ULGSVAodKb7FQEVeAhaA"
+  // },
   {
-    photoId: 45,
-    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmWrTJJhuSiKp1kJcCYSCvhRXJBoL9SSEhfnuV4C1YBLYg"
-  },
-  {
-    photoId: 46,
-    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmP5R9Edz9qYWmJcfxUKpw94XLc4RXnkjhwakqM1SPtugN"
-  },
-  {
-    photoId: 47,
-    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmVgt4JAUEe5bmrbWmiqTfYc55ULGSVAodKb7FQEVeAhaA"
-  },
-  {
-    photoId: 48,
+    photoId: 44,
     imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/Qmaa3P8Vr6PUCx6AVEnQsJzF69VcSEh3Uh1rzQ4adquXnF"
   },
   {
-    photoId: 49,
+    photoId: 45,
     imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmReTsifVT43mJwJSyxEPAmYAbyiAAd5SkAPpjc7Gb4XEr"
-  },
+  }
 ];
 
 export default galleryData;
