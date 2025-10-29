@@ -1,196 +1,120 @@
 const galleryData = [
   {
     photoId: 1,
-    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmQuLWERf5ko4uKWyEmdhcuMkfytNWVLP63CisCPLiGe8m"
+    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmRmJEu431kGdjLEjL4ULiAwNj45fKfqyYxhh9JdLBcwAG"
   },
   {
     photoId: 2,
-    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmY9RS1ezeudEEqdv4sNTfwKVn5viqMrDz9keRaTsuGGsZ"
+    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmU7Gdmas6YKE6GSGLcRbrakDrhcLomTBsQAEeWL3H2Qyj"
   },
   {
     photoId: 3,
-    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmTW9pPmVcGmx3BkZF5Et7eBfV1JnfXhjyfjAZ6pf9vRpw"
+    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmQ52SfvfJkLFroQS4YgNPwsCyhMJhHHsVJCbQD55GkVC3"
   },
   {
     photoId: 4,
-    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmQJNfw5MBFZSk7TAXQLgxur2D2ob3rNm7yQxZMHPQq9Nr"
+    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmdisrzYd8ruhm4ydhnPqMDfPjDniS54RvPi8BztpjJvwg"
   },
   {
     photoId: 5,
-    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmabkLwbABeFrRQpEinHpkgA3tx2NfmgPfBn9myXgsUYYV"
+    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmPLnM8SH9iwXqCTwtzU19uhFiDznHgmJfc5FyXk97XTr3"
   },
   {
     photoId: 6,
-    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmRgaUWYbJ66jsHccgFkqbMDnsdoPoWSpzxX3f9qUD3uCp"
+    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmdjEvvYVFmuxQ5zKTCAez5RR4MVZAzzV2FcUbmb4qCP4p"
   },
   {
     photoId: 7,
-    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/Qmb4ENRHURvckxUKfUS48X9a3U7dtG7e5MqhRiFM4EEzh7"
+    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmcV2ZLhYU4KpGngSG5ZWBex2wjZqMuajSMzdb1AbMF93F"
   },
   {
     photoId: 8,
-    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmdvyGsEtrC4mDnN8WpDtJDJpzcN5a3xVc4naE3ecByLMw"
+    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmPgXmuaWhCSj3ADbhuKt54se6quVauRt6JHBKeGSSXPEw"
   },
   {
     photoId: 9,
-    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmYhZZLG8JHsDQ2AyM1jWom86SuqG4N3bj22t4wb8t56NH"
+    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmYnsTU5yP8qoX26oNgDpvu3KMDzrjDU1AEyYwkyfbFLud"
   },
   {
     photoId: 10,
-    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmapAAa9KRGasPCwTEKAofQkesfnqpoCmUaDUvSRNGFmfd"
+    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmZ3gWF7pn1CJw1MRULNHX673vHJLyNhyji2Hx6HBc54du"
   },
   {
     photoId: 11,
-    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmNQsSaQDsmUPfEpeiiJtuwQ6spbiKWY3y4RofCngLDbMd"
+    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmQe8bNf32yquaq8QhnpzwNBbVHPYdN9oR1Wf3DSB3z1mg"
   },
   {
     photoId: 12,
-    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/Qmd4QvFJ4nAdM3Vocb9cb5HJkjFEaFrEK8iZ84TwC37mi4"
+    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmQ4QbwTbRQPvC2x8aLNXH9ahGxhm1vPdrzuZ7GTyFNUag"
   },
 
   {
     photoId: 13,
-    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmTNaygcueynedgxxdx978SoVkYsvsTjmXgUN7gckQeJ9y"
+    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmawQyTstEtnMcpimCtdEqLTTzwEuwLxQt4ZJtSEfzwr7X"
   },
   {
     photoId: 14,
-    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmXoQFpC99gvjMpFbesyFChkhzKFX6M2cZakeLpjXLrmBm"
+    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmeXrK39PbZGyMJefprZoHbbA12tQDi8BNZh6cc3q9LYiB"
   },
   {
     photoId: 15,
-    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmNgHi5XgPY6PA4KPVCeMDNVu2JHvVzXdG3RzWeu5gjuov"
+    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/Qmc7THS1KD5rGAf6RhXvSJv3eKhsieu7au5v5K8hdCGUXT"
   },
   {
     photoId: 16,
-    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmTddAicvyaZUgZJ4KT9P3WiaC47mGt3dHMi4HDwnqzLAk"
+    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmUqiEpxu6moj1ku65de4cYewYcDc9Xt2uS7Z88bd6Dufs"
   },
   {
     photoId: 17,
-    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmcNLVvpqyRtgBrzNRDjn2vvDrtvCsSr77VNsahfAHA4Eo"
+    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmcXhhMQQYwyQ9kCjhrp5BkuqUfPeQZhRGpfqR9XAYRCab"
   },
   {
     photoId: 18,
-    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmaVNeEnzS2fBwuc6dDimicBEBNvjg36dWHUQs6iYaqS48"
+    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmNqDyGCaM8d66WsHdGncAKJu6i3BYCHJ2k9XLjRho8xKQ"
   },
   {
     photoId: 19,
-    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmTeXfJfruSsE1em3zDaVhWg4Mp1bpvygxMXU27hmX9MZf"
+    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmV7rKLFDHaZHJGHUB36hN899AreV9MjYdESpCF61jmdTh"
   },
   {
     photoId: 20,
-    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmZhSfMN5rUiJfjeA8dwDXev9SAJuVbjiSw3jj19wExyj7"
+    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmdeGNHXSLpX9EJCrm21ruNPQLp5CSD7HJBkzrRiexMskn"
   },
   {
     photoId: 21,
-    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmSM32692KTT9AUMiRiP81pdZFkzGM8DqWJLq9YBPFj841"
+    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmbW9yBzWKwfXbaCpYMv5LQQYoriP5HiwxvKDGDVpxsk7W"
   },
   {
     photoId: 22,
-    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmUFRKtJxNYCouLDu4SmLPV4Wedpqv5gHEYwdoLYZePVxP"
+    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmamR9D78iKhDErx5Dsamygu5AGU1odzTN3wUxCEJVB6Fg"
   },
   {
     photoId: 23,
-    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmdkdSXRYQUXzdBro4A6kUNEUvnHSSwyzTbxNwoZK6CBAQ"
+    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmSs4WpTK8HgjrbvdXQGdFA4dKkCLjm2dGxfr4eRbVf3Ap"
   },
   {
     photoId: 24,
-    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmPdubNuW4hhvrNa5vo6tWqUstiRPTFCt1jHBUPhsRveRa"
+    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmRgcmtqXwmAFQrT2V4ZdcGNYF9oVYCLSayMqdLd7u9QE6"
   },
   {
     photoId: 25,
-    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmVNjHw8NxYzpMUKEBAkC9R98xzXbUuz8LJqxwAjRofe6a"
+    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/Qmf8xpqNcppPMzEmSbneaGzH6xxxs3SYKybQh4rNVkyHUQ"
   },
   {
     photoId: 26,
-    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmNvdvpr6hPKNuGuumjd5dgbojUhB6TFNhgNPNTNbzfKqa"
+    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmNXGSF8qAhA8s9QyjSvCSfj3LM8y52wyKzM3a2yeEMm13"
   },
   {
     photoId: 27,
-    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmSNXuH2BzXRVgDj1cKtTkYfSpoTwC9YdjPEPW9fcaZgTX"
+    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmU7mgwRqGP97WZ4CmKQfPYabbqZq2Jx9qgQf8DiCAis6F"
   },
   {
     photoId: 28,
-    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmRfAMaiUNpc6F1enVDY5dSwFHZPXxQ39fBhuzxbJJY63D"
+    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmU7WVQ9G5p8wcZbfjgypFUz4eTcPx5MfoSZcGPCrVyag1"
   },
   {
     photoId: 29,
-    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmPjLePMuTb6rD3bfWZMcdQMkaLUr1Jh6uB1mjM73SWTne"
-  },
-  {
-    photoId: 30,
-    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmYSYSdGjjcqhWP4p7kS9UXq7K2e6NGL8i96auL3RqThYq"
-  },
-  {
-    photoId: 31,
-    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmXXvJB7Z84JfEQrowDgxQu8SQfgWzWbG2aDRW1ofaXb5S"
-  },
-  {
-    photoId: 32,
-    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmYqMc5CEWiX9vRakwDkLDfHXXG4Q8pvYKXKQN5QT1jXfZ"
-  },
-  {
-    photoId: 33,
-    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmQuLWERf5ko4uKWyEmdhcuMkfytNWVLP63CisCPLiGe8m"
-  },
-  {
-    photoId: 34,
-    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/Qmf8a7EEsgukVS9vTnrAGiyxNvMpFg2dQByo379zJTr3Yr"
-  },
-  {
-    photoId: 35,
-    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmPMJ2gC13364wLLADaAhLDih41p2KQj6TfEnC7gqWcaeD"
-  },
-  {
-    photoId: 36,
-    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmdhAkeGxU2y5jPbt526T1w2id54fWp5KdaraeWK6HfoJ3"
-  },
-  {
-    photoId: 37,
-    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmYTGmoUM2rZomcYU1YnWBfMaDwZhMVrtPdBXcq5QBuUfy"
-  },
-  {
-    photoId: 38,
-    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmesADKHDoPuemAEZg95G1Lsky4DuDRL27yBnFwbUkqLEN"
-  },
-  {
-    photoId: 39,
-    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmaCwvFo7hgQCPjfgCMhYKWTTrU8Gi6zkw7njckoq9pjdB"
-  },
-  {
-    photoId: 40,
-    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmNnu4TGthQVxUDBJHknWaCqwbfxYNsq1nBKmSUydwseHx"
-  },
-  {
-    photoId: 41,
-    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmQZcPwH4ZiG9HeaqZqL1n6WMy5Y5uCk3xKxk7UWdieJ9S"
-  },
-  {
-    photoId: 42,
-    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmewfgsTiv412sqhdHw4sYuy9NoXeygTWTfXgu1i5Gmt68"
-  },
-  {
-    photoId: 43,
-    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmNN92jzJ1CKWoFcXuFrCUDPccWhtas5PtYfbeCctyJ72B"
-  },
-  // {
-  //   photoId: 45,
-  //   imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmWrTJJhuSiKp1kJcCYSCvhRXJBoL9SSEhfnuV4C1YBLYg"
-  // },
-  // {
-  //   photoId: 46,
-  //   imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmP5R9Edz9qYWmJcfxUKpw94XLc4RXnkjhwakqM1SPtugN"
-  // },
-  // {
-  //   photoId: 47,
-  //   imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmVgt4JAUEe5bmrbWmiqTfYc55ULGSVAodKb7FQEVeAhaA"
-  // },
-  {
-    photoId: 44,
-    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/Qmaa3P8Vr6PUCx6AVEnQsJzF69VcSEh3Uh1rzQ4adquXnF"
-  },
-  {
-    photoId: 45,
-    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmReTsifVT43mJwJSyxEPAmYAbyiAAd5SkAPpjc7Gb4XEr"
+    imageSrc: "https://vocal-cyan-gibbon.myfilebase.com/ipfs/QmdcxuwZSHCEcGwSYpLuLrMBLKTiExELSYXhYBjxUvf1QE"
   }
 ];
 
