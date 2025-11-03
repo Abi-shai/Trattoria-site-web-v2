@@ -134,7 +134,7 @@ const GalleryImage = memo(({
             className="gallery-image"
             onMouseEnter={() => setterHoveredIndex(imgIndex)}
             onMouseLeave={() => setHoveredIndex(null)}
-            onClick={() => { toggleState() }}
+            onClick={() => { setterHoveredIndex(imgIndex); toggleState() }}
           >
             <LazyLoadImage
               src={imageSrc}
