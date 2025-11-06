@@ -5,10 +5,12 @@ import FullScreenStateContext from "../context/FullscreenContext";
 import ScrollToTop from "../utility/ScrollToTop";
 import { BrowserRouter, Routes, Route, useLocation, Outlet, Navigate } from "react-router-dom";
 import RouteChangeTracker from "../utility/RouteChangeTracker";
+import { RemoveScroll } from "react-remove-scroll";
 
 import Header from "../components/header/Header";
 import UtilityBar from "../components/utilityBar/UtilityBar";
-import Footer from '../components/footer/Footer'
+import Footer from '../components/footer/Footer';
+import EventModal from '../components/eventModal/eventModal';
 
 import Home from "./pages/home/Home";
 import Restaurant from "./pages/restaurant/Restaurant";
@@ -27,7 +29,7 @@ import Pizza from "./pages/pizza/Pizza";
 
 import './Site.css';
 
-// Remplace par ton ID de mesure
+
 const MEASUREMENT_ID = "G-HJ01PSJ2SP";
 ReactGA.initialize(MEASUREMENT_ID);
 
@@ -72,21 +74,36 @@ const PageLayout = () => {
 
 const Site = () => {
   const [state, setState] = useState('closed');
+  const [eventModalState, setEventModalState] = useState(false);
 
   const toggleState = () => {
     return setState(currentState => (currentState === 'opened' ? 'closed' : 'opened'));
   };
 
+  const openEventModal = () => {
+    setEventModalState(true);
+  }
+
+  const closeEventModal = () => {
+    setEventModalState(false);
+  }
+
+  const contextValue = {
+    state: state,
+    toggleState: toggleState,
+    eventModal: eventModalState,
+    openEventModal: openEventModal,
+    closeEventModal: closeEventModal
+  };
+
   return (
-    <FullScreenStateContext.Provider value={{ state, toggleState }} >
-      <div
-        style={state === 'opened' ? { height: '100svh', overflow: 'hidden' } : {}}
-        className="site-page"
-      >
-        <BrowserRouter>
-          <PageLayout />
-        </BrowserRouter>
-      </div>
+    <FullScreenStateContext.Provider value={contextValue} >
+      <BrowserRouter>
+        <RemoveScroll enabled={eventModalState}>
+          {/* <EventModal /> */}
+        </RemoveScroll>
+        <PageLayout />
+      </BrowserRouter>
     </FullScreenStateContext.Provider>
   );
 }

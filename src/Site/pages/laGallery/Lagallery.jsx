@@ -1,130 +1,32 @@
-// import UseWindowSize from "../../../utility/useWindowSize";
-// import { LazyLoadImage } from "react-lazy-load-image-component";
-// import { memo } from "react";
-
-// import { useState, useEffect } from "react";
-// import { useContext } from "react";
-// import FullScreenStateContext from "../../../context/FullscreenContext";
-
-// import galleryData from "../../../gallery-data";
-
-// import SearchIcon from '../../../assets/icons/search.svg?react';
-// import CloseIcon from '../../../assets/icons/close.svg?react';
-
-// import './Lagallery.css';
-
-// const Lagallery = () => {
-
-//   const [hoveredIndex, setHoveredIndex] = useState(0);
-//   const { state, toggleState } = useContext(FullScreenStateContext);
-
-//   const currentWith = UseWindowSize().width;
-
-//   useEffect(() => {
-//     document.title = 'Gallery | Trattoria Da Alex';
-//   }, []);
-
-//   const setterHoveredIndex = (index) => {
-//     setHoveredIndex(index);
-//     console.log(hoveredIndex);
-//     console.log(state)
-//   }
-
-//   const GalleryImage = ({ imageSrc, imgIndex }) => {
-//     return (
-//       <>
-//         {
-//           currentWith > 1080
-
-//             ? < div
-//               className="gallery-image"
-//               onMouseEnter={() => setterHoveredIndex(imgIndex)}
-//               onMouseLeave={() => setHoveredIndex(null)}
-//               onClick={toggleState}
-//             >
-//               <LazyLoadImage src={imageSrc} alt="Photo de gallery" effect="blur" />
-//               <div
-//                 style={hoveredIndex === imgIndex ? { opacity: 1 } : { opacity: 0 }}
-//                 className="gallery-image-overlay"
-//               >
-//                 <SearchIcon />
-//               </div>
-
-
-//             </div >
-
-//             : < div
-//               className="gallery-image"
-//               onClick={() => { toggleState(), setterHoveredIndex(imgIndex) }}
-//             >
-//               <LazyLoadImage src={imageSrc} alt="Photo de gallery" effect="blur" />
-
-//             </div >
-//         }
-//       </>
-//     );
-//   };
-
-//   return (
-//     <main className="gallery-page">
-//       <div className="gallery-wrapper">
-//         {
-//           galleryData.map(slot => {
-//             return <GalleryImage imgIndex={slot.photoId} key={slot.photoId} imageSrc={slot.imageSrc} />
-//           })
-//         }
-//       </div>
-//       {
-//         state === 'opened'
-//           ?
-//           <div className="full-image-wrapper">
-//             <img className="full-image-gallery" src={galleryData[hoveredIndex - 1].imageSrc} />
-//             <div
-//               onClick={toggleState}
-//               className="close-icon"
-//             >
-//               <CloseIcon />
-//             </div>
-//           </div>
-//           : null
-//       }
-//     </main>
-
-//   );
-// };
-
-// export default memo(Lagallery);
-
-
-
-
 import UseWindowSize from "../../../utility/useWindowSize";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { memo, useState, useEffect, useContext } from "react";
 import FullScreenStateContext from "../../../context/FullscreenContext";
+import { RemoveScroll } from "react-remove-scroll";
+
 import galleryData from "../../../gallery-data";
 
 import SearchIcon from '../../../assets/icons/search.svg?react';
 import CloseIcon from '../../../assets/icons/close.svg?react';
 
-import 'react-lazy-load-image-component/src/effects/blur.css'; // N'oublie pas d'importer le CSS de l'effet
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import './Lagallery.css';
 
 
-// ==================================================================
-// ÉTAPE 1 : DÉFINIR LE COMPOSANT IMAGE À L'EXTÉRIEUR
-// On le "mémorise" aussi pour des performances optimales
-// ==================================================================
 const GalleryImage = memo(({
   imageSrc,
   imgIndex,
   currentWith,
   hoveredIndex,
-  setterHoveredIndex,
-  setHoveredIndex,
+  setHoveredIndex, // <-- Juste pour le survol
+  setSelectedIndex, // <-- Juste pour le clic
   toggleState
 }) => {
 
+  const handleOpenModal = () => {
+    setSelectedIndex(imgIndex); // On dit quelle image est sélectionnée
+    toggleState(); // On ouvre la modale
+  };
 
   return (
     <>
@@ -132,15 +34,16 @@ const GalleryImage = memo(({
         currentWith > 1080
           ? <div
             className="gallery-image"
-            onMouseEnter={() => setterHoveredIndex(imgIndex)}
+            onMouseEnter={() => setHoveredIndex(imgIndex)}
             onMouseLeave={() => setHoveredIndex(null)}
-            onClick={() => { setterHoveredIndex(imgIndex); toggleState() }}
+            onClick={handleOpenModal} // On appelle notre nouvelle fonction
           >
             <LazyLoadImage
               src={imageSrc}
               alt="Photo de gallery"
               effect="blur"
             />
+
             <div
               style={hoveredIndex === imgIndex ? { opacity: 1 } : { opacity: 0 }}
               className="gallery-image-overlay"
@@ -150,12 +53,14 @@ const GalleryImage = memo(({
           </div>
           : <div
             className="gallery-image"
-            onClick={() => { setterHoveredIndex(imgIndex); toggleState() }}
+            onClick={handleOpenModal} // Même fonction ici
           >
             <LazyLoadImage
               src={imageSrc}
               alt="Photo de gallery"
               effect="blur"
+              width="400" // N'oublie pas d'ajouter width/height
+              height="300"
             />
           </div>
       }
@@ -164,11 +69,10 @@ const GalleryImage = memo(({
 });
 
 
-// ==================================================================
-// TON COMPOSANT DE PAGE PRINCIPAL
-// ==================================================================
+
 const Lagallery = () => {
-  const [hoveredIndex, setHoveredIndex] = useState(0);
+  const [hoveredIndex, setHoveredIndex] = useState(null); // Pour le survol
+  const [selectedIndex, setSelectedIndex] = useState(null); // 👈 NOUVEL ÉTAT POUR LE CLIC
   const { state, toggleState } = useContext(FullScreenStateContext);
   const currentWith = UseWindowSize().width;
 
@@ -176,45 +80,47 @@ const Lagallery = () => {
     document.title = 'Gallery | Trattoria Da Alex';
   }, []);
 
-  const setterHoveredIndex = (index) => {
-    setHoveredIndex(index);
-  }
+  // Trouve l'image sélectionnée en toute sécurité
+  const selectedImage = selectedIndex !== null
+    ? galleryData.find(img => img.photoId === selectedIndex)
+    : null;
 
   return (
     <main className="gallery-page">
       <div className="gallery-wrapper">
         {
           galleryData.map(slot => {
-            // ÉTAPE 1 (suite) : On passe tout par les props
             return <GalleryImage
               key={slot.photoId}
               imgIndex={slot.photoId}
               imageSrc={slot.imageSrc}
               currentWith={currentWith}
               hoveredIndex={hoveredIndex}
-              setterHoveredIndex={setterHoveredIndex}
               setHoveredIndex={setHoveredIndex}
+              setSelectedIndex={setSelectedIndex} // On passe le nouveau setter
               toggleState={toggleState}
             />
           })
         }
       </div>
       {
-        state === 'opened'
+        (state === 'opened' && selectedImage)
           ?
-          <div className="full-image-wrapper">
-            <img className="full-image-gallery" src={galleryData[hoveredIndex - 1].imageSrc} />
-            <div
-              onClick={toggleState}
-              className="close-icon"
-            >
-              <CloseIcon />
+          <RemoveScroll>
+            <div className="full-image-wrapper">
+              <img className="full-image-gallery" src={selectedImage.imageSrc} />
+              <div
+                onClick={toggleState}
+                className="close-icon"
+              >
+                <CloseIcon />
+              </div>
             </div>
-          </div>
+          </RemoveScroll>
           : null
       }
     </main>
   );
 };
 
-export default memo(Lagallery); // Tu gardes le memo ici, c'est très bien
+export default memo(Lagallery);

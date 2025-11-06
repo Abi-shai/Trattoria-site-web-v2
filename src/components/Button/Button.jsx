@@ -4,18 +4,39 @@ import './Button.css';
 
 
 // Style de button 1 / Avec le fond
-const ButtonPrimary = ({ content, showIconRight }) => {
+const ButtonPrimary = ({ content, showIconRight, hasHref, onClick }) => {
   return (
-    <button className="cta buttonPrimary">
-      {content}
-
-      {/* Logique pour construire un boolean qui va se charger de l'affichage de l'icône lorsqu'il est true */}
+    <>
       {
-        showIconRight
-          ? <ChevronDown />
-          : null
+        hasHref
+          ? <a
+            className="cta buttonPrimary"
+            href={hasHref}
+            onClick={onClick}
+          >
+            {content}
+
+            {/* Logique pour construire un boolean qui va se charger de l'affichage de l'icône lorsqu'il est true */}
+            {
+              showIconRight
+                ? <ChevronDown />
+                : null
+            }
+          </a>
+
+          : <button className="cta buttonPrimary">
+            {content}
+
+            {/* Logique pour construire un boolean qui va se charger de l'affichage de l'icône lorsqu'il est true */}
+            {
+              showIconRight
+                ? <ChevronDown />
+                : null
+            }
+          </button>
       }
-    </button>
+
+    </>
   );
 };
 

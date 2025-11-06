@@ -1,8 +1,12 @@
 import { createContext } from 'react';
 
 const FullScreenStateContext = createContext({
-  state: 'closed', // une valeur d'état
-  toggleState: () => { }
+  state: 'closed',
+  toggleState: () => { },
+  eventModal: false,
+  openEventModal: () => { },
+  closeEventModal: () => { }
 });
+
 
 export default FullScreenStateContext;
