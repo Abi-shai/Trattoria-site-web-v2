@@ -8,6 +8,8 @@ import galleryData from "../../../gallery-data";
 
 import SearchIcon from '../../../assets/icons/search.svg?react';
 import CloseIcon from '../../../assets/icons/close.svg?react';
+import ChevronRight from '../../../assets/icons/chevron-right.svg?react';
+import ChevronLeft from '../../../assets/icons/chevron-left.svg?react';
 
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import './Lagallery.css';
@@ -115,6 +117,14 @@ const Lagallery = () => {
               >
                 <CloseIcon />
               </div>
+              {/* <div className="swiping-icons">
+                <div className="left">
+                  <ChevronLeft />
+                </div>
+                <div className="right">
+                  <ChevronRight />
+                </div>
+              </div> */}
             </div>
           </RemoveScroll>
           : null
