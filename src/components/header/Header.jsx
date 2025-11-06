@@ -3,6 +3,7 @@ import { useScrollDirection } from "../../utility/HidingElementScroll";
 import { useState } from "react";
 
 import { NavLink } from "react-router-dom";
+import { RemoveScroll } from "react-remove-scroll";
 
 import { ButtonPrimary } from "../Button/Button";
 
@@ -197,7 +198,6 @@ const Header = () => {
 
 
       {/* Navigation secondaire, Mobile */}
-
       <nav aria-label="Navigation Principale" className="mobile">
         <ul>
           <li>
