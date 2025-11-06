@@ -73,14 +73,59 @@ const GalleryImage = memo(({
 
 
 const Lagallery = () => {
-  const [hoveredIndex, setHoveredIndex] = useState(null); // Pour le survol
-  const [selectedIndex, setSelectedIndex] = useState(null); // 👈 NOUVEL ÉTAT POUR LE CLIC
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+  const [selectedIndex, setSelectedIndex] = useState(null);
   const { state, toggleState } = useContext(FullScreenStateContext);
   const currentWith = UseWindowSize().width;
 
+  const totalImages = galleryData.length;
+
   useEffect(() => {
     document.title = 'Gallery | Trattoria Da Alex';
-  }, []);
+
+    // Fonction qui gère les appuis de touches
+    const handleKeyDown = (event) => {
+      // Ne rien faire si la modale n'est pas ouverte
+      if (state !== 'opened') return;
+
+      if (event.key === 'ArrowRight') {
+        handleNext();
+      } else if (event.key === 'ArrowLeft') {
+        handlePrev();
+      } else if (event.key === 'Escape') {
+        toggleState(); // Ferme la modale avec "Echap"
+      }
+    };
+
+    // Ajoute l'écouteur d'événement au document
+    document.addEventListener('keydown', handleKeyDown);
+
+    // Nettoie l'écouteur quand le composant est détruit
+    return () => {
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [state, toggleState]);
+
+  const handleNext = () => {
+    setSelectedIndex(currentId => {
+      // Si on est à la dernière image (l'ID photo est égal au total)
+      if (currentId === totalImages) {
+        return 1; // On repart au début (ID 1)
+      }
+      return currentId + 1; // Sinon, on fait +1
+    });
+  };
+
+  const handlePrev = () => {
+    setSelectedIndex(currentId => {
+      // Si on est à la première image (ID 1)
+      if (currentId === 1) {
+        return totalImages; // On va à la fin
+      }
+      return currentId - 1; // Sinon, on fait -1
+    });
+  };
+
 
   // Trouve l'image sélectionnée en toute sécurité
   const selectedImage = selectedIndex !== null
@@ -117,14 +162,14 @@ const Lagallery = () => {
               >
                 <CloseIcon />
               </div>
-              {/* <div className="swiping-icons">
-                <div className="left">
+              <div className="swiping-icons">
+                <div className="left" onClick={handlePrev}>
                   <ChevronLeft />
                 </div>
-                <div className="right">
+                <div className="right" onClick={handleNext}>
                   <ChevronRight />
                 </div>
-              </div> */}
+              </div>
             </div>
           </RemoveScroll>
           : null
