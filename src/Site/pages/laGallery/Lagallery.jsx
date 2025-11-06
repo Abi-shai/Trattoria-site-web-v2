@@ -6,7 +6,7 @@ import { RemoveScroll } from "react-remove-scroll";
 
 import galleryData from "../../../gallery-data";
 
-import SearchIcon from '../../../assets/icons/search.svg?react';
+import FullScreenIcon from '../../../assets/icons/fullscreen.svg?react';
 import CloseIcon from '../../../assets/icons/close.svg?react';
 import ChevronRight from '../../../assets/icons/chevron-right.svg?react';
 import ChevronLeft from '../../../assets/icons/chevron-left.svg?react';
@@ -50,7 +50,7 @@ const GalleryImage = memo(({
               style={hoveredIndex === imgIndex ? { opacity: 1 } : { opacity: 0 }}
               className="gallery-image-overlay"
             >
-              <SearchIcon />
+              <FullScreenIcon />
             </div>
           </div>
           : <div
