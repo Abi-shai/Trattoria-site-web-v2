@@ -9,7 +9,7 @@ import EventImage from '../../assets/images/current-event.jpeg';
 import './eventModal.css';
 
 
-const CURRENT_EVENT_ID = 'journée-internatinale-happy-hour-2';
+const CURRENT_EVENT_ID = 'journée-internatinale-happy-hour-event';
 const DISPLAY_DELAY = 3000;
 
 const EventModal = () => {
@@ -67,10 +67,10 @@ const EventModal = () => {
                   <p className="body1 day">Mercredi 12 Novembre</p>
                   <div className="event-divider"></div>
                   <h3>Journée internationale du happy hour</h3>
-                  <p className="body1 infos-of-the-event">Doublez le plaisir, pas le prix — 2 cocktar + 1 assette de tapas offerts, le tout à 10 000 FCFA !</p>
+                  <p className="body1 infos-of-the-event">Doublez le plaisir, pas le prix — 2 cocktails + 1 assiette de tapas offerts, le tout à 10 000 FCFA !</p>
                 </div>
 
-                <ButtonPrimary hasHref="tel:+221766446404" content="Réserver votre table" />
+                <ButtonPrimary hasHref="tel:+221766446404" content="Réserver au 766446405" />
 
               </div>
             </div>
