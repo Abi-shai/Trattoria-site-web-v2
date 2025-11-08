@@ -4,12 +4,12 @@ import FullScreenStateContext from "../../context/FullscreenContext";
 import { ButtonPrimary } from '../Button/Button';
 import CloseIcon from '../../assets/icons/close.svg?react';
 
-import EventImage from '../../assets/images/event-trattoria.png';
+import EventImage from '../../assets/images/current-event.jpeg';
 
 import './eventModal.css';
 
 
-const CURRENT_EVENT_ID = 'test-8';
+const CURRENT_EVENT_ID = 'test-10';
 const DISPLAY_DELAY = 3000;
 
 const EventModal = () => {
@@ -64,13 +64,13 @@ const EventModal = () => {
               <div className="modal-event-details">
 
                 <div className="event-occasion-and-infos">
-                  <p className="body2 day">Jeudi 17 juillet, de 20h à 00h</p>
+                  <p className="body1 day">Mercredi 12 Novembre</p>
                   <div className="event-divider"></div>
-                  <h3>Soirée karaoké</h3>
-                  <p className="body1 infos-of-the-event">Ce jeudi, c’est toi la star ! Viens ambiancer la salle à notre Karaoké Night le 17 juillet de 20h à 00h chez Trattoria Da Alex 🎶. Micro, menu à la carte et bonne humeur au rendez-vous !</p>
+                  <h3>Journée internationale du happy hour</h3>
+                  <p className="body1 infos-of-the-event">Doublez le plaisir, pas le prix — 2 cocktar + 1 assette de tapas offerts, le tout à 10 000 FCFA !</p>
                 </div>
 
-                <ButtonPrimary hasHref="tel:+221766446404" content="Réserver au 76 644 64 05" />
+                <ButtonPrimary hasHref="tel:+221766446404" content="Réserver votre table" />
 
               </div>
             </div>
