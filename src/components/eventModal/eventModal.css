@@ -65,10 +65,18 @@
 
         h3 {
           color: var(--gray-color-05);
+
+          @media (max-width: 1080px) {
+            font-size: 24px;
+          }
         }
 
         .infos-of-the-event {
           color: var(--gray-color-20);
+
+          @media (max-width: 1080px) {
+            font-size: 1.25rem;
+          }
         }
       }
 
