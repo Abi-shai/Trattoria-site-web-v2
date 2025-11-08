@@ -9,7 +9,7 @@ import EventImage from '../../assets/images/event-trattoria.png';
 import './eventModal.css';
 
 
-const CURRENT_EVENT_ID = 'test-6';
+const CURRENT_EVENT_ID = 'test-8';
 const DISPLAY_DELAY = 3000;
 
 const EventModal = () => {

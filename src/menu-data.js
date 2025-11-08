@@ -274,16 +274,16 @@ export const risottiData = [
     }
   },
   {
-    title: "Zucchine e salmone",
-    description: "(Courgettes et saumon fumé)",
+    title: "Zucca e zola",
+    description: "(Courge et gorgonzola)",
     overlay: {
       first: null,
       second: null
     }
   },
   {
-    title: "Zucca e zola",
-    description: "(Courge et gorgonzola)",
+    title: "Zucchine e salmone",
+    description: "(Courgettes et saumon fumé)",
     overlay: {
       first: null,
       second: null
@@ -309,14 +309,6 @@ export const pastaSeccaData = [
     }
   },
   {
-    title: "Linguine alle vongole",
-    description: "(Palourdes)",
-    overlay: {
-      first: null,
-      second: null
-    }
-  },
-  {
     title: "Penne salsiccia e zucca",
     moreInfo: "*",
     description: "(Gratin de penne à la saucisse, crème de courge, provola fumée)",
@@ -326,16 +318,24 @@ export const pastaSeccaData = [
     }
   },
   {
-    title: "Linguine ai frutti di mare",
-    description: "(Tomates cerises, calamars, crevettes, moules, pinces de crabe)",
+    title: "Paccheri stracciatella e pomodorini",
+    description: "(Pâtes Paccheri, tomates cerises, stracciatella)",
     overlay: {
       first: null,
       second: null
     }
   },
   {
-    title: "Paccheri stracciatella e pomodorini",
-    description: "(Pâtes Paccheri, tomates cerises, stracciatella)",
+    title: "Linguine alle vongole",
+    description: "(Palourdes)",
+    overlay: {
+      first: null,
+      second: null
+    }
+  },
+  {
+    title: "Linguine ai frutti di mare",
+    description: "(Tomates cerises, calamars, crevettes, moules, pinces de crabe)",
     overlay: {
       first: null,
       second: null
@@ -362,14 +362,6 @@ export const pastaFrescaData = [
     }
   },
   {
-    title: "Tagliatelle alla montanara",
-    description: "(Asperges, cèpes, gorgonzola, grana padano)",
-    overlay: {
-      first: null,
-      second: null
-    }
-  },
-  {
     title: "Tonnarelli alla carbonara",
     moreInfo: "*",
     description: "(Pâtes Tonnarelli, joue de porc fumée, oeuf, pecorino, grana padano)",
@@ -379,24 +371,8 @@ export const pastaFrescaData = [
     }
   },
   {
-    title: "Gnocchi alla sorrentina",
-    description: "(Gratin de gnocchis à la sauce tomate et provola fumée)",
-    overlay: {
-      first: null,
-      second: null
-    }
-  },
-  {
     title: "Tagliatelle alla bolognese",
     description: "(Sauce tomate, viande hachée, céleri, oignons, carottes)",
-    overlay: {
-      first: null,
-      second: null
-    }
-  },
-  {
-    title: "Gnocchi crema di grana padano e tartufo",
-    description: "(Crème de grana padano et truffe)",
     overlay: {
       first: null,
       second: null
@@ -411,24 +387,8 @@ export const pastaFrescaData = [
     }
   },
   {
-    title: "Gnocchi ai formaggi",
-    description: "(Crème fraîche, gorgonzola, mozzarella, provola fumée)",
-    overlay: {
-      first: null,
-      second: null
-    }
-  },
-  {
     title: "Tagliatelle pesto e gamberetti",
     description: "(Tomates cerises, pesto, crevettes)",
-    overlay: {
-      first: null,
-      second: null
-    }
-  },
-  {
-    title: "Ravioli al salmone",
-    description: "(Farce de saumon fumé et citron confit, sauce crème fraîche, saumon fumé, zeste de citron, menthe)",
     overlay: {
       first: null,
       second: null
@@ -443,16 +403,56 @@ export const pastaFrescaData = [
     }
   },
   {
-    title: "Ravioli di magro cacio e pepe",
-    description: "(Farce de ricotta et épinards, sauce crème de pecorino et poivre)",
+    title: "Tagliatelle carciofi e gamberi",
+    description: "(Gambas, artichauts, crème d’artichauts)",
     overlay: {
       first: null,
       second: null
     }
   },
   {
-    title: "Tagliatelle carciofi e gamberi",
-    description: "(Gambas, artichauts, crème d’artichauts)",
+    title: "Tagliatelle alla montanara",
+    description: "(Asperges, cèpes, gorgonzola, grana padano)",
+    overlay: {
+      first: null,
+      second: null
+    }
+  },
+  {
+    title: "Gnocchi alla sorrentina",
+    description: "(Gratin de gnocchis à la sauce tomate et provola fumée)",
+    overlay: {
+      first: null,
+      second: null
+    }
+  },
+  {
+    title: "Gnocchi crema di grana padano e tartufo",
+    description: "(Crème de grana padano et truffe)",
+    overlay: {
+      first: null,
+      second: null
+    }
+  },
+  {
+    title: "Gnocchi ai formaggi",
+    description: "(Crème fraîche, gorgonzola, mozzarella, provola fumée)",
+    overlay: {
+      first: null,
+      second: null
+    }
+  },
+  {
+    title: "Ravioli al salmone",
+    description: "(Farce de saumon fumé et citron confit, sauce crème fraîche, saumon fumé, zeste de citron, menthe)",
+    overlay: {
+      first: null,
+      second: null
+    }
+  },
+  {
+    title: "Ravioli di magro cacio e pepe",
+    description: "(Farce de ricotta et épinards, sauce crème de pecorino et poivre)",
     overlay: {
       first: null,
       second: null
