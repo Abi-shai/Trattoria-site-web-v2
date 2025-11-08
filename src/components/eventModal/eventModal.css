@@ -5,7 +5,6 @@
   bottom: 0;
   right: 0;
   z-index: 999;
-  height: 100vh;
 
   display: flex;
   justify-content: center;
@@ -40,7 +39,7 @@
       object-fit: cover;
 
       @media (max-width: 1080px) {
-        height: 220px;
+        height: 180px;
       }
     }
 

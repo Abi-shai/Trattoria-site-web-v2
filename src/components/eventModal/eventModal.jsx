@@ -9,7 +9,7 @@ import EventImage from '../../assets/images/current-event.jpeg';
 import './eventModal.css';
 
 
-const CURRENT_EVENT_ID = 'journée-internatinale-happy-hour';
+const CURRENT_EVENT_ID = 'journée-internatinale-happy-hour-2';
 const DISPLAY_DELAY = 3000;
 
 const EventModal = () => {
