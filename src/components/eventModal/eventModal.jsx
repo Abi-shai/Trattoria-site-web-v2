@@ -9,7 +9,7 @@ import EventImage from '../../assets/images/current-event.jpeg';
 import './eventModal.css';
 
 
-const CURRENT_EVENT_ID = 'journée-internatinale-happy-hour-event';
+const CURRENT_EVENT_ID = 'journée-internatinale-happy-hour-event-final';
 const DISPLAY_DELAY = 3000;
 
 const EventModal = () => {
@@ -70,7 +70,7 @@ const EventModal = () => {
                   <p className="body1 infos-of-the-event">Doublez le plaisir, pas le prix — 2 cocktails + 1 assiette de tapas offerts, le tout à 10 000 FCFA !</p>
                 </div>
 
-                <ButtonPrimary hasHref="tel:+221766446404" content="Réserver au 766446405" />
+                <ButtonPrimary hasHref="tel:+221766446404" content="Réserver au 766446404" />
 
               </div>
             </div>
