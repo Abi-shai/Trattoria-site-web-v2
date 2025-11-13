@@ -99,9 +99,9 @@ const Site = () => {
   return (
     <FullScreenStateContext.Provider value={contextValue} >
       <BrowserRouter>
-        <RemoveScroll enabled={eventModalState}>
+        {/* <RemoveScroll enabled={eventModalState}>
           <EventModal />
-        </RemoveScroll>
+        </RemoveScroll> */}
         <PageLayout />
       </BrowserRouter>
     </FullScreenStateContext.Provider>
