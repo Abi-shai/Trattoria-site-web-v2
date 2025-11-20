@@ -25,6 +25,7 @@ const Contacts = () => {
       firstName: event.target.firstName.value,
       lastName: event.target.lastName.value,
       email: event.target.email.value,
+      message: event.target.message.value,
     };
 
     try {
@@ -75,6 +76,7 @@ const Contacts = () => {
               <InputField label="Message" htmlFor="message" id="message" name="message" />
             </div>
             <ButtonSecondary type="submit" content="Envoyer" />
+            {status && <p className="status-message">{status}</p>}
           </form> */}
 
           {/* {

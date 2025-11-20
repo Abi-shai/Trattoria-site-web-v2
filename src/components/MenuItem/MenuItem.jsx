@@ -18,18 +18,24 @@ const MenuItem = ({ menuTitle, moreInfo, menuDescription, firstOverlayInfo, seco
   }
 
 
-  const MoreInfosOverlay = ({ firstInfo, secondInfo }) => {
+  const MoreInfosOverlay = ({ firstInfo, secondInfo, handleKeyDown }) => {
 
     return (
       <div
         className="more-info-wrapper"
         style={overlayOn ? { opacity: 1 } : { opacity: 0 }}
+        role="dialog"
+        aria-modal="true"
       >
         <div className="heading">
           Informations supplémentaires
           <div
             className="close-button"
             onClick={setterOverlayOff}
+            onKeyDown={(e) => handleKeyDown(e, setterOverlayOff)}
+            role="button"
+            tabIndex={0}
+            aria-label="Fermer les informations supplémentaires"
           >
             <Close />
           </div>
@@ -68,6 +74,13 @@ const MenuItem = ({ menuTitle, moreInfo, menuDescription, firstOverlayInfo, seco
     );
   };
 
+  const handleKeyDown = (e, action) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      action();
+    }
+  };
+
   return (
     <div
       className="menu-item-wrapper"
@@ -77,7 +90,12 @@ const MenuItem = ({ menuTitle, moreInfo, menuDescription, firstOverlayInfo, seco
       <div
         className="menu-item-title"
         onClick={overlayOn ? setterOverlayOff : setterOverlayOn}
+        onKeyDown={(e) => handleKeyDown(e, overlayOn ? setterOverlayOff : setterOverlayOn)}
+        role={firstOverlayInfo || secondOverlayInfo ? "button" : undefined}
+        tabIndex={firstOverlayInfo || secondOverlayInfo ? 0 : undefined}
         style={firstOverlayInfo || secondOverlayInfo ? { cursor: "pointer" } : { cursor: 'unset' }}
+        aria-expanded={overlayOn}
+        aria-label={firstOverlayInfo || secondOverlayInfo ? `Voir plus d'informations sur ${menuTitle}` : undefined}
       >
         <p>{menuTitle}</p>
         <p>{moreInfo}</p>
@@ -91,7 +109,7 @@ const MenuItem = ({ menuTitle, moreInfo, menuDescription, firstOverlayInfo, seco
 
       {
         firstOverlayInfo || secondOverlayInfo
-          ? <MoreInfosOverlay firstInfo={firstOverlayInfo} secondInfo={secondOverlayInfo} />
+          ? <MoreInfosOverlay firstInfo={firstOverlayInfo} secondInfo={secondOverlayInfo} handleKeyDown={handleKeyDown} />
           : null
       }
 

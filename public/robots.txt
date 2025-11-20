@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://trattoriadaalex.com/sitemap.xml
