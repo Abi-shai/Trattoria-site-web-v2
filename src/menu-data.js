@@ -1416,7 +1416,7 @@ export const specialiData = [
 
 export const pizzaMoreInfos = {
   suppléments: [
-    "Mozzarella de bufflonne", "Burrata", "Crudo ou speck", "Bresaola", "Cèpes (Porcini)", "Pleurotes grises (Funghi orecchiette)", "Mozzarellas cerises", "Autres", "Sans gluten"
+    "Mozzarella de bufflonne", "Burrata", "Crudo ou speck", "Bresaola", "Cèpes (Porcini)", "Pleurotes grises (Funghi orecchiette)", "Mozzarellas cerises", "Sans gluten", "Autres"
   ],
   notes: [
     "* Possibilité halal", "** Disponible en stock selon arrivage"
