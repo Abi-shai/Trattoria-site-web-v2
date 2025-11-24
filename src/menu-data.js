@@ -1083,6 +1083,14 @@ export const bulleData = [
 
 export const pizzaGlobalData = [
   {
+    title: "Margherita",
+    description: "(Sauce tomate, mozzarella)",
+    overlay: {
+      first: null,
+      second: null
+    }
+  },
+  {
     title: "Napoli",
     description: "(Sauce tomate, mozzarella, câpres, anchois)",
     overlay: {
@@ -1212,7 +1220,7 @@ export const pizzaGlobalData = [
   {
     title: "Prosciutto e funghi",
     moreInfo: "*",
-    description: "(Sauce tomate, mozzarella, aubergines, grana padano)",
+    description: "(Sauce tomate, mozzarella, jambon blanc, pleurotes grises)",
     overlay: {
       first: "Possibilité halal",
       second: null
@@ -1279,7 +1287,7 @@ export const pizzaGlobalData = [
   },
   {
     title: "Colorado al salmone",
-    description: "(Sauce tomate, mozzarella, mascarpone, saumon fumé, noix, roquette**))",
+    description: "(Sauce tomate, mozzarella, mascarpone, saumon fumé, noix, roquette**)",
     overlay: {
       first: null,
       second: "Disponible en stock selon arrivage"
@@ -1291,14 +1299,6 @@ export const pizzaGlobalData = [
     overlay: {
       first: null,
       second: "Disponible en stock selon arrivage"
-    }
-  },
-  {
-    title: "Margherita",
-    description: "(Sauce tomate, mozzarella)",
-    overlay: {
-      first: null,
-      second: null
     }
   },
 ];
@@ -1315,7 +1315,7 @@ export const provolaData = [
   },
   {
     title: "Crudo",
-    description: "(Sauce tomate, provola fumée)",
+    description: "(Provola fumée, jambon cru, romarin)",
     overlay: {
       first: null,
       second: null
@@ -1416,7 +1416,7 @@ export const specialiData = [
 
 export const pizzaMoreInfos = {
   suppléments: [
-    "Mozzarella de bufflonne", "Burrata", "Crudo", "Speck", "Bresaola", "Cèpes (Porcini)", "Légumes Pleurotes grises (Funghi orecchiette)", "Mozzarellas cerises", "Autres", "Sans gluten"
+    "Mozzarella de bufflonne", "Burrata", "Crudo ou speck", "Bresaola", "Cèpes (Porcini)", "Pleurotes grises (Funghi orecchiette)", "Mozzarellas cerises", "Autres", "Gluten free"
   ],
   notes: [
     "* Possibilité halal", "** Disponible en stock selon arrivage"
