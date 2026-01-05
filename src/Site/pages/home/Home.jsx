@@ -132,11 +132,11 @@ const MenuAndTestimonials = ({ currentDay }) => {
       <div className="menu-de-la-semaine-wrapper">
         <h3 className="h3">Le menu de la semaine</h3>
         <div className="wrapper-insider">
-          <MenuDay currentDay={currentDay} day='Lundi' daySpot={1} mainDish='Piccata Milanese' secondDish='Spaghetti à la sauce tomate' />
-          <MenuDay currentDay={currentDay} day='Mardi' daySpot={2} mainDish='Lotte à la crème d’épinards' secondDish='Purée' />
-          <MenuDay currentDay={currentDay} day='Mercredi' daySpot={3} mainDish='Poulet à la sicilienne' secondDish='Polenta' />
-          <MenuDay currentDay={currentDay} day='Jeudi' daySpot={4} mainDish='Brochettes de poissons' secondDish='Frittes' />
-          <MenuDay currentDay={currentDay} bold={true} day='Vendredi' daySpot={5} mainDish='Paella' secondDish='Emincé de boeuf' thirdDish='Tagliatelle' />
+          <MenuDay currentDay={currentDay} day='Lundi' daySpot={1} mainDish='Blanc de poulet du chasseur' secondDish='Tagliatelle' />
+          <MenuDay currentDay={currentDay} day='Mardi' daySpot={2} mainDish='Salade de poulpe, p. de terre et courgettes' secondDish='' />
+          <MenuDay currentDay={currentDay} day='Mercredi' daySpot={3} mainDish='Poulet à la diavola' secondDish='Polenta' />
+          <MenuDay currentDay={currentDay} day='Jeudi' daySpot={4} mainDish='Ragoût de calamars' secondDish='Spaghetti' />
+          <MenuDay currentDay={currentDay} bold={true} day='Vendredi' daySpot={5} mainDish='Paella' secondDish='Gratin de pattes à la viande' thirdDish='Crudités' />
         </div>
       </div>
 
