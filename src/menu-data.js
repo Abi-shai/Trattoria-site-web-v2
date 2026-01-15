@@ -1422,3 +1422,45 @@ export const pizzaMoreInfos = {
     "* Possibilité halal", "** Disponible en stock selon arrivage"
   ]
 };
+
+
+export const propositionsDuMois = {
+  propositionsDuChef: [
+    {
+      title: "Entrée",
+      description: "Cheescake au saumon"
+    },
+    {
+      title: "Plat",
+      description: "Rouleaux de saumon et courgettes"
+    },
+    {
+      title: "Dessert",
+      description: "Affogato aux spéculoos"
+    },
+    {
+      title: "",
+      description: ""
+    }
+  ],
+  cocktailDuJeudi: [
+    {
+      title: "Cocktail du jeudi",
+      ingredients: "Kiwi, Concombre, Ananas, Citron, Soda ou Gin",
+      promoDetails: "PROMO — 2 Cocktails achetés = 1 assiette de TAPAS OFFERTE !",
+    }
+  ],
+  pizzaDuMois: [
+    {
+      title: "Pizza du mois",
+      moreInfo: "*",
+      description: "Provola, champignons frais de Paris*, porchetta",
+      moreInfos: {
+        notes: [
+          "Disponible en stock selon arrivage",
+          "*Disponible en stock selon arrivage",
+        ]
+      }
+    }
+  ]
+};

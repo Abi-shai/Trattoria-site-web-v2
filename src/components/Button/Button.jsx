@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import ChevronDown from '../../assets/icons/chevron-down.svg?react';
 
 import './Button.css';
@@ -41,6 +42,23 @@ const ButtonPrimary = ({ content, showIconRight, hasHref, onClick }) => {
 };
 
 
+
+const ButtonNavLink = ({ content, showIconRight, link, onClick }) => {
+  return (
+    <NavLink to={link} className="cta buttonPrimary" onClick={onClick}>
+      {content}
+
+      {/* Logique pour construire un boolean qui va se charger de l'affichage de l'icône lorsqu'il est true */}
+      {
+        showIconRight
+          ? <ChevronDown />
+          : null
+      }
+    </NavLink>
+  );
+};
+
+
 // Style de button 2 / Avec les bordures
 const ButtonSecondary = ({ type, content, showIconRight }) => {
   return (
@@ -78,4 +96,4 @@ const LinkButton = ({ content, icon, href, style }) => {
 };
 
 
-export { ButtonPrimary, ButtonSecondary, LinkButton };
+export { ButtonPrimary, ButtonNavLink, ButtonSecondary, LinkButton };

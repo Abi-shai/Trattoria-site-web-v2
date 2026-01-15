@@ -85,6 +85,10 @@
         background-color: var(--gray-color-90);
       }
     }
+
+    .event-cta-wrapper {
+      max-width: 252px;
+    }
   }
 
   .event-close-icon {

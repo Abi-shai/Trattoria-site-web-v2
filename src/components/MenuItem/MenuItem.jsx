@@ -5,7 +5,7 @@ import Close from '../../assets/icons/close.svg?react';
 import './MenuItem.css';
 
 
-const MenuItem = ({ menuTitle, moreInfo, menuDescription, firstOverlayInfo, secondOverlayInfo }) => {
+const MenuItem = ({ menuTitle, moreInfo, menuDescription, firstOverlayInfo, secondOverlayInfo, isCentered }) => {
 
   const [overlayOn, setOverlayOn] = useState(false);
 
@@ -93,17 +93,25 @@ const MenuItem = ({ menuTitle, moreInfo, menuDescription, firstOverlayInfo, seco
         onKeyDown={(e) => handleKeyDown(e, overlayOn ? setterOverlayOff : setterOverlayOn)}
         role={firstOverlayInfo || secondOverlayInfo ? "button" : undefined}
         tabIndex={firstOverlayInfo || secondOverlayInfo ? 0 : undefined}
-        style={firstOverlayInfo || secondOverlayInfo ? { cursor: "pointer" } : { cursor: 'unset' }}
+        style={{
+          ...(firstOverlayInfo || secondOverlayInfo ? { cursor: "pointer" } : { cursor: 'unset' }),
+          ...(isCentered ? { justifyContent: "center" } : {})
+        }}
         aria-expanded={overlayOn}
         aria-label={firstOverlayInfo || secondOverlayInfo ? `Voir plus d'informations sur ${menuTitle}` : undefined}
       >
-        <p>{menuTitle}</p>
-        <p>{moreInfo}</p>
+        <p className="core-menu-title">{menuTitle}</p>
+        <p
+          className="core-menu-more-info">{moreInfo}
+        </p>
       </div>
 
       {
         menuDescription
-          ? <p className="body1 menu-item-description">{menuDescription}</p>
+          ? <p
+            style={isCentered ? { textAlign: 'center' } : { textAlign: 'unset' }}
+            className="body1 menu-item-description">{menuDescription}
+          </p>
           : null
       }
 
@@ -113,7 +121,7 @@ const MenuItem = ({ menuTitle, moreInfo, menuDescription, firstOverlayInfo, seco
           : null
       }
 
-    </div>
+    </div >
   );
 };
 

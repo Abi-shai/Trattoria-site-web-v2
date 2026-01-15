@@ -1,7 +1,7 @@
 import { useState, useEffect, useContext } from 'react';
 import FullScreenStateContext from "../../context/FullscreenContext";
 
-import { ButtonPrimary } from '../Button/Button';
+import { ButtonNavLink } from '../Button/Button';
 import CloseIcon from '../../assets/icons/close.svg?react';
 
 import EventImage from '../../assets/images/current-event.jpeg';
@@ -9,7 +9,7 @@ import EventImage from '../../assets/images/current-event.jpeg';
 import './eventModal.css';
 
 
-const CURRENT_EVENT_ID = 'journée-internatinale-happy-hour-event-final-final';
+const CURRENT_EVENT_ID = 'proposition-janvier';
 const DISPLAY_DELAY = 3000;
 
 const EventModal = () => {
@@ -64,13 +64,20 @@ const EventModal = () => {
               <div className="modal-event-details">
 
                 <div className="event-occasion-and-infos">
-                  <p className="body1 day">Mercredi 12 Novembre</p>
+                  {/* Commented out the data because of the current event nature */}
+                  {/* <p className="body1 day">Mercredi 12 Novembre</p> */}
                   <div className="event-divider"></div>
-                  <h3>Journée internationale du happy hour</h3>
-                  <p className="body1 infos-of-the-event">Doublez le plaisir, pas le prix — 2 cocktails + 1 assiette de tapas offerts, le tout à 10 000 FCFA !</p>
+                  <h3>Nouvelles propositions du mois</h3>
+                  <p className="body1 infos-of-the-event">Il y’a des nouveautés à la Trattoria Da Alex en ce moment....découvrez les nouvelles propositions du mois !</p>
                 </div>
 
-                <ButtonPrimary hasHref="tel:+221766446405" content="Réserver au 766446405" />
+                <div className="event-cta-wrapper">
+                  <ButtonNavLink
+                    link="/carte/propositions-du-mois"
+                    content="Découvrir les propositions"
+                    onClick={handleClose}
+                  />
+                </div>
 
               </div>
             </div>

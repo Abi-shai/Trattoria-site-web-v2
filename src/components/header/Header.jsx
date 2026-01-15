@@ -43,6 +43,7 @@ const ListNavOption = ({ navContent, showDivider, navLink }) => {
 const MenuPopOver = () => {
   return (
     <div className="menu-popover">
+      <ListNavOption navLink='/carte/propositions-du-mois' navContent={'Proposition du mois'} showDivider={true} />
       <ListNavOption navLink='/carte/cicchetti' navContent={'Cicchetti'} />
       <ListNavOption navLink='/carte/antipasti' navContent={'Antipasti'} />
       <ListNavOption navLink='/carte/primi' navContent={'Primi'} />

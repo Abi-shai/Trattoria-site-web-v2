@@ -1,0 +1,18 @@
+.promo-banner {
+  display: flex;
+  justify-content: center;
+
+  background-color: var(--component-over-brand-color);
+  padding: 24px;
+
+
+  p {
+    color: var(--white-color);
+    text-align: center;
+    font-family: Tra1;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}

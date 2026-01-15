@@ -11,8 +11,6 @@ import { pizzaGlobalData, provolaData, specialiData, pizzaMoreInfos } from "../.
 
 import PizzaImage from '../../../assets/images/carte/pizze-page.png';
 
-import './Pizza.css';
-
 const Pizza = () => {
 
   useEffect(() => {
@@ -33,9 +31,9 @@ const Pizza = () => {
 
         <MenuSectionHeader title="Pizza du mois" />
 
-        <section className="pizza-du-mois">
+        <section className="proposition-du-mois">
           <p className="mois">Novembre</p>
-          <p className="pizza">
+          <p className="proposition">
             Friarielli, ricotta, saucisse, pecorino
           </p>
         </section>

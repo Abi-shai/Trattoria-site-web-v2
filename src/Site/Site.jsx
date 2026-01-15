@@ -25,7 +25,7 @@ import Vins from "./pages/vins/Vins";
 import Lagallery from "./pages/laGallery/Lagallery";
 import Contacts from "./pages/contacts/Contacts";
 import Pizza from "./pages/pizza/Pizza";
-
+import PropositionDuMois from "./pages/proposition-du-mois/PropositionDuMois";
 
 import './Site.css';
 
@@ -45,6 +45,7 @@ const PageLayout = () => {
         <UtilityBar />
         <Header />
       </div>
+      <EventModal />
       <Routes>
 
         <Route path="/" element={<Home />} />
@@ -53,7 +54,8 @@ const PageLayout = () => {
 
         <Route path="/carte" element={<Outlet />}>
           {/* Redirige de "/carte" vers la première sous-page par défaut */}
-          <Route index element={<Navigate to="/carte/cicchetti" replace />} />
+          <Route index element={<Navigate to="/carte/propositions-du-mois" replace />} />
+          <Route path="propositions-du-mois" element={<PropositionDuMois />} />
           <Route path="cicchetti" element={<Ciccheti />} />
           <Route path="antipasti" element={<Antipasti />} />
           <Route path="primi" element={<Primi />} />
