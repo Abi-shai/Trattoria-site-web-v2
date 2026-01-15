@@ -1452,6 +1452,7 @@ export const propositionsDuMois = {
   ],
   pizzaDuMois: [
     {
+      mois: "Janvier",
       title: "Pizza du mois",
       moreInfo: "*",
       description: "Provola, champignons frais de Paris*, porchetta",

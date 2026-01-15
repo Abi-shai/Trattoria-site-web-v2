@@ -7,9 +7,10 @@ import MenuSectionHeader from "../../../components/menuSectionHeader/MenuSection
 import { DividerOnOtherPages } from "../../../components/divider/Divider";
 import MenuItem from "../../../components/MenuItem/MenuItem";
 
-import { pizzaGlobalData, provolaData, specialiData, pizzaMoreInfos } from "../../../menu-data";
+import { pizzaGlobalData, provolaData, specialiData, pizzaMoreInfos, propositionsDuMois } from "../../../menu-data";
 
 import PizzaImage from '../../../assets/images/carte/pizze-page.png';
+import PropositionDuMois from "../proposition-du-mois/PropositionDuMois";
 
 const Pizza = () => {
 
@@ -21,6 +22,8 @@ const Pizza = () => {
   const removedProvolaLastItem = provolaData.slice(0, -1);
   const currentWith = UseWindowSize().width;
 
+  const pizzaDuMoisData = propositionsDuMois.pizzaDuMois[0];
+
   return (
     <>
 
@@ -31,12 +34,22 @@ const Pizza = () => {
 
         <MenuSectionHeader title="Pizza du mois" />
 
-        <section className="proposition-du-mois">
-          <p className="mois">Novembre</p>
-          <p className="proposition">
-            Friarielli, ricotta, saucisse, pecorino
-          </p>
+        <section className="menu-group-wrapper">
+          <MenuItem
+            menuTitle={pizzaDuMoisData.mois}
+            moreInfo={pizzaDuMoisData.moreInfo}
+            firstOverlayInfo={pizzaDuMoisData.moreInfos.notes[0]}
+            menuDescription={pizzaDuMoisData.description}
+            isCentered
+          />
         </section>
+
+        {/* <section className="proposition-du-mois">
+          <p className="mois">{pizzaDuMoisData.mois}</p>
+          <p className="proposition">
+            {pizzaDuMoisData.description}
+          </p>
+        </section> */}
 
         <DividerOnOtherPages />
 
