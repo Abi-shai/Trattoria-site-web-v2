@@ -261,6 +261,18 @@ const Header = () => {
                   <ul>
                     <li>
                       <NavLink
+                        to="/carte/propositions-du-mois"
+                        end
+                        className={({ isActive }) =>
+                          isActive ? "nav-active" : "nav-link"
+                        }
+                      >
+                        Propositions du mois
+                      </NavLink>
+                    </li>
+                    <div className="divider"></div>
+                    <li>
+                      <NavLink
                         to="/carte/cicchetti"
                         end
                         className={({ isActive }) =>
