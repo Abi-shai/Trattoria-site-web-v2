@@ -1,6 +1,7 @@
 import { useState } from "react";
 // 1. On ajoute l'import de pdfjs pour configurer le worker
 import { Document, Page, pdfjs } from 'react-pdf';
+import UseWindowSize from "../../../utility/useWindowSize";
 
 // 2. IMPORTATION OBLIGATOIRE DES STYLES (sinon le rendu sera cassé)
 import 'react-pdf/dist/Page/AnnotationLayer.css';
@@ -17,6 +18,8 @@ const EnglishMenu = () => {
   const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = useState(1);
 
+  const currentWith = UseWindowSize().width;
+
   function onDocumentLoadSuccess({ numPages }) {
     setNumPages(numPages);
   }
@@ -30,8 +33,8 @@ const EnglishMenu = () => {
           <Page
             key={`page_${index + 1}`}
             pageNumber={index + 1}
-            scale={.8}
-            width={window.innerWidth > 100 ? 600 : window.innerWidth - 40}
+            // scale={.8}
+            width={currentWith > 600 ? 600 : currentWith - 40}
             renderTextLayer={true}
             className="pdf-page"
           />
