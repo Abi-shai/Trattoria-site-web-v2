@@ -23,6 +23,7 @@ const Footer = () => {
         { title: 'Primi', route: '/carte/primi' },
         { title: 'Secondi', route: '/carte/secondi' },
         { title: 'Desserts', route: '/carte/desserts' },
+        { title: 'Menu en anglais', route: '/english-menu' },
       ]
     },
     {
