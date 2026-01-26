@@ -51,7 +51,8 @@ const MenuPopOver = () => {
       <ListNavOption navLink='/carte/desserts' navContent={'Desserts'} showDivider={true} />
       <ListNavOption navLink='/carte/aperitifs' navContent={'Apéritifs'} />
       <ListNavOption navLink='/carte/cocktails' navContent={'Cocktails'} />
-      <ListNavOption navLink='/carte/vins' navContent={'Vins'} />
+      <ListNavOption navLink='/carte/vins' navContent={'Vins'} showDivider={true} />
+      <ListNavOption navLink='/english-menu' navContent={'Menu en anglais'} />
     </div>
   )
 }
@@ -233,7 +234,7 @@ const Header = () => {
             >
               Pizza
             </NavLink></li>
-          <li className="special-link" onClick={setterCartOpened} style={CartOpened === 'open' ? { height: '398px', padding: '0.5em' } : { height: '36px' }}>
+          <li className="special-link" onClick={setterCartOpened} style={CartOpened === 'open' ? { height: '492px', padding: '0.5em' } : { height: '36px' }}>
 
             <div className="wrapper-1">
               <a
@@ -358,6 +359,17 @@ const Header = () => {
                         }
                       >
                         Vins
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink
+                        to="/english-menu"
+                        end
+                        className={({ isActive }) =>
+                          isActive ? "nav-active" : "nav-link"
+                        }
+                      >
+                        Menu en anglais
                       </NavLink>
                     </li>
                   </ul>

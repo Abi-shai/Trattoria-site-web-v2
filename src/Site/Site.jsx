@@ -67,7 +67,7 @@ const PageLayout = () => {
           <Route path="cocktails" element={<Cocktails />} />
           <Route path="vins" element={<Vins />} />
         </Route>
-        {/* <Route path="/english-menu" element={<EnglishMenu />} /> */}
+        <Route path="/english-menu" element={<EnglishMenu />} />
         <Route path="/gallery" element={<Lagallery />} />
         <Route path="/contacts" element={<Contacts />} />
       </Routes>
