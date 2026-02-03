@@ -17,7 +17,6 @@
     justify-content: start;
     padding-top: 178px;
     gap: .5em;
-    /* overflow-x: hidden; */
 
     @media (max-width: 1080px) {
       flex-direction: column;
