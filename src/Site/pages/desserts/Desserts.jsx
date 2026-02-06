@@ -4,8 +4,9 @@ import UseWindowSize from "../../../utility/useWindowSize";
 
 import PageHeader from "../../../components/pageHeader/PageHeader";
 import MenuItem from "../../../components/MenuItem/MenuItem";
+import { DividerOnOtherPages } from "../../../components/divider/Divider";
 
-import { dessertsData } from "../../../menu-data";
+import { dessertsData, dessertsMoreInfos } from "../../../menu-data";
 
 import DessertsImage from '../../../assets/images/carte/desserts.png';
 
@@ -52,6 +53,17 @@ const Desserts = () => {
               })
           }
         </section>
+
+        <DividerOnOtherPages />
+
+
+        <div className="menu-more-infos-wrapper">
+          {
+            Object.values(dessertsMoreInfos.notes).map((value, i) => {
+              return <p key={i}>{value}</p>
+            })
+          }
+        </div>
 
       </main>
 

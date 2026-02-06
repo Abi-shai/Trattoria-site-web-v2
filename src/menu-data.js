@@ -9,39 +9,32 @@ export const antipastiData = [
     }
   },
   {
-    title: "Frittomisto",
-    description: "(Friture mixte de poissons - calamars, crevettes, aiguillettes - et ses légumes)",
-    overlay: {
-      first: null,
-      second: null
-    }
-  },
-  {
     title: "Bomba Hamburger",
+    moreInfo: "*",
     description: "(Viande du Brésil, lardons fumés, tomates séchées, oignons caramélisés, provola fumée, enrobés de pâte à pizza)",
     overlay: {
-      first: null,
+      first: "Possibilité halal",
       second: null
     }
   },
   {
-    title: "Carpaccio di polipo",
-    description: "(Fines tranches de poulpe, tomates cerises, roquette**, citronette)",
+    title: "Insalata Mediterranea",
+    description: `(Salade, tomates cerises, olives noires, mozzarellas cerises, concombres, poivrons rôtis, cœur d'artichaut)`,
     overlay: {
+    }
+  },
+  {
+    title: "Insalata Campagnola",
+    moreInfo: "**",
+    description: `(Salade, tomates cerises, carottes, poulet, grana padano, champignons de Paris frais**, noix, vinaigrette au romarin frais)`,
+    overlay: {
+      first: null,
       second: "Disponible en stock selon arrivage"
     }
   },
   {
-    title: "Melanzane alla parmigiana",
-    description: "(Aubergines, sauce tomate, mozzarella)",
-    overlay: {
-      first: null,
-      second: null
-    }
-  },
-  {
-    title: "Carpaccio di corifena",
-    description: "(Fines tranches de dorade coryphène et citronette)",
+    title: "Insalata di mare",
+    description: "(Moules, palourdes, crevettes, poulpes, seiches)",
     overlay: {
       first: null,
       second: null
@@ -56,8 +49,81 @@ export const antipastiData = [
     }
   },
   {
+    title: "Melanzane alla parmigiana",
+    description: "(Aubergines, sauce tomate, mozzarella)",
+    overlay: {
+      first: null,
+      second: null
+    }
+  },
+  {
+    title: "Polipo alla diavola",
+    description: "(Poulpe à la sauce tomate pimentée)",
+    overlay: {
+      first: null,
+      second: null
+    }
+  },
+  {
+    title: "Gallette di Grana Padano",
+    description: "(Galettes de grana padano, légumes grillées, stracciatella)",
+    overlay: {
+      first: null,
+      second: null
+    }
+  },
+  {
+    title: "Tortino al salmone",
+    description: "(Cheesecake au ricotta et saumon fumé)",
+    overlay: {
+      first: null,
+      second: null
+    }
+  },
+  {
+    title: "Carpaccio di polipo",
+    moreInfo: "**",
+    description: "(Fines tranches de poulpe, tomates cerises, roquette**, citronette)",
+    overlay: {
+      second: "Disponible en stock selon arrivage"
+    }
+  },
+  {
     title: "Carpaccio di manzo",
     description: "(Fines tranches de filet de bœuf cru et citronette)",
+    overlay: {
+      first: null,
+      second: null
+    }
+  },
+  {
+    title: "Frittomisto",
+    description: "(Friture mixte de calamars, crevettes, légumes)",
+    overlay: {
+      first: null,
+      second: null
+    }
+  },
+  {
+    title: "Bufala e crudo",
+    description: "(Mozzarella de bufflonne, jambon cru)",
+    overlay: {
+      first: null,
+      second: null
+    }
+  },
+  {
+    title: "Bufala e bresaola",
+    moreInfo: "**",
+    description: "(Mozzarella de bufflonne, bresaola, tomates cerises, roquette**)",
+    overlay: {
+      first: null,
+      second: "Disponible en stock selon arrivage"
+    }
+  },
+  {
+    title: "Carpaccio di corifena",
+    description: "(Fines tranches de dorade coryphène et citronette)",
     overlay: {
       first: null,
       second: null
@@ -69,14 +135,6 @@ export const antipastiData = [
     description: "(Salade, carottes, jambon blanc, grana padano, persil, croutons de pain)",
     overlay: {
       first: "Possibilité halal",
-      second: null
-    }
-  },
-  {
-    title: "Bufala e crudo",
-    description: "(Mozzarella de bufflonne, jambon cru)",
-    overlay: {
-      first: null,
       second: null
     }
   },
@@ -98,25 +156,8 @@ export const antipastiData = [
     }
   },
   {
-    title: "Insalata di mare",
-    description: "(Moules, palourdes, crevettes, poulpes, seiches)",
-    overlay: {
-      first: null,
-      second: null
-    }
-  },
-
-  {
     title: "Tagliere di formaggi",
     description: "(Plancha de fromages)",
-    overlay: {
-      first: null,
-      second: null
-    }
-  },
-  {
-    title: "Polipo alla diavola",
-    description: "(Poulpe à la sauce tomate pimentée)",
     overlay: {
       first: null,
       second: null
@@ -132,14 +173,6 @@ export const antipastiData = [
     }
   },
   {
-    title: "Polipo ubriaco",
-    description: "(Poulpe mijoté au vin rouge)",
-    overlay: {
-      first: null,
-      second: null
-    }
-  },
-  {
     title: "Tagliere misto",
     moreInfo: "*",
     description: "(Plancha mixte de charcuteries, fromages, légumes à l’huile)",
@@ -147,7 +180,7 @@ export const antipastiData = [
       first: "Possibilité halal",
       second: null
     }
-  },
+  }
 ];
 
 export const antipastiMoreInfos = {
@@ -157,7 +190,7 @@ export const antipastiMoreInfos = {
   notes: [
     "* Possibilité halal", "** Disponible en stock selon arrivage"
   ]
-}
+};
 
 
 
@@ -174,40 +207,8 @@ export const cicchettiData = [
     }
   },
   {
-    title: "Bruschetta verdure alla griglia",
-    description: "(Pain grillé, tomates, ail, légumes grillés)",
-    overlay: {
-      first: null,
-      second: null
-    }
-  },
-  {
-    title: "Mozzarella in carrozza",
-    description: "(Tranches de pain et mozzarella panés et frits)",
-    overlay: {
-      first: null,
-      second: null
-    }
-  },
-  {
-    title: "Bruschetta tonno",
-    description: "(Pain grillé, tomates, ail, thon, oignons, mozzarella)",
-    overlay: {
-      first: null,
-      second: null
-    }
-  },
-  {
-    title: "Provola fritta",
-    description: "(Cubes de provola panés et frits)",
-    overlay: {
-      first: null,
-      second: null
-    }
-  },
-  {
-    title: "Bruschetta caprese",
-    description: "(Pain grillé, tomates, ail, mozzarellas cerises)",
+    title: "Mozzarella fritta",
+    description: "(Cubes de mozzarella panés et frits)",
     overlay: {
       first: null,
       second: null
@@ -215,31 +216,15 @@ export const cicchettiData = [
   },
   {
     title: "Ravioli fritti ai formaggi",
-    description: "(Raviolis panés et frits, farce de fromages, sa sauce au chèvre et miel)",
+    description: "(Raviolis panés et frits, farce de fromages et sa sauce au chèvre et miel)",
     overlay: {
       first: null,
       second: null
     }
   },
   {
-    title: "Bruschetta acciughe",
-    description: "(Pain grillé, provola fumée, anchois)",
-    overlay: {
-      first: null,
-      second: null
-    }
-  },
-  {
-    title: "Ravioli fritti al salmone",
-    description: "(Raviolis panés et frits, farce au saumon et sa confiture d’orange)",
-    overlay: {
-      first: null,
-      second: null
-    }
-  },
-  {
-    title: "Pizza bruschetta",
-    description: "(Pain pizza, tomates, stracciatella)",
+    title: "Ravioli fritti al pesto e mozzarella",
+    description: "(Raviolis panés et frits, farce au pesto de basilic et mozzarella)",
     overlay: {
       first: null,
       second: null
@@ -254,14 +239,54 @@ export const cicchettiData = [
     }
   },
   {
-    title: null,
-    description: null,
+    title: "Bruschetta verdure alla griglia",
+    description: "(Pain grillé, tomates, ail, légumes grillés)",
     overlay: {
       first: null,
       second: null
     }
   },
+  {
+    title: "Bruschetta tonno",
+    description: "(Pain grillé, tomates, ail, thon, oignons, mozzarella)",
+    overlay: {
+      first: null,
+      second: null
+    }
+  },
+  {
+    title: "Bruschetta caprese",
+    description: "(Pain grillé, tomates, ail, mozzarellas cerises)",
+    overlay: {
+      first: null,
+      second: null
+    }
+  },
+  {
+    title: "Bruschetta funghi",
+    moreInfo: "*",
+    description: "(Pain grillé, stracciatella, mélange forestier de champignons, roquette*)",
+    overlay: {
+      first: "Disponible en stock selon arrivage",
+      second: null
+    }
+  },
+  {
+    title: "Bruschetta pesto di rucola e salmone",
+    moreInfo: "*",
+    description: "(Pain grillé, pesto de roquette*, ricotta, saumon fumé)",
+    overlay: {
+      first: "Disponible en stock selon arrivage",
+      second: null
+    }
+  }
 ];
+
+export const cicchettiMoreInfos = {
+  notes: [
+    "* Disponible en stock selon arrivage"
+  ]
+};
 
 
 export const risottiData = [
@@ -274,16 +299,17 @@ export const risottiData = [
     }
   },
   {
-    title: "Zucca e zola",
-    description: "(Courge et gorgonzola)",
+    title: "Rustico",
+    moreInfo: "*",
+    description: "(Saucisse, champignons de Paris frais**)",
     overlay: {
-      first: null,
-      second: null
+      first: "Possibilité halal",
+      second: "Disponible en stock selon arrivage"
     }
   },
   {
-    title: "Zucchine e salmone",
-    description: "(Courgettes et saumon fumé)",
+    title: "Mare verde",
+    description: "(Courgettes, saumon fumé)",
     overlay: {
       first: null,
       second: null
@@ -309,19 +335,20 @@ export const pastaSeccaData = [
     }
   },
   {
-    title: "Penne salsiccia e zucca",
+    title: "Spaghetti all'amatriciana",
     moreInfo: "*",
-    description: "(Gratin de penne à la saucisse, crème de courge, provola fumée)",
+    description: "(Sauce tomate, joue de porc fumée, piment)",
     overlay: {
       first: "Possibilité halal",
       second: null
     }
   },
   {
-    title: "Paccheri stracciatella e pomodorini",
-    description: "(Pâtes Paccheri, tomates cerises, stracciatella)",
+    title: "Spaghetti alla carbonara",
+    moreInfo: "*",
+    description: "(Joue de porc fumée, oeufs, pecorino, grana padano)",
     overlay: {
-      first: null,
+      first: "Possibilité halal",
       second: null
     }
   },
@@ -342,6 +369,23 @@ export const pastaSeccaData = [
     }
   },
   {
+    title: "Lasagne alla bolognese",
+    description: "(Sauce tomate, viande hachée, céleri, oignons, carottes)",
+    overlay: {
+      first: null,
+      second: null
+    }
+  },
+  {
+    title: "Paccheri alla romana",
+    moreInfo: "*",
+    description: "(Pâtes Paccheri, joue de porc, ricotta, pecorino)",
+    overlay: {
+      first: "Possibilité halal",
+      second: null
+    }
+  },
+  {
     title: "",
     description: "",
     overlay: {
@@ -353,24 +397,6 @@ export const pastaSeccaData = [
 
 export const pastaFrescaData = [
   {
-    title: "Tonnarelli all’amatriciana",
-    moreInfo: "*",
-    description: "(Pâtes Tonnarelli, sauce tomate, joue de porc fumée, piment)",
-    overlay: {
-      first: "Possibilité halal",
-      second: null
-    }
-  },
-  {
-    title: "Tonnarelli alla carbonara",
-    moreInfo: "*",
-    description: "(Pâtes Tonnarelli, joue de porc fumée, oeuf, pecorino, grana padano)",
-    overlay: {
-      first: "Possibilité halal",
-      second: null
-    }
-  },
-  {
     title: "Tagliatelle alla bolognese",
     description: "(Sauce tomate, viande hachée, céleri, oignons, carottes)",
     overlay: {
@@ -379,15 +405,7 @@ export const pastaFrescaData = [
     }
   },
   {
-    title: "Lasagne alla bolognese",
-    description: "(Sauce tomate, viande hachée, céleri, oignons, carottes)",
-    overlay: {
-      first: null,
-      second: null
-    }
-  },
-  {
-    title: "Tagliatelle pesto e gamberetti",
+    title: "Tagliatelle del porto",
     description: "(Tomates cerises, pesto, crevettes)",
     overlay: {
       first: null,
@@ -395,7 +413,7 @@ export const pastaFrescaData = [
     }
   },
   {
-    title: "Tagliatelle salmone e vodka",
+    title: "Tagliatelle al salmone ubriaco",
     description: "(Tomates cerises, saumon fumé, vodka)",
     overlay: {
       first: null,
@@ -403,16 +421,16 @@ export const pastaFrescaData = [
     }
   },
   {
-    title: "Tagliatelle carciofi e gamberi",
-    description: "(Gambas, artichauts, crème d’artichauts)",
+    title: "Tagliatelle del mare nero",
+    description: `(Tagliatelles au noir de sèche, tomates cerises, gambas, artichauts, crème d'artichauts)`,
     overlay: {
-      first: null,
+      first: "Possibilité halal",
       second: null
     }
   },
   {
     title: "Tagliatelle alla montanara",
-    description: "(Asperges, cèpes, gorgonzola, grana padano)",
+    description: "(Asperges, cèpes, gorgonzola, grana padano) ",
     overlay: {
       first: null,
       second: null
@@ -427,7 +445,7 @@ export const pastaFrescaData = [
     }
   },
   {
-    title: "Gnocchi crema di grana padano e tartufo",
+    title: "Gnocchi al tartufo",
     description: "(Crème de grana padano et truffe)",
     overlay: {
       first: null,
@@ -436,7 +454,15 @@ export const pastaFrescaData = [
   },
   {
     title: "Gnocchi ai formaggi",
-    description: "(Crème fraîche, gorgonzola, mozzarella, provola fumée)",
+    description: "(Crème fraîche, gorgonzola, mozzarella, provola fumée, brie)",
+    overlay: {
+      first: null,
+      second: null
+    }
+  },
+  {
+    title: "Gnocchi alla stracciatella rosa",
+    description: "(Stracciatella, zeste de citron, poivre rose)",
     overlay: {
       first: null,
       second: null
@@ -459,8 +485,25 @@ export const pastaFrescaData = [
     }
   },
   {
-    title: "Ravioli di salsiccia al tartufo e porcini",
+    title: "Ravioli rustici",
     description: "(Farce de saucisse, crème de truffe et cèpes)",
+    overlay: {
+      first: null,
+      second: null
+    }
+  },
+  {
+    title: "Ravioli gran bosco",
+    moreInfo: "*",
+    description: "(Gratin de ravioli, farce de bœuf et champignons forestiers, sauce au brie et champignons de Paris frais*)",
+    overlay: {
+      first: "Possibilité halal",
+      second: null
+    }
+  },
+  {
+    title: "",
+    description: "",
     overlay: {
       first: null,
       second: null
@@ -478,7 +521,7 @@ export const primiMoreInfos = {
 
 export const viandeData = [
   {
-    title: "Rollé di Pollo",
+    title: "Involtini di pollo e asparagi",
     moreInfo: "*",
     description: "(Roulot de poulet, lardons fumés, asperges, sauce grana padano)",
     overlay: {
@@ -487,24 +530,8 @@ export const viandeData = [
     }
   },
   {
-    title: "Ossobuco e risotto alla milanese",
-    description: "(Ossobuco de bœuf avec jus de rôti et sa gremolada, accompagné de risotto au safran)",
-    overlay: {
-      first: null,
-      second: null
-    }
-  },
-  {
     title: "Costata di maiale alla griglia",
     description: "(Côte de porc grillée)",
-    overlay: {
-      first: null,
-      second: null
-    }
-  },
-  {
-    title: "Vitello alla pizzaiola",
-    description: "(Escalope de veau en sauce tomate et provola fumée)",
     overlay: {
       first: null,
       second: null
@@ -519,27 +546,11 @@ export const viandeData = [
     }
   },
   {
-    title: "Cotoletta alla milanese",
-    description: "(Côte de veau panée)",
-    overlay: {
-      first: null,
-      second: null
-    }
-  },
-  {
     title: "Filetto di manzo alla griglia",
-    moreInfo: "**",
+    moreInfo: "*",
     description: "(Filet de bœuf grillé)",
     overlay: {
-      first: null,
-      second: "Provenance du Brésil"
-    }
-  },
-  {
-    title: "Fiorentina alla griglia",
-    description: "(T-bone grillé, provenance de Florence-Italie)",
-    overlay: {
-      first: null,
+      first: "Possibilité halal",
       second: null
     }
   },
@@ -553,14 +564,29 @@ export const viandeData = [
     }
   },
   {
-    title: "",
-    moreInfo: "",
-    description: "",
+    title: "Ossobuco e risotto alla milanese",
+    description: "(Ossobuco de bœuf avec jus de rôti et sa gremolada, accompagné de risotto au safran)",
     overlay: {
       first: null,
       second: null
     }
   },
+  {
+    title: "Stinco di agnello alla cacciatora",
+    description: "(Souri d'agneau du chasseur, accompagné de polenta)",
+    overlay: {
+      first: null,
+      second: null
+    }
+  },
+  {
+    title: "Cotoletta alla milanese",
+    description: "(Côte de veau panée)",
+    overlay: {
+      first: null,
+      second: null
+    }
+  }
 ];
 
 
@@ -572,10 +598,9 @@ export const poissonData = [
       first: null,
       second: null
     }
-  },
-  {
-    title: "Gamberoni al brandy",
-    description: "(Gambas sautés au brandy, accompagnés de risotto au safran)",
+  }, {
+    title: "Filetto di spigola al sale aromatico",
+    description: "(Filet de loup de mer au sel aromatisé)",
     overlay: {
       first: null,
       second: null
@@ -590,14 +615,13 @@ export const poissonData = [
     }
   },
   {
-    title: "",
-    moreInfo: "",
-    description: "",
+    title: "Salmone ai sapori del sud",
+    description: "(Pavé de saumon, tomates cerises, olives, câpres, zeste de citron)",
     overlay: {
       first: null,
       second: null
     }
-  },
+  }
 ];
 
 
@@ -616,46 +640,8 @@ export const secondiMoreInfos = {
 
 export const dessertsData = [
   {
-    title: "Assiette de fruits",
-    overlay: {
-      first: null,
-      second: null
-    }
-  },
-  {
-    title: "Pizza au Nutella",
-    overlay: {
-      first: null,
-      second: null
-    }
-  },
-  {
-    title: "Ravioli fritti nutella",
-    description: "(Raviolis panés et frits, farce au nutella)",
-    overlay: {
-      first: null,
-      second: null
-    }
-  },
-  {
-    title: "Tortino al cioccolato",
-    description: "(Fondant au chocolat et sa boule de glace)",
-    overlay: {
-      first: null,
-      second: null
-    }
-  },
-  {
-    title: "Ravioli fritti mela vanigliata",
-    description: "(Raviolis panés et frits, farce à la compote de pomme vanillée, coulis de caramel)",
-    overlay: {
-      first: null,
-      second: null
-    }
-  },
-  {
-    title: "Tortino al pistacchio",
-    description: "(Fondant à la pistache et sa boule de glace)",
+    title: "Assortimento di frutta",
+    description: "(Assiette de fruits)",
     overlay: {
       first: null,
       second: null
@@ -663,22 +649,63 @@ export const dessertsData = [
   },
   {
     title: "Pannacotta",
-    description: "(Flan à la crème fraîche et son coulis)",
+    description: "(Flan à la crème fraîche, coulis au choix*)",
+    overlay: {
+      first: "Fruits de la passion, fraise, ananas, pêche, mangue, coco, pomme verte, myrtille, kiwi, Caramel, Chocolat.",
+      second: null
+    }
+  },
+  {
+    title: "Pizza au Nutella",
+    description: "(Pizza au Nutella)",
     overlay: {
       first: null,
+      second: null
+    }
+  },
+  {
+    title: "Tortino al cioccolato",
+    description: "(Fondant au chocolat, boule de glace)",
+    overlay: {
+      first: null,
+      second: null
+    }
+  },
+  {
+    title: "Tortino al pistacchio",
+    description: "(Fondant à la pistache, boule de glace)",
+    overlay: {
+      first: null,
+      second: null
+    }
+  },
+  {
+    title: "Mousse alla Nutella",
+    description: "(Nutella, mascarpone, crème fraîche)",
+    overlay: {
+      first: null,
+      second: null
+    }
+  },
+  {
+    title: "Affogato agli Speculoos",
+    description: "(Liqueur Amaretto, sirop de speculoos, glace vanille, café)",
+    overlay: {
+      first: null,
+      second: null
+    }
+  },
+  {
+    title: "Fior di Philadelphia",
+    description: "(Crème au Philadelphia sur une base croquante, coulis au choix*)",
+    overlay: {
+      first: "Fruits de la passion, fraise, ananas, pêche, mangue, coco, pomme verte, myrtille, kiwi, Caramel, Chocolat.",
       second: null
     }
   },
   {
     title: "Tiramisù",
-    overlay: {
-      first: null,
-      second: null
-    }
-  },
-  {
-    title: "Budino agli Speculoos",
-    description: "(Flan aux Spéculoos)",
+    description: "(Boudoirs, crème mascarpone, café)",
     overlay: {
       first: null,
       second: null
@@ -686,7 +713,6 @@ export const dessertsData = [
   },
   {
     title: "",
-    moreInfo: "",
     description: "",
     overlay: {
       first: null,
@@ -695,9 +721,44 @@ export const dessertsData = [
   },
 ];
 
+
+export const dessertsMoreInfos = {
+  notes: [
+    "* Fruits de la passion", "fraise", "ananas", "pêche", "mangue", "coco", "pomme verte", "Myrtille", "Kiwi", "Caramel", "Chocolat"
+  ]
+};
+
 export const aperitifsData = [
   {
     title: "Ricard, Pastis",
+    overlay: {
+      first: null,
+      second: null
+    }
+  },
+  {
+    title: "Martini",
+    overlay: {
+      first: null,
+      second: null
+    }
+  },
+  {
+    title: "Whisky & Soda",
+    overlay: {
+      first: null,
+      second: null
+    }
+  },
+  {
+    title: "Rhum & Soda",
+    overlay: {
+      first: null,
+      second: null
+    }
+  },
+  {
+    title: "Gin & Soda",
     overlay: {
       first: null,
       second: null
@@ -712,22 +773,8 @@ export const aperitifsData = [
     }
   },
   {
-    title: "Martin",
-    overlay: {
-      first: null,
-      second: null
-    }
-  },
-  {
     title: "Negroni sbagliato",
     description: "(Martini rouge, Campari, prosecco)",
-    overlay: {
-      first: null,
-      second: null
-    }
-  },
-  {
-    title: "Whisky & Soda",
     overlay: {
       first: null,
       second: null
@@ -742,22 +789,8 @@ export const aperitifsData = [
     }
   },
   {
-    title: "Rhum & Soda",
-    overlay: {
-      first: null,
-      second: null
-    }
-  },
-  {
     title: "Spritz Aperol",
     description: "(Aperol, prosecco)",
-    overlay: {
-      first: null,
-      second: null
-    }
-  },
-  {
-    title: "Gin & Soda",
     overlay: {
       first: null,
       second: null
@@ -783,33 +816,41 @@ export const cocktailsData = [
     }
   },
   {
-    title: "Italian Mule",
-    description: "(Amaretto, wiskhy, gingembre, lime)",
-    overlay: {
-      first: null,
-      second: null
-    }
-  },
-  {
     title: "Mojito Fruité",
     moreInfo: "*",
-    description: "(Citron vert, menthe, sucre de canne, purée de fruits, soda ou rhum)",
+    description: "(Citron vert, menthe, sucre de canne, purée de fruits*, soda ou rhum)",
     overlay: {
-      first: "Passion, fraise, ananas, pêche, mangue, coco, pomme verte au choix",
-      second: null
-    }
-  },
-  {
-    title: "Next Level",
-    description: "(Liqueur de pêche, triple sec, gin, lime)",
-    overlay: {
-      first: null,
+      first: "Fruits de la passion, fraise, ananas, pêche, mangue, coco, pomme verte, myrtille, kiwi.",
       second: null
     }
   },
   {
     title: "Colorado",
     description: "(Pamplemousse rose, gingembre, basilic, tonic ou gin)",
+    overlay: {
+      first: null,
+      second: null
+    }
+  },
+  {
+    title: "Golden Berry",
+    description: "(Purée de myrtilles, sirop de pêches, jus de pommes, jus de citron, tonic ou gin)",
+    overlay: {
+      first: null,
+      second: null
+    }
+  },
+  {
+    title: "Dolce Verde",
+    description: "(Purée de kiwis, sirop de concombres, jus d'ananas, jus de citron, tonic ou gin)",
+    overlay: {
+      first: null,
+      second: null
+    }
+  },
+  {
+    title: "Italian Mule",
+    description: "(Amaretto, wiskhy, gingembre, lime)",
     overlay: {
       first: null,
       second: null
@@ -824,43 +865,34 @@ export const cocktailsData = [
     }
   },
   {
-    title: "Daiquiri fruité",
-    moreInfo: "*",
-    description: "(Sucre de canne, purée de fruits, lime, soda ou rhum)",
-    overlay: {
-      first: "Passion, fraise, ananas, pêche, mangue, coco, pomme verte au choix",
-      second: null
-    }
-  },
-  {
-    title: "Blue Sky",
-    description: "(Curaçao, lime, liqueur de pêche, purée de pêche, gin)",
+    title: "Salmoncito",
+    description: "(Pamplemousse, Campari, tonic)",
     overlay: {
       first: null,
       second: null
     }
   },
   {
-    title: "Piña colada",
-    description: "(Purée de coco, jus d’ananas, lait de coco, Malibu, rhum)",
+    title: "Aperol Fragola",
+    description: `(Purée de fraises, Aperol, Martini bianco, jus de citron, blanc d'oeuf)`,
     overlay: {
       first: null,
       second: null
     }
   },
   {
-    title: "Aperol Coco",
-    description: "(Aperol, tequila, purée de coco, lime)",
+    title: "Aperi-Tiki",
+    description: "(Sirop de basilic, purée d'ananas, rhum blanc, tonic)",
     overlay: {
       first: null,
       second: null
     }
-  },
+  }
 ];
 
 export const cocktailsMoreInfos = {
   notes: [
-    "* Passion", "fraise", "ananas", "pêche", "mangue", "coco", "pomme verte au choix"
+    "* Fruits de la passion", "fraise", "ananas", "pêche", "mangue", "coco", "pomme verte", "Myrtille", "Kiwi"
   ]
 };
 
@@ -876,16 +908,16 @@ export const roséData = [
     }
   },
   {
-    title: "Primitivo",
-    description: "Puglia",
+    title: "Bardolino",
+    description: "Veneto",
     overlay: {
       first: null,
       second: null
     }
   },
   {
-    title: "Bardolino",
-    description: "Veneto",
+    title: "Primitivo",
+    description: "Puglia",
     overlay: {
       first: null,
       second: null
@@ -904,7 +936,7 @@ export const blancData = [
     }
   },
   {
-    title: "Sauvignon",
+    title: "Orvieto",
     description: "Veneto",
     overlay: {
       first: null,
@@ -912,7 +944,15 @@ export const blancData = [
     }
   },
   {
-    title: "Orvieto",
+    title: "Vespaiolo",
+    description: "Veneto",
+    overlay: {
+      first: null,
+      second: null
+    }
+  },
+  {
+    title: "Sauvignon",
     description: "Veneto",
     overlay: {
       first: null,
@@ -927,14 +967,6 @@ export const blancData = [
       second: null
     }
   },
-  {
-    title: "Vespaiolo",
-    description: "Veneto",
-    overlay: {
-      first: null,
-      second: null
-    }
-  }
 ];
 
 
@@ -948,24 +980,8 @@ export const rougeData = [
     }
   },
   {
-    title: "Valpolicella",
-    description: "Veneto",
-    overlay: {
-      first: null,
-      second: null
-    }
-  },
-  {
     title: "Montepulciano",
     description: "Abruzzo",
-    overlay: {
-      first: null,
-      second: null
-    }
-  },
-  {
-    title: "Barbera Dasti",
-    description: "Piemonte",
     overlay: {
       first: null,
       second: null
@@ -988,6 +1004,30 @@ export const rougeData = [
     }
   },
   {
+    title: "Primitivo",
+    description: "Puglia",
+    overlay: {
+      first: null,
+      second: null
+    }
+  },
+  {
+    title: "Valpolicella",
+    description: "Veneto",
+    overlay: {
+      first: null,
+      second: null
+    }
+  },
+  {
+    title: "Barbera Dasti",
+    description: "Piemonte",
+    overlay: {
+      first: null,
+      second: null
+    }
+  },
+  {
     title: "Bonacosta",
     description: "Veneto",
     overlay: {
@@ -1002,23 +1042,7 @@ export const rougeData = [
       first: null,
       second: null
     }
-  },
-  {
-    title: "Primitivo",
-    description: "Puglia",
-    overlay: {
-      first: null,
-      second: null
-    }
-  },
-  {
-    title: "Amarone",
-    description: "Veneto",
-    overlay: {
-      first: null,
-      second: null
-    }
-  },
+  }
 ];
 
 
@@ -1070,26 +1094,10 @@ export const bulleData = [
       first: null,
       second: null
     }
-  },
-  {
-    title: "Champagne Jacquart",
-    description: "Reims",
-    overlay: {
-      first: null,
-      second: null
-    }
   }
 ];
 
 export const pizzaGlobalData = [
-  {
-    title: "Margherita",
-    description: "(Sauce tomate, mozzarella)",
-    overlay: {
-      first: null,
-      second: null
-    }
-  },
   {
     title: "Napoli",
     description: "(Sauce tomate, mozzarella, câpres, anchois)",
@@ -1142,7 +1150,7 @@ export const pizzaGlobalData = [
   {
     title: "Carbonara",
     moreInfo: "*",
-    description: "(Crème fraîche, mozzarella, lardons fumés, œuf)",
+    description: "(Crème fraîche, mozzarella, lardons fumés, pecorino, œuf)",
     overlay: {
       first: "Possibilité halal",
       second: null
@@ -1168,10 +1176,10 @@ export const pizzaGlobalData = [
   {
     title: "Capricciosa",
     moreInfo: "*",
-    description: "(Sauce tomate, mozzarella, jambon blanc, champignons, olives, artichauts)",
+    description: "(Sauce tomate, mozzarella, jambon blanc, champignons de Paris frais**, olives, artichauts)",
     overlay: {
       first: "Possibilité halal",
-      second: null
+      second: "Disponible en stock selon arrivage"
     }
   },
   {
@@ -1211,7 +1219,7 @@ export const pizzaGlobalData = [
   },
   {
     title: "Formaggi",
-    description: "(Sauce tomate, mozzarella, gorgonzola, provola fumée, chèvre)",
+    description: "(Sauce tomate, mozzarella, gorgonzola, provola fumée, brie)",
     overlay: {
       first: null,
       second: null
@@ -1220,10 +1228,10 @@ export const pizzaGlobalData = [
   {
     title: "Prosciutto e funghi",
     moreInfo: "*",
-    description: "(Sauce tomate, mozzarella, jambon blanc, pleurotes grises)",
+    description: "(Sauce tomate, mozzarella, jambon blanc, champignons de Paris frais**)",
     overlay: {
       first: "Possibilité halal",
-      second: null
+      second: "Disponible en stock selon arrivage"
     }
   },
   {
@@ -1237,10 +1245,10 @@ export const pizzaGlobalData = [
   },
   {
     title: "Funghi",
-    description: "(Sauce tomate, mozzarella, cèpes, pleurotes grises)",
+    description: "(Sauce tomate, mozzarella, cèpes, champignons de Paris frais**)",
     overlay: {
       first: null,
-      second: null
+      second: "Disponible en stock selon arrivage"
     }
   },
   {
@@ -1269,9 +1277,17 @@ export const pizzaGlobalData = [
     }
   },
   {
+    title: "Speck e brie",
+    description: "(Sauce tomate, mozzarella, speck, brie)",
+    overlay: {
+      first: null,
+      second: null
+    }
+  },
+  {
     title: "Campagnola",
     moreInfo: "*",
-    description: "(Sauce tomate, mozzarella, pleurotes grises, gorgonzola, jambon blanc)",
+    description: "(Sauce tomate, mozzarella, champignons de Paris frais**, gorgonzola, jambon blanc)",
     overlay: {
       first: "Possibilité halal",
       second: null
@@ -1294,11 +1310,60 @@ export const pizzaGlobalData = [
     }
   },
   {
+    title: "Carciofi e mare",
+    description: "(Crème d'artichauts, mozzarella, gambas, artichauts)",
+    overlay: {
+      first: null,
+      second: null
+    }
+  },
+  {
+    title: "Speck et noci",
+    description: "(Crème fraîche, mozzarella, gorgonzola, speck, noix)",
+    overlay: {
+      first: null,
+      second: null
+    }
+  },
+  {
     title: "Trattoria",
     description: "(Sauce tomate, gorgonzola, grana padano, pecorino, jambon cru, noix, roquette**)",
     overlay: {
       first: null,
       second: "Disponible en stock selon arrivage"
+    }
+  },
+  {
+    title: "Burratona",
+    description: "(Sauce tomate, burrata, tomates séchées, crème de truffe)",
+    overlay: {
+      first: null,
+      second: null
+    }
+  },
+  {
+    title: "Alex",
+    description: "(Tomates fraîches, burrata, jambon cru, roquette**)",
+    overlay: {
+      first: null,
+      second: "Disponible en stock selon arrivage"
+    }
+  },
+  {
+    title: "Alex bresaola",
+    description: "(Tomates fraîches, burrata, bresaola, roquette**)",
+    overlay: {
+      first: null,
+      second: "Disponible en stock selon arrivage"
+    }
+  },
+  {
+    title: "",
+    moreInfo: "",
+    description: "",
+    overlay: {
+      first: "",
+      second: ""
     }
   },
 ];
@@ -1314,29 +1379,12 @@ export const provolaData = [
     }
   },
   {
-    title: "Crudo",
-    description: "(Provola fumée, jambon cru, romarin)",
-    overlay: {
-      first: null,
-      second: null
-    }
-  },
-  {
     title: "Salsiccia",
     moreInfo: "*",
     description: "(Sauce tomate, provola fumée, saucisse)",
     overlay: {
       first: "Possibilité halal",
       second: null
-    }
-  },
-  {
-    title: "Esplosiva",
-    moreInfo: "*",
-    description: "(Sauce tomate, provola fumée, soppressata calabra**, saucisse, poivrons, oignons, pleurotes grises, olives, piment)",
-    overlay: {
-      first: "Possibilité halal",
-      second: "Disponible en stock selon arrivage"
     }
   },
   {
@@ -1349,14 +1397,30 @@ export const provolaData = [
     }
   },
   {
-    title: "",
-    moreInfo: "",
-    description: "",
+    title: "Crudo",
+    description: "(Provola fumée, jambon cru, romarin)",
     overlay: {
-      first: "",
-      second: ""
+      first: null,
+      second: null
     }
   },
+  {
+    title: "Contadina",
+    description: "(Crème de courge, champignons de Paris frais**, provola, persil frais)",
+    overlay: {
+      first: null,
+      second: "Disponible en stock selon arrivage"
+    }
+  },
+  {
+    title: "Esplosiva",
+    moreInfo: "*",
+    description: "(Sauce tomate, provola fumée, soppressata calabra**, saucisse, poivrons, oignons, champignons de Paris frais**, olives, piment)",
+    overlay: {
+      first: "Possibilité halal",
+      second: "Disponible en stock selon arrivage"
+    }
+  }
 ];
 
 
@@ -1416,7 +1480,7 @@ export const specialiData = [
 
 export const pizzaMoreInfos = {
   suppléments: [
-    "Mozzarella de bufflonne", "Burrata", "Crudo ou speck", "Bresaola", "Cèpes (Porcini)", "Pleurotes grises (Funghi orecchiette)", "Mozzarellas cerises", "Sans gluten", "Autres"
+    "Mozzarella de bufflonne", "Burrata", "Crudo ou speck", "Bresaola", "Cèpes (Porcini)", "Champignons de Paris frais", "Mozzarellas cerises", "Sans gluten", "Autres"
   ],
   notes: [
     "* Possibilité halal", "** Disponible en stock selon arrivage"

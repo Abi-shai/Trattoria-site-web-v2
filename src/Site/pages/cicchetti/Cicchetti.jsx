@@ -4,10 +4,11 @@ import UseWindowSize from "../../../utility/useWindowSize";
 
 import PageHeader from "../../../components/pageHeader/PageHeader";
 import MenuItem from "../../../components/MenuItem/MenuItem";
+import { DividerOnOtherPages } from "../../../components/divider/Divider";
 
 import CicchettiImage from '../../../assets/images/carte/cicchetti.png';
 
-import { cicchettiData } from "../../../menu-data";
+import { cicchettiData, cicchettiMoreInfos } from "../../../menu-data";
 
 import './Cicchetti.css';
 
@@ -54,6 +55,17 @@ const Ciccheti = () => {
               })
           }
         </section>
+
+
+        <DividerOnOtherPages />
+
+        <div className="menu-more-infos-wrapper">
+          {
+            Object.values(cicchettiMoreInfos.notes).map((value, i) => {
+              return <p key={i}>{value}</p>
+            })
+          }
+        </div>
       </main>
     </>
   );

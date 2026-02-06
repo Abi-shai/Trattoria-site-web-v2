@@ -16,6 +16,7 @@ import './Primi.css';
 const Primi = () => {
 
   const removedLastItem = pastaSeccaData.slice(0, -1);
+  const removedLastItemFresca = pastaFrescaData.slice(0, -1);
   const currentWith = UseWindowSize().width;
 
   useEffect(() => {
@@ -32,7 +33,7 @@ const Primi = () => {
         <section className="menu-group-wrapper">
           {
             risottiData.map((data, i) => {
-              return <MenuItem key={i} menuTitle={data.title} menuDescription={data.description} />
+              return <MenuItem key={i} menuTitle={data.title} menuDescription={data.description} firstOverlayInfo={data.overlay.first} moreInfo={data.moreInfo} secondOverlayInfo={data.overlay.second} />
             })
           }
         </section>
@@ -58,9 +59,13 @@ const Primi = () => {
 
         <section className="menu-group-wrapper">
           {
-            pastaFrescaData.map((data, i) => {
-              return <MenuItem key={i} menuTitle={data.title} menuDescription={data.description} />
-            })
+            currentWith < 1080
+              ? removedLastItemFresca.map((data, i) => {
+                return <MenuItem key={i} menuTitle={data.title} menuDescription={data.description} firstOverlayInfo={data.overlay.first} moreInfo={data.moreInfo} secondOverlayInfo={data.overlay.second} />
+              })
+              : pastaFrescaData.map((data, i) => {
+                return <MenuItem key={i} menuTitle={data.title} menuDescription={data.description} firstOverlayInfo={data.overlay.first} moreInfo={data.moreInfo} secondOverlayInfo={data.overlay.second} />
+              })
           }
         </section>
 

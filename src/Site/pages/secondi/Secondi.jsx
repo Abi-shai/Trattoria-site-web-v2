@@ -29,29 +29,17 @@ const Secondi = () => {
         <MenuSectionHeader title="Viande" />
         <section className="menu-group-wrapper">
           {
-            currentWith > 1080
-              ? viandeData.map((menu, i) => {
-                return (
-                  <MenuItem
-                    key={i}
-                    menuTitle={menu.title}
-                    moreInfo={menu.moreInfo}
-                    menuDescription={menu.description}
-                    firstOverlayInfo={menu.overlay.first}
-                    secondOverlayInfo={menu.overlay.second}
-                  />)
-              })
-              : removedViandeLastItem.map((menu, i) => {
-                return (
-                  <MenuItem
-                    key={i}
-                    menuTitle={menu.title}
-                    moreInfo={menu.moreInfo}
-                    menuDescription={menu.description}
-                    firstOverlayInfo={menu.overlay.first}
-                    secondOverlayInfo={menu.overlay.second}
-                  />)
-              })
+            viandeData.map((menu, i) => {
+              return (
+                <MenuItem
+                  key={i}
+                  menuTitle={menu.title}
+                  moreInfo={menu.moreInfo}
+                  menuDescription={menu.description}
+                  firstOverlayInfo={menu.overlay.first}
+                  secondOverlayInfo={menu.overlay.second}
+                />)
+            })
           }
         </section>
 
@@ -61,29 +49,17 @@ const Secondi = () => {
 
         <section className="menu-group-wrapper">
           {
-            currentWith > 1080
-              ? poissonData.map((menu, i) => {
-                return (
-                  <MenuItem
-                    key={i}
-                    menuTitle={menu.title}
-                    moreInfo={menu.moreInfo}
-                    menuDescription={menu.description}
-                    firstOverlayInfo={menu.overlay.first}
-                    secondOverlayInfo={menu.overlay.second}
-                  />)
-              })
-              : removedPoissonLastItem.map((menu, i) => {
-                return (
-                  <MenuItem
-                    key={i}
-                    menuTitle={menu.title}
-                    moreInfo={menu.moreInfo}
-                    menuDescription={menu.description}
-                    firstOverlayInfo={menu.overlay.first}
-                    secondOverlayInfo={menu.overlay.second}
-                  />)
-              })
+            poissonData.map((menu, i) => {
+              return (
+                <MenuItem
+                  key={i}
+                  menuTitle={menu.title}
+                  moreInfo={menu.moreInfo}
+                  menuDescription={menu.description}
+                  firstOverlayInfo={menu.overlay.first}
+                  secondOverlayInfo={menu.overlay.second}
+                />)
+            })
           }
         </section>
 

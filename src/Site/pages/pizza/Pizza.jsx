@@ -20,6 +20,8 @@ const Pizza = () => {
 
   const removedSpecialiLastItem = specialiData.slice(0, -1);
   const removedProvolaLastItem = provolaData.slice(0, -1);
+  const removedPizzaGlobalLastItem = pizzaGlobalData.slice(0, -1);
+
   const currentWith = UseWindowSize().width;
 
   const pizzaDuMoisData = propositionsDuMois.pizzaDuMois[0];
@@ -32,7 +34,7 @@ const Pizza = () => {
       <main className="menu-body-main-wrapper">
 
 
-        <MenuSectionHeader title="Pizza du mois" />
+        {/* <MenuSectionHeader title="Pizza du mois" />
 
         <section className="menu-group-wrapper">
           <MenuItem
@@ -42,20 +44,45 @@ const Pizza = () => {
             menuDescription={pizzaDuMoisData.description}
             isCentered
           />
-        </section>
-
-        {/* <section className="proposition-du-mois">
-          <p className="mois">{pizzaDuMoisData.mois}</p>
-          <p className="proposition">
-            {pizzaDuMoisData.description}
-          </p>
         </section> */}
 
-        <DividerOnOtherPages />
+        {/* <DividerOnOtherPages /> */}
 
         <section className="menu-group-wrapper">
           {
-            pizzaGlobalData.map((menu, i) => {
+            currentWith < 1080
+              ? removedPizzaGlobalLastItem.map((menu, i) => {
+                return (
+                  <MenuItem
+                    key={i}
+                    menuTitle={menu.title}
+                    moreInfo={menu.moreInfo}
+                    menuDescription={menu.description}
+                    firstOverlayInfo={menu.overlay.first}
+                    secondOverlayInfo={menu.overlay.second}
+                  />)
+              })
+              : pizzaGlobalData.map((menu, i) => {
+                return (
+                  <MenuItem
+                    key={i}
+                    menuTitle={menu.title}
+                    moreInfo={menu.moreInfo}
+                    menuDescription={menu.description}
+                    firstOverlayInfo={menu.overlay.first}
+                    secondOverlayInfo={menu.overlay.second}
+                  />)
+              })
+          }
+        </section>
+
+        <DividerOnOtherPages />
+
+        <MenuSectionHeader title="le provola" />
+
+        <section className="menu-group-wrapper">
+          {
+            provolaData.map((menu, i) => {
               return (
                 <MenuItem
                   key={i}
@@ -71,39 +98,7 @@ const Pizza = () => {
 
         <DividerOnOtherPages />
 
-        <MenuSectionHeader title="le provola" />
-
-        <section className="menu-group-wrapper">
-          {
-            currentWith < 1080
-              ? removedProvolaLastItem.map((menu, i) => {
-                return (
-                  <MenuItem
-                    key={i}
-                    menuTitle={menu.title}
-                    moreInfo={menu.moreInfo}
-                    menuDescription={menu.description}
-                    firstOverlayInfo={menu.overlay.first}
-                    secondOverlayInfo={menu.overlay.second}
-                  />)
-              })
-              : provolaData.map((menu, i) => {
-                return (
-                  <MenuItem
-                    key={i}
-                    menuTitle={menu.title}
-                    moreInfo={menu.moreInfo}
-                    menuDescription={menu.description}
-                    firstOverlayInfo={menu.overlay.first}
-                    secondOverlayInfo={menu.overlay.second}
-                  />)
-              })
-          }
-        </section>
-
-        <DividerOnOtherPages />
-
-        <MenuSectionHeader title="le speciali" />
+        {/* <MenuSectionHeader title="le speciali" />
 
 
         <section className="menu-group-wrapper">
@@ -132,10 +127,7 @@ const Pizza = () => {
                   />)
               })
           }
-        </section>
-
-
-        <DividerOnOtherPages />
+        </section> */}
 
         <MenuSectionHeader title="suppléments" />
 
