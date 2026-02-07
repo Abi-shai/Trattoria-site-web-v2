@@ -43,7 +43,7 @@ const ListNavOption = ({ navContent, showDivider, navLink }) => {
 const MenuPopOver = () => {
   return (
     <div className="menu-popover">
-      <ListNavOption navLink='/carte/propositions-du-mois' navContent={'Proposition du mois'} showDivider={true} />
+      {/* <ListNavOption navLink='/carte/propositions-du-mois' navContent={'Proposition du mois'} showDivider={true} /> */}
       <ListNavOption navLink='/carte/cicchetti' navContent={'Cicchetti'} />
       <ListNavOption navLink='/carte/antipasti' navContent={'Antipasti'} />
       <ListNavOption navLink='/carte/primi' navContent={'Primi'} />
@@ -234,7 +234,7 @@ const Header = () => {
             >
               Pizza
             </NavLink></li>
-          <li className="special-link" onClick={setterCartOpened} style={CartOpened === 'open' ? { height: '492px', padding: '0.5em' } : { height: '36px' }}>
+          <li className="special-link" onClick={setterCartOpened} style={CartOpened === 'open' ? { height: '450px', padding: '0.5em' } : { height: '36px' }}>
 
             <div className="wrapper-1">
               <a
@@ -260,7 +260,7 @@ const Header = () => {
               CartOpened === 'open'
                 ? <div className="wrapper-2">
                   <ul>
-                    <li>
+                    {/* <li>
                       <NavLink
                         to="/carte/propositions-du-mois"
                         end
@@ -270,7 +270,7 @@ const Header = () => {
                       >
                         Propositions du mois
                       </NavLink>
-                    </li>
+                    </li> */}
                     <div className="divider"></div>
                     <li>
                       <NavLink

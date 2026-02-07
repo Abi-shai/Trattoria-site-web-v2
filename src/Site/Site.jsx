@@ -56,8 +56,8 @@ const PageLayout = () => {
 
         <Route path="/carte" element={<Outlet />}>
           {/* Redirige de "/carte" vers la première sous-page par défaut */}
-          <Route index element={<Navigate to="/carte/propositions-du-mois" replace />} />
-          <Route path="propositions-du-mois" element={<PropositionDuMois />} />
+          <Route index element={<Navigate to="/carte/cicchetti" replace />} />
+          {/* <Route path="propositions-du-mois" element={<PropositionDuMois />} /> */}
           <Route path="cicchetti" element={<Ciccheti />} />
           <Route path="antipasti" element={<Antipasti />} />
           <Route path="primi" element={<Primi />} />
