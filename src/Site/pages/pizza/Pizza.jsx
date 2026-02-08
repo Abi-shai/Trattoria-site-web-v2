@@ -31,7 +31,7 @@ const Pizza = () => {
       <PageHeader img={PizzaImage} title='PIZZA' />
       <main className="menu-body-main-wrapper">
 
-
+        {/* 
         <MenuSectionHeader title="Pizza du mois" />
 
         <section className="menu-group-wrapper">
@@ -42,16 +42,7 @@ const Pizza = () => {
             menuDescription={pizzaDuMoisData.description}
             isCentered
           />
-        </section>
-
-        {/* <section className="proposition-du-mois">
-          <p className="mois">{pizzaDuMoisData.mois}</p>
-          <p className="proposition">
-            {pizzaDuMoisData.description}
-          </p>
         </section> */}
-
-        <DividerOnOtherPages />
 
         <section className="menu-group-wrapper">
           {

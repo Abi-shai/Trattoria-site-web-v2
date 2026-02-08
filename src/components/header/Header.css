@@ -171,7 +171,7 @@
           &:hover {
             .menu-popover {
               position: absolute;
-              height: 532px;
+              height: 474px;
               overflow: hidden;
 
               border: 1px solid var(--gray-color-90);
