@@ -11,7 +11,7 @@ import Header from "../components/header/Header";
 import UtilityBar from "../components/utilityBar/UtilityBar";
 import AnnoncementBar from "../components/annoncementBar/AnnoncementBar";
 import Footer from '../components/footer/Footer';
-import EventModal from '../components/eventModal/eventModal';
+// import EventModal from '../components/eventModal/eventModal';
 
 import Home from "./pages/home/Home";
 import Restaurant from "./pages/restaurant/Restaurant";
@@ -49,7 +49,7 @@ const PageLayout = () => {
         <UtilityBar />
         <Header />
       </div>
-      <EventModal />
+      {/* <EventModal /> */}
       <Routes>
 
         <Route path="/" element={<Home />} />

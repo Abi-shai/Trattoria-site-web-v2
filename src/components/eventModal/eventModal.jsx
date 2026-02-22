@@ -9,7 +9,7 @@ import EventImage from '../../assets/images/current-event.jpeg';
 import './eventModal.css';
 
 
-const CURRENT_EVENT_ID = 'carte-2026-test';
+const CURRENT_EVENT_ID = 'carte-2dq026-test';
 const DISPLAY_DELAY = 3000;
 
 const EventModal = () => {
