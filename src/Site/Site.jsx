@@ -9,6 +9,7 @@ import { RemoveScroll } from "react-remove-scroll";
 
 import Header from "../components/header/Header";
 import UtilityBar from "../components/utilityBar/UtilityBar";
+import AnnoncementBar from "../components/annoncementBar/AnnoncementBar";
 import Footer from '../components/footer/Footer';
 import EventModal from '../components/eventModal/eventModal';
 
@@ -44,6 +45,7 @@ const PageLayout = () => {
       <ScrollToTop />
       {/* On applique la clé sur le conteneur des barres de navigation */}
       <div className="top-bars" key={location.pathname}>
+        <AnnoncementBar />
         <UtilityBar />
         <Header />
       </div>
@@ -81,6 +83,8 @@ const Site = () => {
   const [state, setState] = useState('closed');
   const [eventModalState, setEventModalState] = useState(false);
 
+  const [isBannerOpen, setIsBannerOpen] = useState(true);
+
   const toggleState = () => {
     return setState(currentState => (currentState === 'opened' ? 'closed' : 'opened'));
   };
@@ -93,20 +97,26 @@ const Site = () => {
     setEventModalState(false);
   }
 
+  const closeBanner = () => {
+    setIsBannerOpen(false);
+  }
+
   const contextValue = {
     state: state,
     toggleState: toggleState,
     eventModal: eventModalState,
     openEventModal: openEventModal,
-    closeEventModal: closeEventModal
+    closeEventModal: closeEventModal,
+    isBannerOpen: isBannerOpen,
+    closeBanner: closeBanner
   };
 
   return (
     <FullScreenStateContext.Provider value={contextValue} >
       <BrowserRouter>
-        {/* <RemoveScroll enabled={eventModalState}>
+        <RemoveScroll enabled={eventModalState}>
           <EventModal />
-        </RemoveScroll> */}
+        </RemoveScroll>
         <PageLayout />
       </BrowserRouter>
     </FullScreenStateContext.Provider>

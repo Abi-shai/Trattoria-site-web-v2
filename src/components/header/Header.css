@@ -171,7 +171,7 @@
           &:hover {
             .menu-popover {
               position: absolute;
-              height: 476px;
+              height: 420px;
               overflow: hidden;
 
               border: 1px solid var(--gray-color-90);
@@ -302,6 +302,19 @@
 
 }
 
+/* Une classe qu'on ajoutera pour cacher la barre */
+.site-header.hidden-and-banner-open {
+  transform: translateY(-143.19px);
+  /* On la déplace vers le haut de sa propre hauteur pour la cacher */
+}
+
+@media (max-width: 1080px) {
+  .site-header.hidden-and-banner-open {
+    transform: translateY(-119.19px);
+  }
+}
+
+
 .site-header.hidden {
   transform: translateY(-72px);
 }
@@ -311,7 +324,6 @@
     transform: translateY(-56px);
   }
 }
-
 
 
 /* Active, routing */

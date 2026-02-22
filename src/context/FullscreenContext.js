@@ -5,7 +5,9 @@ const FullScreenStateContext = createContext({
   toggleState: () => { },
   eventModal: false,
   openEventModal: () => { },
-  closeEventModal: () => { }
+  closeEventModal: () => { },
+  isBannerOpen: true,
+  closeBanner: () => { }
 });
 
 

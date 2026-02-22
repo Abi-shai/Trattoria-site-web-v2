@@ -41,6 +41,18 @@
   }
 }
 
+/* Une classe qu'on ajoutera pour cacher la barre */
+.utility-wrapper.hidden-and-banner-open {
+  transform: translateY(-143.19px);
+  /* On la déplace vers le haut de sa propre hauteur pour la cacher */
+}
+
+@media (max-width: 1080px) {
+  .utility-wrapper.hidden-and-banner-open {
+    transform: translateY(-119.19px);
+  }
+}
+
 
 /* Une classe qu'on ajoutera pour cacher la barre */
 .utility-wrapper.hidden {

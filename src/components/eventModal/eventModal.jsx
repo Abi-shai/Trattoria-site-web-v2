@@ -9,7 +9,7 @@ import EventImage from '../../assets/images/current-event.jpeg';
 import './eventModal.css';
 
 
-const CURRENT_EVENT_ID = 'event-propositions-janvier-2026';
+const CURRENT_EVENT_ID = 'carte-2026-test';
 const DISPLAY_DELAY = 3000;
 
 const EventModal = () => {
@@ -67,17 +67,17 @@ const EventModal = () => {
                   {/* Commented out the data because of the current event nature */}
                   {/* <p className="body1 day">Mercredi 12 Novembre</p> */}
                   <div className="event-divider"></div>
-                  <h3>Nouvelles propositions du mois</h3>
-                  <p className="body1 infos-of-the-event">Il y’a des nouveautés à la Trattoria Da Alex en ce moment....découvrez les nouvelles propositions du mois !</p>
+                  <h3>La Carte 2026 est disponible !</h3>
+                  <p className="body1 infos-of-the-event">Notre nouvelle sélection est enfin disponible. Des ingrédients frais, des recettes authentiques et beaucoup de passion : découvrez notre nouvelle carte dès maintenant.</p>
                 </div>
 
-                <div className="event-cta-wrapper">
+                {/* <div className="event-cta-wrapper">
                   <ButtonNavLink
                     link="/carte/propositions-du-mois"
                     content="Découvrir les propositions"
                     onClick={handleClose}
                   />
-                </div>
+                </div> */}
 
               </div>
             </div>

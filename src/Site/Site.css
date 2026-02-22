@@ -311,7 +311,7 @@ body {
   right: 0;
   left: 0;
   z-index: 16;
-  height: auto;
+  height: max-content;
 }
 
 /* le style de la partie main de toutes les pages de la carte */
