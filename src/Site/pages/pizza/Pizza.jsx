@@ -51,7 +51,7 @@ const Pizza = () => {
         <section className="menu-group-wrapper">
           {
             currentWith < 1080
-              ? removedPizzaGlobalLastItem.map((menu, i) => {
+              ? pizzaGlobalData.map((menu, i) => {
                 return (
                   <MenuItem
                     key={i}

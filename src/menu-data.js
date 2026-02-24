@@ -1097,275 +1097,273 @@ export const bulleData = [
   }
 ];
 
-export const pizzaGlobalData = [
-  {
-    title: "Napoli",
-    description: "(Sauce tomate, mozzarella, câpres, anchois)",
-    overlay: {
-      first: null,
-      second: null
-    }
-  },
-  {
-    title: "Vegetariana",
-    description: "(Tomates fraîches, mozzarella, courgettes, aubergines, poivrons)",
-    overlay: {
-      first: null,
-      second: null
-    }
-  },
-  {
-    title: "Parmigiana",
-    description: "(Sauce tomate, mozzarella, aubergines, grana padano)",
-    overlay: {
-      first: null,
-      second: null
-    }
-  },
-  {
-    title: "Tonno",
-    description: "(Sauce tomate, mozzarella, thon, oignons)",
-    overlay: {
-      first: null,
-      second: null
-    }
-  },
-  {
-    title: "Prosciutto",
-    moreInfo: "*",
-    description: "(Sauce tomate, mozzarella, jambon blanc)",
-    overlay: {
-      first: "Possibilité halal",
-      second: null
-    }
-  },
-  {
-    title: "Bianca",
-    description: "(Crème fraîche, mozzarella, fromage de chèvre, miel)",
-    overlay: {
-      first: null,
-      second: null
-    }
-  },
-  {
-    title: "Carbonara",
-    moreInfo: "*",
-    description: "(Crème fraîche, mozzarella, lardons fumés, pecorino, œuf)",
-    overlay: {
-      first: "Possibilité halal",
-      second: null
-    }
-  },
-  {
-    title: "Italia",
-    description: "(Crème fraîche, mozzarellas cerises, épinards, tomates cerises)",
-    overlay: {
-      first: null,
-      second: null
-    }
-  },
-  {
-    title: "Mediterranea",
-    moreInfo: "*",
-    description: "(Sauce tomate, mozzarella, saucisson sec, poivrons, olives)",
-    overlay: {
-      first: "Possibilité halal",
-      second: null
-    }
-  },
-  {
-    title: "Capricciosa",
-    moreInfo: "*",
-    description: "(Sauce tomate, mozzarella, jambon blanc, champignons de Paris frais**, olives, artichauts)",
-    overlay: {
-      first: "Possibilité halal",
-      second: "Disponible en stock selon arrivage"
-    }
-  },
-  {
-    title: "Orientale",
-    moreInfo: "*",
-    description: "(Sauce tomate, mozzarella, saucisse, poivrons)",
-    overlay: {
-      first: "Possibilité halal",
-      second: null
-    }
-  },
-  {
-    title: "Calzone napoletano",
-    moreInfo: "*",
-    description: "(Mozzarella, ricotta, saucisson sec)",
-    overlay: {
-      first: "Possibilité halal",
-      second: null
-    }
-  },
-  {
-    title: "Frutti di mare",
-    description: "(Sauce tomate, mozzarella, calamars, crevettes, moules)",
-    overlay: {
-      first: null,
-      second: null
-    }
-  },
-  {
-    title: "Chef Aziz by COWAF",
-    moreInfo: "*",
-    description: "(Sauce tomate, mozzarella, saucisse, oignons, œuf, piment frais)",
-    overlay: {
-      first: "Possibilité halal",
-      second: null
-    }
-  },
-  {
-    title: "Formaggi",
-    description: "(Sauce tomate, mozzarella, gorgonzola, provola fumée, brie)",
-    overlay: {
-      first: null,
-      second: null
-    }
-  },
-  {
-    title: "Prosciutto e funghi",
-    moreInfo: "*",
-    description: "(Sauce tomate, mozzarella, jambon blanc, champignons de Paris frais**)",
-    overlay: {
-      first: "Possibilité halal",
-      second: "Disponible en stock selon arrivage"
-    }
-  },
-  {
-    title: "Rustica",
-    moreInfo: "*",
-    description: "(Sauce tomate, mozzarella, lardons fumés, cèpes)",
-    overlay: {
-      first: "Possibilité halal",
-      second: null
-    }
-  },
-  {
-    title: "Funghi",
-    description: "(Sauce tomate, mozzarella, cèpes, champignons de Paris frais**)",
-    overlay: {
-      first: null,
-      second: "Disponible en stock selon arrivage"
-    }
-  },
-  {
-    title: "Verderosa",
-    description: "(Crème de courgettes, mozzarella, courgettes grillées, saumon fumé)",
-    overlay: {
-      first: null,
-      second: null
-    }
-  },
-  {
-    title: "Deliziosa",
-    description: "(Crème fraîche, mozzarella, saumon fumé)",
-    overlay: {
-      first: null,
-      second: null
-    }
-  },
-  {
-    title: "Axel",
-    moreInfo: "*",
-    description: "(Sauce tomate, mozzarella, saucisson sec, gorgonzola, crème de noix)",
-    overlay: {
-      first: "Possibilité halal",
-      second: null
-    }
-  },
-  {
-    title: "Speck e brie",
-    description: "(Sauce tomate, mozzarella, speck, brie)",
-    overlay: {
-      first: null,
-      second: null
-    }
-  },
-  {
-    title: "Campagnola",
-    moreInfo: "*",
-    description: "(Sauce tomate, mozzarella, champignons de Paris frais**, gorgonzola, jambon blanc)",
-    overlay: {
-      first: "Possibilité halal",
-      second: null
-    }
-  },
-  {
-    title: "Colorado",
-    description: "(Sauce tomate, mozzarella, mascarpone, speck, noix, roquette**)",
-    overlay: {
-      first: null,
-      second: "Disponible en stock selon arrivage"
-    }
-  },
-  {
-    title: "Colorado al salmone",
-    description: "(Sauce tomate, mozzarella, mascarpone, saumon fumé, noix, roquette**)",
-    overlay: {
-      first: null,
-      second: "Disponible en stock selon arrivage"
-    }
-  },
-  {
-    title: "Carciofi e mare",
-    description: "(Crème d'artichauts, mozzarella, gambas, artichauts)",
-    overlay: {
-      first: null,
-      second: null
-    }
-  },
-  {
-    title: "Speck et noci",
-    description: "(Crème fraîche, mozzarella, gorgonzola, speck, noix)",
-    overlay: {
-      first: null,
-      second: null
-    }
-  },
-  {
-    title: "Trattoria",
-    description: "(Sauce tomate, gorgonzola, grana padano, pecorino, jambon cru, noix, roquette**)",
-    overlay: {
-      first: null,
-      second: "Disponible en stock selon arrivage"
-    }
-  },
-  {
-    title: "Burratona",
-    description: "(Sauce tomate, burrata, tomates séchées, crème de truffe)",
-    overlay: {
-      first: null,
-      second: null
-    }
-  },
-  {
-    title: "Alex",
-    description: "(Tomates fraîches, burrata, jambon cru, roquette**)",
-    overlay: {
-      first: null,
-      second: "Disponible en stock selon arrivage"
-    }
-  },
-  {
-    title: "Alex bresaola",
-    description: "(Tomates fraîches, burrata, bresaola, roquette**)",
-    overlay: {
-      first: null,
-      second: "Disponible en stock selon arrivage"
-    }
-  },
-  {
-    title: "",
-    moreInfo: "",
-    description: "",
-    overlay: {
-      first: "",
-      second: ""
-    }
-  },
+export const pizzaGlobalData = [{
+  title: "Margherita",
+  description: "(Sauce tomate, mozzarella)",
+  overlay: {
+    first: null,
+    second: null
+  }
+},
+{
+  title: "Napoli",
+  description: "(Sauce tomate, mozzarella, câpres, anchois)",
+  overlay: {
+    first: null,
+    second: null
+  }
+},
+{
+  title: "Vegetariana",
+  description: "(Tomates fraîches, mozzarella, courgettes, aubergines, poivrons)",
+  overlay: {
+    first: null,
+    second: null
+  }
+},
+{
+  title: "Parmigiana",
+  description: "(Sauce tomate, mozzarella, aubergines, grana padano)",
+  overlay: {
+    first: null,
+    second: null
+  }
+},
+{
+  title: "Tonno",
+  description: "(Sauce tomate, mozzarella, thon, oignons)",
+  overlay: {
+    first: null,
+    second: null
+  }
+},
+{
+  title: "Prosciutto",
+  moreInfo: "*",
+  description: "(Sauce tomate, mozzarella, jambon blanc)",
+  overlay: {
+    first: "Possibilité halal",
+    second: null
+  }
+},
+{
+  title: "Bianca",
+  description: "(Crème fraîche, mozzarella, fromage de chèvre, miel)",
+  overlay: {
+    first: null,
+    second: null
+  }
+},
+{
+  title: "Carbonara",
+  moreInfo: "*",
+  description: "(Crème fraîche, mozzarella, lardons fumés, pecorino, œuf)",
+  overlay: {
+    first: "Possibilité halal",
+    second: null
+  }
+},
+{
+  title: "Italia",
+  description: "(Crème fraîche, mozzarellas cerises, épinards, tomates cerises)",
+  overlay: {
+    first: null,
+    second: null
+  }
+},
+{
+  title: "Mediterranea",
+  moreInfo: "*",
+  description: "(Sauce tomate, mozzarella, saucisson sec, poivrons, olives)",
+  overlay: {
+    first: "Possibilité halal",
+    second: null
+  }
+},
+{
+  title: "Capricciosa",
+  moreInfo: "*",
+  description: "(Sauce tomate, mozzarella, jambon blanc, champignons de Paris frais**, olives, artichauts)",
+  overlay: {
+    first: "Possibilité halal",
+    second: "Disponible en stock selon arrivage"
+  }
+},
+{
+  title: "Orientale",
+  moreInfo: "*",
+  description: "(Sauce tomate, mozzarella, saucisse, poivrons)",
+  overlay: {
+    first: "Possibilité halal",
+    second: null
+  }
+},
+{
+  title: "Calzone napoletano",
+  moreInfo: "*",
+  description: "(Mozzarella, ricotta, saucisson sec)",
+  overlay: {
+    first: "Possibilité halal",
+    second: null
+  }
+},
+{
+  title: "Frutti di mare",
+  description: "(Sauce tomate, mozzarella, calamars, crevettes, moules)",
+  overlay: {
+    first: null,
+    second: null
+  }
+},
+{
+  title: "Chef Aziz by COWAF",
+  moreInfo: "*",
+  description: "(Sauce tomate, mozzarella, saucisse, oignons, œuf, piment frais)",
+  overlay: {
+    first: "Possibilité halal",
+    second: null
+  }
+},
+{
+  title: "Formaggi",
+  description: "(Sauce tomate, mozzarella, gorgonzola, provola fumée, brie)",
+  overlay: {
+    first: null,
+    second: null
+  }
+},
+{
+  title: "Prosciutto e funghi",
+  moreInfo: "*",
+  description: "(Sauce tomate, mozzarella, jambon blanc, champignons de Paris frais**)",
+  overlay: {
+    first: "Possibilité halal",
+    second: "Disponible en stock selon arrivage"
+  }
+},
+{
+  title: "Rustica",
+  moreInfo: "*",
+  description: "(Sauce tomate, mozzarella, lardons fumés, cèpes)",
+  overlay: {
+    first: "Possibilité halal",
+    second: null
+  }
+},
+{
+  title: "Funghi",
+  description: "(Sauce tomate, mozzarella, cèpes, champignons de Paris frais**)",
+  overlay: {
+    first: null,
+    second: "Disponible en stock selon arrivage"
+  }
+},
+{
+  title: "Verderosa",
+  description: "(Crème de courgettes, mozzarella, courgettes grillées, saumon fumé)",
+  overlay: {
+    first: null,
+    second: null
+  }
+},
+{
+  title: "Deliziosa",
+  description: "(Crème fraîche, mozzarella, saumon fumé)",
+  overlay: {
+    first: null,
+    second: null
+  }
+},
+{
+  title: "Axel",
+  moreInfo: "*",
+  description: "(Sauce tomate, mozzarella, saucisson sec, gorgonzola, crème de noix)",
+  overlay: {
+    first: "Possibilité halal",
+    second: null
+  }
+},
+{
+  title: "Speck e brie",
+  description: "(Sauce tomate, mozzarella, speck, brie)",
+  overlay: {
+    first: null,
+    second: null
+  }
+},
+{
+  title: "Campagnola",
+  moreInfo: "*",
+  description: "(Sauce tomate, mozzarella, champignons de Paris frais**, gorgonzola, jambon blanc)",
+  overlay: {
+    first: "Possibilité halal",
+    second: null
+  }
+},
+{
+  title: "Colorado",
+  description: "(Sauce tomate, mozzarella, mascarpone, speck, noix, roquette**)",
+  overlay: {
+    first: null,
+    second: "Disponible en stock selon arrivage"
+  }
+},
+{
+  title: "Colorado al salmone",
+  description: "(Sauce tomate, mozzarella, mascarpone, saumon fumé, noix, roquette**)",
+  overlay: {
+    first: null,
+    second: "Disponible en stock selon arrivage"
+  }
+},
+{
+  title: "Carciofi e mare",
+  description: "(Crème d'artichauts, mozzarella, gambas, artichauts)",
+  overlay: {
+    first: null,
+    second: null
+  }
+},
+{
+  title: "Speck et noci",
+  description: "(Crème fraîche, mozzarella, gorgonzola, speck, noix)",
+  overlay: {
+    first: null,
+    second: null
+  }
+},
+{
+  title: "Trattoria",
+  description: "(Sauce tomate, gorgonzola, grana padano, pecorino, jambon cru, noix, roquette**)",
+  overlay: {
+    first: null,
+    second: "Disponible en stock selon arrivage"
+  }
+},
+{
+  title: "Burratona",
+  description: "(Sauce tomate, burrata, tomates séchées, crème de truffe)",
+  overlay: {
+    first: null,
+    second: null
+  }
+},
+{
+  title: "Alex",
+  description: "(Tomates fraîches, burrata, jambon cru, roquette**)",
+  overlay: {
+    first: null,
+    second: "Disponible en stock selon arrivage"
+  }
+},
+{
+  title: "Alex bresaola",
+  description: "(Tomates fraîches, burrata, bresaola, roquette**)",
+  overlay: {
+    first: null,
+    second: "Disponible en stock selon arrivage"
+  }
+}
 ];
 
 
