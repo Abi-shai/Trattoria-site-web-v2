@@ -1490,40 +1490,40 @@ export const propositionsDuMois = {
   propositionsDuChef: [
     {
       title: "Entrée",
-      description: "Cheescake au saumon"
+      description: "Avocat et crevettes en sauce cocktail"
     },
     {
       title: "Plat",
-      description: "Rouleaux de saumon et courgettes"
+      description: "Gnocchi à la provola et champignons de Paris frais"
     },
     {
       title: "Dessert",
-      description: "Affogato aux spéculoos"
+      description: "Fraisier"
     },
     {
       title: "",
       description: ""
     }
   ],
-  cocktailDuJeudi: [
-    {
-      title: "Cocktail du jeudi",
-      ingredients: "Kiwi, Concombre, Ananas, Citron, Soda ou Gin",
-      promoDetails: "PROMO — 2 Cocktails achetés = 1 assiette de TAPAS OFFERTE !",
-    }
-  ],
+  // cocktailDuJeudi: [
+  //   {
+  //     title: "Cocktail du jeudi",
+  //     ingredients: "Kiwi, Concombre, Ananas, Citron, Soda ou Gin",
+  //     promoDetails: "PROMO — 2 Cocktails achetés = 1 assiette de TAPAS OFFERTE !",
+  //   }
+  // ],
   pizzaDuMois: [
     {
-      mois: "Janvier",
-      title: "Pizza du mois",
-      moreInfo: "*",
-      description: "Provola, champignons frais de Paris*, porchetta",
-      moreInfos: {
-        notes: [
-          "Disponible en stock selon arrivage",
-          "*Disponible en stock selon arrivage",
-        ]
-      }
+      mois: "Mars",
+      title: "Oro e fuoco",
+      // moreInfo: "*",
+      description: "Provola, ananas, speck, miel, piment, roquette",
+      // moreInfos: {
+      //   notes: [
+      //     "Disponible en stock selon arrivage",
+      //     "*Disponible en stock selon arrivage",
+      //   ]
+      // }
     }
   ]
 };

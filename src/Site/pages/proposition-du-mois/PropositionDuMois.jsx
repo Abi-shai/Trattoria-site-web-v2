@@ -18,9 +18,8 @@ const PropositionDuMois = () => {
   const currentWith = UseWindowSize().width;
 
   const propositionDuChefData = propositionsDuMois.propositionsDuChef;
-  const cocktailDuJeudiData = propositionsDuMois.cocktailDuJeudi[0];
+  // const cocktailDuJeudiData = propositionsDuMois.cocktailDuJeudi[0];
   const pizzaDuMoisData = propositionsDuMois.pizzaDuMois[0];
-  console.log(cocktailDuJeudiData);
 
   const removedPropositionDuChefLastItem = propositionDuChefData.slice(0, -1);
 
@@ -31,7 +30,7 @@ const PropositionDuMois = () => {
 
   return (
     <>
-      <PageHeader img={PropositionsDuMoisImage} title="Propositions du mois" description="Janvier" />
+      <PageHeader img={PropositionsDuMoisImage} title="Propositions du mois" description="Mars" />
       <main className="menu-body-main-wrapper">
 
         <MenuSectionHeader title="Propositions du chef" />
@@ -67,7 +66,7 @@ const PropositionDuMois = () => {
 
         <DividerOnOtherPages />
 
-        <section className="proposition-du-mois">
+        {/* <section className="proposition-du-mois">
           <MenuItem
             menuTitle={cocktailDuJeudiData.title}
             menuDescription={cocktailDuJeudiData.ingredients}
@@ -77,25 +76,27 @@ const PropositionDuMois = () => {
           <div className="promo-banner">
             <p>{cocktailDuJeudiData.promoDetails}</p>
           </div>
-        </section>
+        </section> */}
 
-        <DividerOnOtherPages />
+        {/* <DividerOnOtherPages /> */}
+
+        <MenuSectionHeader title="Pizza du mois" />
 
         <section className="menu-group-wrapper">
           <MenuItem
             menuTitle={pizzaDuMoisData.title}
             moreInfo={pizzaDuMoisData.moreInfo}
-            firstOverlayInfo={pizzaDuMoisData.moreInfos.notes[0]}
+            // firstOverlayInfo={pizzaDuMoisData.moreInfos.notes[0]}
             menuDescription={pizzaDuMoisData.description}
             isCentered
           />
         </section>
 
-        <DividerOnOtherPages />
-
+        {/* <DividerOnOtherPages /> */}
+        {/* 
         <div className="menu-more-infos-wrapper">
           <p>{pizzaDuMoisData.moreInfos.notes[1]}</p>
-        </div>
+        </div> */}
 
       </main>
     </>

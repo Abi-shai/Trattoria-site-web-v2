@@ -18,6 +18,7 @@ const Footer = () => {
       label: 'La carte',
       links: [
         { title: 'Pizza', route: '/pizza' },
+        { title: 'Propositions du mois', route: '/carte/propositions-du-mois' },
         { title: 'Cicchetti', route: '/carte/cicchetti' },
         { title: 'Antipasti', route: '/carte/antipasti' },
         { title: 'Primi', route: '/carte/primi' },
