@@ -22,6 +22,7 @@
       font-weight: 600;
       line-height: normal;
       font-variant: normal;
+      color: var(--primary-color-10);
 
 
       @media (max-width: 1080px) {
