@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import PageHeader from "../../../components/pageHeader/PageHeader";
 import MenuItem from "../../../components/MenuItem/MenuItem";
 import { DividerOnOtherPages } from "../../../components/divider/Divider";
+import MenuSectionHeader from "../../../components/menuSectionHeader/MenuSectionHeader";
 
 import { cocktailsData, cocktailsMoreInfos } from "../../../menu-data";
 
@@ -38,6 +39,8 @@ const Cocktails = () => {
         </section>
 
         <DividerOnOtherPages />
+
+        <MenuSectionHeader title="Coulis au choix" />
 
 
         <div className="menu-more-infos-wrapper">

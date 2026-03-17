@@ -39,7 +39,7 @@ const Primi = () => {
         </section>
         <DividerOnOtherPages />
 
-        <MenuSectionHeader title="PASTA SECCA**" description="Pâtes sèches" />
+        <MenuSectionHeader title="PASTA SECCA" isPastaFrescaLike=" (option sans gluten)" description="Pâtes sèches" />
 
         <section className="menu-group-wrapper">
           {

@@ -5,6 +5,7 @@ import UseWindowSize from "../../../utility/useWindowSize";
 import PageHeader from "../../../components/pageHeader/PageHeader";
 import MenuItem from "../../../components/MenuItem/MenuItem";
 import { DividerOnOtherPages } from "../../../components/divider/Divider";
+import MenuSectionHeader from "../../../components/menuSectionHeader/MenuSectionHeader";
 
 import { dessertsData, dessertsMoreInfos } from "../../../menu-data";
 
@@ -55,6 +56,8 @@ const Desserts = () => {
         </section>
 
         <DividerOnOtherPages />
+
+        <MenuSectionHeader title="Coulis au choix" />
 
 
         <div className="menu-more-infos-wrapper">

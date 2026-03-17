@@ -34,7 +34,7 @@ const Pizza = () => {
       <main className="menu-body-main-wrapper">
 
 
-        <MenuSectionHeader title="Pizza du mois" />
+        <MenuSectionHeader title="PIZZA DU MOIS" />
 
         <section className="menu-group-wrapper">
           <MenuItem

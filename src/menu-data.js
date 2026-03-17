@@ -25,7 +25,7 @@ export const antipastiData = [
   },
   {
     title: "Insalata Campagnola",
-    moreInfo: "**",
+    // moreInfo: "**",
     description: `(Salade, tomates cerises, carottes, poulet, grana padano, champignons de Paris frais**, noix, vinaigrette au romarin frais)`,
     overlay: {
       first: null,
@@ -82,7 +82,7 @@ export const antipastiData = [
   },
   {
     title: "Carpaccio di polipo",
-    moreInfo: "**",
+    // moreInfo: "**",
     description: "(Fines tranches de poulpe, tomates cerises, roquette**, citronette)",
     overlay: {
       second: "Disponible en stock selon arrivage"
@@ -114,41 +114,7 @@ export const antipastiData = [
   },
   {
     title: "Bufala e bresaola",
-    moreInfo: "**",
-    description: "(Mozzarella de bufflonne, bresaola, tomates cerises, roquette**)",
-    overlay: {
-      first: null,
-      second: "Disponible en stock selon arrivage"
-    }
-  },
-  {
-    title: "Carpaccio di corifena",
-    description: "(Fines tranches de dorade coryphène et citronette)",
-    overlay: {
-      first: null,
-      second: null
-    }
-  },
-  {
-    title: "Insalata Croccante",
-    moreInfo: "*",
-    description: "(Salade, carottes, jambon blanc, grana padano, persil, croutons de pain)",
-    overlay: {
-      first: "Possibilité halal",
-      second: null
-    }
-  },
-  {
-    title: "Insalata Estiva",
-    description: "(Salade, carottes râpées, tomates, thon, mozzarellas cerises, olives)",
-    overlay: {
-      first: null,
-      second: null
-    }
-  },
-  {
-    title: "Bufala e bresaola",
-    moreInfo: "**",
+    // moreInfo: "**",
     description: "(Mozzarella de bufflonne, bresaola, tomates cerises, roquette**)",
     overlay: {
       first: null,
@@ -264,7 +230,7 @@ export const cicchettiData = [
   },
   {
     title: "Bruschetta funghi",
-    moreInfo: "*",
+    // moreInfo: "*",
     description: "(Pain grillé, stracciatella, mélange forestier de champignons, roquette*)",
     overlay: {
       first: "Disponible en stock selon arrivage",
@@ -292,7 +258,7 @@ export const cicchettiMoreInfos = {
 export const risottiData = [
   {
     title: "Frutti di mare",
-    description: "(Tomates, calamars, crevettes, moules, pinces de crabe)",
+    description: "(Tomates cerises, calamars, crevettes, moules, pinces de crabe)",
     overlay: {
       first: null,
       second: null
@@ -316,11 +282,12 @@ export const risottiData = [
     }
   },
   {
-    title: "Asparagi, speck e pecorino",
-    description: "(Asperges, speck, pecorino)",
+    title: "Diavola del bosco",
+    moreInfo: "*",
+    description: "(Soppressata calabra**, champignons de Paris frais**, piment de Cayenne)",
     overlay: {
-      first: null,
-      second: null
+      first: "Possibilité halal",
+      second: "Disponible en stock selon arrivage"
     }
   },
 ];
@@ -494,11 +461,11 @@ export const pastaFrescaData = [
   },
   {
     title: "Ravioli gran bosco",
-    moreInfo: "*",
-    description: "(Gratin de ravioli, farce de bœuf et champignons forestiers, sauce au brie et champignons de Paris frais*)",
+    // moreInfo: "*",
+    description: "(Gratin de ravioli, farce de bœuf et champignons forestiers, sauce au brie et champignons de Paris frais**)",
     overlay: {
-      first: "Possibilité halal",
-      second: null
+      first: null,
+      second: "Disponible en stock selon arrivage"
     }
   },
   {
@@ -547,11 +514,11 @@ export const viandeData = [
   },
   {
     title: "Filetto di manzo alla griglia",
-    moreInfo: "*",
+    moreInfo: "**",
     description: "(Filet de bœuf grillé)",
     overlay: {
-      first: "Possibilité halal",
-      second: null
+      first: null,
+      second: "Provenance du Brésil"
     }
   },
   {
@@ -630,7 +597,7 @@ export const secondiMoreInfos = {
     "Riz", "Spaghettis", "Polenta", "Pommes sautées", "Pommes vapeur", "Frites", "Légumes sautés", "Légumes grillés", "Épinards", "Haricots verts (selon arrivage)"
   ],
   sauces: [
-    "Poivre", "Pleurotes grises et cèpes (Funghi orecchiette e porcini)", "Gorgonzola et poivre rose"
+    "Poivre", "Gorgonzola et poivre rose", "Champignons de Paris (selon arrivage) et cèpes"
   ],
   notes: [
     "* Possibilité halal", "** Provenance du Brésil"
@@ -651,13 +618,13 @@ export const dessertsData = [
     title: "Pannacotta",
     description: "(Flan à la crème fraîche, coulis au choix*)",
     overlay: {
-      first: "Fruits de la passion, fraise, ananas, pêche, mangue, coco, pomme verte, myrtille, kiwi, Caramel, Chocolat.",
+      first: "Fruits de la passion, Fraise, Ananas, Pêche, Mangue, Coco, Pomme verte, Myrtille, Kiwi, Caramel, Chocolat",
       second: null
     }
   },
   {
-    title: "Pizza au Nutella",
-    description: "(Pizza au Nutella)",
+    title: "Pizza Nutella",
+    description: "(Pizza Nutella)",
     overlay: {
       first: null,
       second: null
@@ -699,7 +666,7 @@ export const dessertsData = [
     title: "Fior di Philadelphia",
     description: "(Crème au Philadelphia sur une base croquante, coulis au choix*)",
     overlay: {
-      first: "Fruits de la passion, fraise, ananas, pêche, mangue, coco, pomme verte, myrtille, kiwi, Caramel, Chocolat.",
+      first: "Fruits de la passion, Fraise, Ananas, Pêche, Mangue, Coco, Pomme verte, Myrtille, Kiwi, Caramel, Chocolat",
       second: null
     }
   },
@@ -724,7 +691,7 @@ export const dessertsData = [
 
 export const dessertsMoreInfos = {
   notes: [
-    "* Fruits de la passion", "fraise", "ananas", "pêche", "mangue", "coco", "pomme verte", "Myrtille", "Kiwi", "Caramel", "Chocolat"
+    "Fruits de la passion", "Fraise", "Ananas", "Pêche", "Mangue", "Coco", "Pomme verte", "Myrtille", "Kiwi", "Caramel", "Chocolat"
   ]
 };
 
@@ -817,10 +784,10 @@ export const cocktailsData = [
   },
   {
     title: "Mojito Fruité",
-    moreInfo: "*",
+    // moreInfo: "*",
     description: "(Citron vert, menthe, sucre de canne, purée de fruits*, soda ou rhum)",
     overlay: {
-      first: "Fruits de la passion, fraise, ananas, pêche, mangue, coco, pomme verte, myrtille, kiwi.",
+      first: "Fruits de la passion, Fraise, Ananas, pêche, Mangue, Coco, Pomme verte, Myrtille, Kiwi",
       second: null
     }
   },
@@ -892,7 +859,7 @@ export const cocktailsData = [
 
 export const cocktailsMoreInfos = {
   notes: [
-    "* Fruits de la passion", "fraise", "ananas", "pêche", "mangue", "coco", "pomme verte", "Myrtille", "Kiwi"
+    "Fruits de la passion", "Fraise", "Ananas", "Pêche", "Mangue", "Coco", "Pomme verte", "Myrtille", "Kiwi"
   ]
 };
 
@@ -936,7 +903,7 @@ export const blancData = [
     }
   },
   {
-    title: "Orvieto",
+    title: "Orvieto (Umbria)",
     description: "Veneto",
     overlay: {
       first: null,
