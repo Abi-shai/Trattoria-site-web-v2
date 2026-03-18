@@ -624,7 +624,7 @@ export const dessertsData = [
   },
   {
     title: "Pizza Nutella",
-    description: "(Pizza Nutella)",
+    description: "(Pizza au Nutella)",
     overlay: {
       first: null,
       second: null

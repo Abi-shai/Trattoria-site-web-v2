@@ -19,7 +19,7 @@
       font-family: Tra1;
       font-size: 2rem;
       font-style: italic;
-      font-weight: 600;
+      font-weight: 500;
       line-height: normal;
       font-variant: normal;
       color: var(--primary-color-10);
@@ -28,7 +28,6 @@
       @media (max-width: 1080px) {
         font-size: 1.5rem;
         font-style: italic;
-        font-weight: 600;
         line-height: normal;
       }
     }
