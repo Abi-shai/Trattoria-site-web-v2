@@ -57,7 +57,7 @@ const Desserts = () => {
 
         <DividerOnOtherPages />
 
-        <MenuSectionHeader title="Coulis au choix" />
+        <MenuSectionHeader title="Coulis au choix*" />
 
 
         <div className="menu-more-infos-wrapper">
