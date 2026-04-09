@@ -38,7 +38,7 @@ const Pizza = () => {
 
         <section className="menu-group-wrapper">
           <MenuItem
-            menuTitle={pizzaDuMoisData.mois}
+            menuTitle={pizzaDuMoisData.title}
             moreInfo={pizzaDuMoisData.moreInfo}
             // firstOverlayInfo={pizzaDuMoisData.moreInfos.notes[0]}
             menuDescription={pizzaDuMoisData.description}

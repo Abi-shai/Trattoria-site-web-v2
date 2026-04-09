@@ -108,10 +108,18 @@ const MenuItem = ({ menuTitle, moreInfo, menuDescription, firstOverlayInfo, seco
 
       {
         menuDescription
-          ? <p
-            style={isCentered ? { textAlign: 'center' } : { textAlign: 'unset' }}
-            className="body1 menu-item-description">{menuDescription}
-          </p>
+          ? Array.isArray(menuDescription)
+            ? menuDescription.map((desc, i) => (
+              <p
+                key={i}
+                style={isCentered ? { textAlign: 'center' } : { textAlign: 'unset' }}
+                className="body1 menu-item-description">{desc}
+              </p>
+            ))
+            : <p
+              style={isCentered ? { textAlign: 'center' } : { textAlign: 'unset' }}
+              className="body1 menu-item-description">{menuDescription}
+            </p>
           : null
       }
 
@@ -121,7 +129,7 @@ const MenuItem = ({ menuTitle, moreInfo, menuDescription, firstOverlayInfo, seco
           : null
       }
 
-    </div >
+    </div>
   );
 };
 

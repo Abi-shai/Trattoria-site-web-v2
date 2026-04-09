@@ -30,7 +30,7 @@ const PropositionDuMois = () => {
 
   return (
     <>
-      <PageHeader img={PropositionsDuMoisImage} title="Propositions du mois" description="Mars" />
+      <PageHeader img={PropositionsDuMoisImage} title="Propositions du mois" description="Avril" />
       <main className="menu-body-main-wrapper">
 
         <MenuSectionHeader title="Propositions du chef" />

@@ -1457,15 +1457,15 @@ export const propositionsDuMois = {
   propositionsDuChef: [
     {
       title: "Entrée",
-      description: "Avocat et crevettes en sauce cocktail"
+      description: "Carpaccio de thiof au radis"
     },
     {
-      title: "Plat",
-      description: "Gnocchi à la provola et champignons de Paris frais"
+      title: "Plats",
+      description: ["Linguine aux courgettes de langoustines", "Filet de thiof en guazzetto méditerranéen"]
     },
     {
       title: "Dessert",
-      description: "Fraisier"
+      description: "Semifreddo à la mangue"
     },
     {
       title: "",
@@ -1481,10 +1481,10 @@ export const propositionsDuMois = {
   // ],
   pizzaDuMois: [
     {
-      mois: "Mars",
-      title: "Oro e fuoco",
+      mois: "Avril",
+      title: "Provola Pancetta",
       // moreInfo: "*",
-      description: "Provola, ananas, speck, miel, piment, roquette",
+      description: "Crème de mangue pimentée, lime",
       // moreInfos: {
       //   notes: [
       //     "Disponible en stock selon arrivage",
