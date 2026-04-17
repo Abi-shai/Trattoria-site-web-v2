@@ -21,6 +21,9 @@ import ChevronLeft from '../../../assets/icons/chevron-left.svg?react';
 
 import Motif from '../../../assets/motif/motif.png';
 
+// Menu data for the 8-week rotation — updated automatically via Claude Code routine every Monday
+import weeklyMenus from '../../../weekly-menus.json';
+
 import './Home.css';
 
 
@@ -132,11 +135,19 @@ const MenuAndTestimonials = ({ currentDay }) => {
       <div className="menu-de-la-semaine-wrapper">
         <h3 className="h3">Le menu de la semaine</h3>
         <div className="wrapper-insider">
-          <MenuDay currentDay={currentDay} day='Lundi' daySpot={1} mainDish='Émincé de poulet à la crème citronnée' secondDish='Tagliatelle' />
-          <MenuDay currentDay={currentDay} day='Mardi' daySpot={2} mainDish='Filet de cabillaud poché' secondDish='Pommes de terre, carottes, petits pois' />
-          <MenuDay currentDay={currentDay} day='Mercredi' daySpot={3} mainDish='Poulet à la sauce BBC' secondDish='Pommes au four' />
-          <MenuDay currentDay={currentDay} day='Jeudi' daySpot={4} mainDish='Salade de crevettes et p. de terre' />
-          <MenuDay currentDay={currentDay} bold={true} day='Vendredi' daySpot={5} mainDish='Paella' secondDish='Courgettes à la parmigiana au jambon' />
+          {/* Renders the current week's menu from weekly-menus.json (cycles weeks 1-8) */}
+          {weeklyMenus.menus.find(m => m.week === weeklyMenus.currentWeek).days.map((item, index) => (
+            <MenuDay
+              key={item.day}
+              currentDay={currentDay}
+              day={item.day}
+              daySpot={index + 1}
+              mainDish={item.mainDish}
+              secondDish={item.secondDish}
+              thirdDish={item.thirdDish}
+              bold={item.day === 'Vendredi'}
+            />
+          ))}
         </div>
       </div>
 

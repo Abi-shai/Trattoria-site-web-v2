@@ -1,0 +1,85 @@
+{
+  "currentWeek": 7,
+  "menus": [
+    {
+      "week": 1,
+      "days": [
+        { "day": "Lundi", "mainDish": "Blanc de poulet du chasseur", "secondDish": "Tagliatelle" },
+        { "day": "Mardi", "mainDish": "Salade de poulpe, p. de terre et courgettes" },
+        { "day": "Mercredi", "mainDish": "Poulet à la diavola", "secondDish": "Polenta" },
+        { "day": "Jeudi", "mainDish": "Ragoût de calamars", "secondDish": "Spaghetti" },
+        { "day": "Vendredi", "mainDish": "Paella", "secondDish": "Gratin de pattes à la viande", "thirdDish": "Crudités" }
+      ]
+    },
+    {
+      "week": 2,
+      "days": [
+        { "day": "Lundi", "mainDish": "Émincé de poulet aux champignons", "secondDish": "Purée" },
+        { "day": "Mardi", "mainDish": "Espadon pané", "secondDish": "Légumes et pommes de terre sautées" },
+        { "day": "Mercredi", "mainDish": "Poulet gratiné", "secondDish": "Chips de pommes de terre et légumes au four" },
+        { "day": "Jeudi", "mainDish": "Calamars en sauce méditerranéenne", "secondDish": "Polenta" },
+        { "day": "Vendredi", "mainDish": "Paella", "secondDish": "Aubergines farcies à la viande", "thirdDish": "Galettes de pommes de terre" }
+      ]
+    },
+    {
+      "week": 3,
+      "days": [
+        { "day": "Lundi", "mainDish": "Escalopes de porc au provola fumée", "secondDish": "Polenta, Épinards" },
+        { "day": "Mardi", "mainDish": "Lotte à la livournaise", "secondDish": "Purée" },
+        { "day": "Mercredi", "mainDish": "Poulet Biancoforte", "secondDish": "Couscous marocain" },
+        { "day": "Jeudi", "mainDish": "Filet de turbot pané", "secondDish": "Gratin de légumes et pommes de terre" },
+        { "day": "Vendredi", "mainDish": "Paella", "secondDish": "Bœuf braisé", "thirdDish": "Polenta" }
+      ]
+    },
+    {
+      "week": 4,
+      "days": [
+        { "day": "Lundi", "mainDish": "Émincé de poulet au poivre", "secondDish": "Pommes sautées, légumes sautés" },
+        { "day": "Mardi", "mainDish": "Lotte au pesto", "secondDish": "Purée" },
+        { "day": "Mercredi", "mainDish": "Poulet rôti aux poivrons", "secondDish": "Pommes lyonnaises au four" },
+        { "day": "Jeudi", "mainDish": "Ragoût de poisson", "secondDish": "Riz safrané" },
+        { "day": "Vendredi", "mainDish": "Paella", "secondDish": "Gratin de pommes de terre et charcuterie", "thirdDish": "Crudités" }
+      ]
+    },
+    {
+      "week": 5,
+      "days": [
+        { "day": "Lundi", "mainDish": "Brochettes de poulet", "secondDish": "Pommes de terre et légumes sautés" },
+        { "day": "Mardi", "mainDish": "Filet de cabillaud au four", "secondDish": "Pommes au four" },
+        { "day": "Mercredi", "mainDish": "Fricassé de poulet aux champignons", "secondDish": "Purée" },
+        { "day": "Jeudi", "mainDish": "Gratin de calamars", "secondDish": "Couscous" },
+        { "day": "Vendredi", "mainDish": "Paella", "secondDish": "Poivrons farcis à la viande", "thirdDish": "Galettes de pomme de terre" }
+      ]
+    },
+    {
+      "week": 6,
+      "days": [
+        { "day": "Lundi", "mainDish": "Cordon bleu", "secondDish": "Frites, salade verte" },
+        { "day": "Mardi", "mainDish": "Filet de capitaine à la messinese", "secondDish": "Pommes lyonnaises au four" },
+        { "day": "Mercredi", "mainDish": "Poulet au paprika", "secondDish": "Chips de courgettes, carottes et pommes de terre au paprika au four" },
+        { "day": "Jeudi", "mainDish": "Barracuda à l'orange", "secondDish": "Purée de patate douce, carottes glacées" },
+        { "day": "Vendredi", "mainDish": "Paella", "secondDish": "Boulettes de viande et sauce parmesan", "thirdDish": "Spaghetti" }
+      ]
+    },
+    {
+      "week": 7,
+      "days": [
+        { "day": "Lundi", "mainDish": "Émincé de poulet à la crème citronnée", "secondDish": "Tagliatelle" },
+        { "day": "Mardi", "mainDish": "Filet de cabillaud poché", "secondDish": "Pommes de terre, carottes, petits pois" },
+        { "day": "Mercredi", "mainDish": "Poulet à la sauce BBC", "secondDish": "Pommes au four" },
+        { "day": "Jeudi", "mainDish": "Salade de crevettes et p. de terre" },
+        { "day": "Vendredi", "mainDish": "Paella", "secondDish": "Courgettes à la parmigiana au jambon" }
+      ]
+    },
+    {
+      "week": 8,
+      "days": [
+        { "day": "Lundi", "mainDish": "Piccata Milanese", "secondDish": "Spaghetti à la sauce tomate" },
+        { "day": "Mardi", "mainDish": "Lotte à la crème d'épinards", "secondDish": "Purée" },
+        { "day": "Mercredi", "mainDish": "Poulet à la sicilienne", "secondDish": "Polenta" },
+        { "day": "Jeudi", "mainDish": "Brochettes de poissons", "secondDish": "Frittes" },
+        { "day": "Vendredi", "mainDish": "Paella", "secondDish": "Emincé de boeuf", "thirdDish": "Tagliatelle" }
+      ]
+    }
+  ]
+}
