@@ -53,7 +53,7 @@ const MenuPopOver = () => {
       <ListNavOption navLink='/carte/aperitifs' navContent={'Apéritifs'} />
       <ListNavOption navLink='/carte/cocktails' navContent={'Cocktails'} />
       <ListNavOption navLink='/carte/vins' navContent={'Vins'} />
-      <ListNavOption navLink='/english-menu' navContent={'Menu en anglais'} />
+      {/* <ListNavOption navLink='/english-menu' navContent={'Menu en anglais'} /> */}
     </div>
   )
 }
@@ -240,7 +240,7 @@ const Header = () => {
                   >
                     Pizza
                   </NavLink></li>
-                <li className="special-link" onClick={setterCartOpened} style={CartOpened === 'open' ? { height: '500px', padding: '0.5em' } : { height: '36px' }}>
+                <li className="special-link" onClick={setterCartOpened} style={CartOpened === 'open' ? { height: '446px', padding: '0.5em' } : { height: '36px' }}>
 
                   <div className="wrapper-1">
                     <a
@@ -367,17 +367,17 @@ const Header = () => {
                               Vins
                             </NavLink>
                           </li>
-                          <li>
-                            <NavLink
-                              to="/english-menu"
-                              end
-                              className={({ isActive }) =>
-                                isActive ? "nav-active" : "nav-link"
-                              }
-                            >
-                              Menu en anglais
-                            </NavLink>
-                          </li>
+                          {/* <li>
+                      <NavLink
+                        to="/english-menu"
+                        end
+                        className={({ isActive }) =>
+                          isActive ? "nav-active" : "nav-link"
+                        }
+                      >
+                        Menu en anglais
+                      </NavLink>
+                    </li> */}
                         </ul>
                       </div>
 
@@ -554,7 +554,7 @@ const Header = () => {
                   >
                     Pizza
                   </NavLink></li>
-                <li className="special-link" onClick={setterCartOpened} style={CartOpened === 'open' ? { height: '500px', padding: '0.5em' } : { height: '36px' }}>
+                <li className="special-link" onClick={setterCartOpened} style={CartOpened === 'open' ? { height: '446px', padding: '0.5em' } : { height: '36px' }}>
 
                   <div className="wrapper-1">
                     <a
@@ -681,17 +681,17 @@ const Header = () => {
                               Vins
                             </NavLink>
                           </li>
-                          <li>
-                            <NavLink
-                              to="/english-menu"
-                              end
-                              className={({ isActive }) =>
-                                isActive ? "nav-active" : "nav-link"
-                              }
-                            >
-                              Menu en anglais
-                            </NavLink>
-                          </li>
+                          {/* <li>
+                      <NavLink
+                        to="/english-menu"
+                        end
+                        className={({ isActive }) =>
+                          isActive ? "nav-active" : "nav-link"
+                        }
+                      >
+                        Menu en anglais
+                      </NavLink>
+                    </li> */}
                         </ul>
                       </div>
 
