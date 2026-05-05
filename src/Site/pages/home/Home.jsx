@@ -4,7 +4,7 @@ import useEmblaCarousel from 'embla-carousel-react';
 
 import UserFeedback from "../../../user-feedback";
 
-import { ButtonPrimary } from "../../../components/Button/Button";
+import { ButtonNavLink, ButtonPrimary, ButtonSecondary } from "../../../components/Button/Button";
 import { DividerOnHome } from "../../../components/divider/Divider";
 
 import HeroSectionImage from '../../../assets/images/hero-section.png';
@@ -223,6 +223,7 @@ const MenuAndTestimonials = ({ currentDay }) => {
 const Home = () => {
 
   const [currentDay, setCurrentDay] = useState(0);
+  const lotsGameLink = "https://trattoriadaalex.mon-restau.com/drw-1/";
 
   useEffect(() => {
     const currentDate = new Date();
@@ -247,13 +248,16 @@ const Home = () => {
             <h2>Buon appetito!</h2>
             <p className="body1">Alex et son équipe vous accueilleront dans une atmosphère chaleureuse et accueillante.</p>
           </div>
-          <a
-            href="https://trattoriadaalex.mon-restau.com/"
-            className="buttonPrimary cta"
-            target='_blank'
-          >
-            Commander en ligne / Réserver une place
-          </a>
+          <div className="homepage-ctas">
+            <a
+              href="https://trattoriadaalex.mon-restau.com/"
+              className="buttonPrimary cta"
+              target='_blank'
+            >
+              Commander en ligne / Réserver une place
+            </a>
+            <ButtonPrimary content="Tenter de gagner un bon d'achat" hasHref={lotsGameLink} target="blank" />
+          </div>
         </div>
 
         <div className="image">
