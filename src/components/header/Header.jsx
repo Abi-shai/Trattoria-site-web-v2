@@ -44,7 +44,6 @@ const ListNavOption = ({ navContent, showDivider, navLink }) => {
 const MenuPopOver = () => {
   return (
     <div className="menu-popover">
-      <ListNavOption navLink='/carte/propositions-du-mois' navContent={'Proposition du mois'} showDivider={true} />
       <ListNavOption navLink='/carte/cicchetti' navContent={'Cicchetti'} />
       <ListNavOption navLink='/carte/antipasti' navContent={'Antipasti'} />
       <ListNavOption navLink='/carte/primi' navContent={'Primi'} />
@@ -105,7 +104,7 @@ const Header = () => {
             <div className="principal-wrapper">
 
               <div className="logo">
-                <NavLink to="/" aria-label="Retour à l’accueil">
+                <NavLink to="/" aria-label="Retour à l'accueil">
                   <img src={TrattoriaLogo} alt="Trattoria Da Alex" />
                 </NavLink>
               </div>
@@ -268,18 +267,6 @@ const Header = () => {
                         <ul>
                           <li>
                             <NavLink
-                              to="/carte/propositions-du-mois"
-                              end
-                              className={({ isActive }) =>
-                                isActive ? "nav-active" : "nav-link"
-                              }
-                            >
-                              Propositions du mois
-                            </NavLink>
-                          </li>
-                          <div className="divider"></div>
-                          <li>
-                            <NavLink
                               to="/carte/cicchetti"
                               end
                               className={({ isActive }) =>
@@ -419,7 +406,7 @@ const Header = () => {
             <div className="principal-wrapper">
 
               <div className="logo">
-                <NavLink to="/" aria-label="Retour à l’accueil">
+                <NavLink to="/" aria-label="Retour à l'accueil">
                   <img src={TrattoriaLogo} alt="Trattoria Da Alex" />
                 </NavLink>
               </div>
@@ -580,18 +567,6 @@ const Header = () => {
                     CartOpened === 'open'
                       ? <div className="wrapper-2">
                         <ul>
-                          <li>
-                            <NavLink
-                              to="/carte/propositions-du-mois"
-                              end
-                              className={({ isActive }) =>
-                                isActive ? "nav-active" : "nav-link"
-                              }
-                            >
-                              Propositions du mois
-                            </NavLink>
-                          </li>
-                          <div className="divider"></div>
                           <li>
                             <NavLink
                               to="/carte/cicchetti"

@@ -30,8 +30,14 @@ const PropositionDuMois = () => {
 
   return (
     <>
-      <PageHeader img={PropositionsDuMoisImage} title="Propositions du mois" description="Avril" />
+      <PageHeader img={PropositionsDuMoisImage} title="Propositions du mois" />
       <main className="menu-body-main-wrapper">
+
+        <div className="menu-more-infos-wrapper">
+          <p>Les propositions du mois de Mai arrivent bientôt. Revenez nous voir !</p>
+        </div>
+
+        {/* Contenu d'Avril masqué en attendant les infos de Mai
 
         <MenuSectionHeader title="Propositions du chef" />
         <section className="menu-group-wrapper">
@@ -66,37 +72,18 @@ const PropositionDuMois = () => {
 
         <DividerOnOtherPages />
 
-        {/* <section className="proposition-du-mois">
-          <MenuItem
-            menuTitle={cocktailDuJeudiData.title}
-            menuDescription={cocktailDuJeudiData.ingredients}
-            isCentered
-          />
-
-          <div className="promo-banner">
-            <p>{cocktailDuJeudiData.promoDetails}</p>
-          </div>
-        </section> */}
-
-        {/* <DividerOnOtherPages /> */}
-
         <MenuSectionHeader title="Pizza du mois" />
 
         <section className="menu-group-wrapper">
           <MenuItem
             menuTitle={pizzaDuMoisData.title}
             moreInfo={pizzaDuMoisData.moreInfo}
-            // firstOverlayInfo={pizzaDuMoisData.moreInfos.notes[0]}
             menuDescription={pizzaDuMoisData.description}
             isCentered
           />
         </section>
 
-        {/* <DividerOnOtherPages /> */}
-        {/* 
-        <div className="menu-more-infos-wrapper">
-          <p>{pizzaDuMoisData.moreInfos.notes[1]}</p>
-        </div> */}
+        */}
 
       </main>
     </>

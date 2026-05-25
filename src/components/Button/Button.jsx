@@ -1,11 +1,11 @@
-import { NavLink } from "react-router-dom";
+import { href, NavLink } from "react-router-dom";
 import ChevronDown from '../../assets/icons/chevron-down.svg?react';
 
 import './Button.css';
 
 
 // Style de button 1 / Avec le fond
-const ButtonPrimary = ({ content, showIconRight, hasHref, onClick }) => {
+const ButtonPrimary = ({ content, showIconRight, hasHref, onClick, target }) => {
   return (
     <>
       {
@@ -14,6 +14,7 @@ const ButtonPrimary = ({ content, showIconRight, hasHref, onClick }) => {
             className="cta buttonPrimary"
             href={hasHref}
             onClick={onClick}
+            target={target}
           >
             {content}
 
@@ -60,18 +61,33 @@ const ButtonNavLink = ({ content, showIconRight, link, onClick }) => {
 
 
 // Style de button 2 / Avec les bordures
-const ButtonSecondary = ({ type, content, showIconRight }) => {
+const ButtonSecondary = ({ type, content, hasHref, target, showIconRight }) => {
   return (
-    <button type={type} className="cta buttonSecondary">
-      {content}
-
-      {/* Logique pour construire un boolean qui va se charger de l'affichage de l'icône lorsqu'il est true */}
+    <>
       {
-        showIconRight
-          ? <ChevronDown />
-          : null
+        hasHref
+          ? <a href={hasHref} target={target} className="cta buttonSecondary">
+            {content}
+
+            {/* Logique pour construire un boolean qui va se charger de l'affichage de l'icône lorsqu'il est true */}
+            {
+              showIconRight
+                ? <ChevronDown />
+                : null
+            }
+          </a>
+          : <button type={type} className="cta buttonSecondary">
+            {content}
+
+            {/* Logique pour construire un boolean qui va se charger de l'affichage de l'icône lorsqu'il est true */}
+            {
+              showIconRight
+                ? <ChevronDown />
+                : null
+            }
+          </button>
       }
-    </button>
+    </>
   );
 };
 
