@@ -34,19 +34,20 @@ const Pizza = () => {
       <main className="menu-body-main-wrapper">
 
 
+        {/* PIZZA DU MOIS — masquée en attendant les infos de Mai
         <MenuSectionHeader title="PIZZA DU MOIS" />
 
         <section className="menu-group-wrapper">
           <MenuItem
             menuTitle={pizzaDuMoisData.title}
             moreInfo={pizzaDuMoisData.moreInfo}
-            // firstOverlayInfo={pizzaDuMoisData.moreInfos.notes[0]}
             menuDescription={pizzaDuMoisData.description}
             isCentered
           />
         </section>
 
         <DividerOnOtherPages />
+        */}
 
         <section className="menu-group-wrapper">
           {

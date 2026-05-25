@@ -16,23 +16,8 @@ const EventModal = () => {
   const { eventModal, openEventModal, closeEventModal } = useContext(FullScreenStateContext);
   const [shouldAnimateIn, setShouldAnimateIn] = useState(false);
 
-  useEffect(() => {
-    const hasSeenModal = localStorage.getItem(CURRENT_EVENT_ID);
-
-    if (!hasSeenModal) {
-      // 1. On crée un minuteur
-      const timer = setTimeout(() => {
-        // 2. On ouvre la modale après le délai
-        openEventModal();
-        setShouldAnimateIn(true);
-      }, DISPLAY_DELAY);
-
-      // 3. C'est l'étape de nettoyage (très importante) :
-      // Si le composant est détruit (l'utilisateur change de page)
-      // avant la fin du délai, on annule le minuteur.
-      return () => clearTimeout(timer);
-    }
-  }, [openEventModal]);
+  // Modale désactivée en attendant les propositions de Mai
+  useEffect(() => {}, [openEventModal]);
 
 
   // Fonction pour gérer la fermeture
