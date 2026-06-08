@@ -239,7 +239,7 @@ const Header = () => {
                   >
                     Pizza
                   </NavLink></li>
-                <li className="special-link" onClick={setterCartOpened} style={CartOpened === 'open' ? { height: '446px', padding: '0.5em' } : { height: '36px' }}>
+                <li className="special-link" onClick={setterCartOpened} style={CartOpened === 'open' ? { height: '396px', padding: '0.5em' } : { height: '36px' }}>
 
                   <div className="wrapper-1">
                     <a
@@ -541,7 +541,7 @@ const Header = () => {
                   >
                     Pizza
                   </NavLink></li>
-                <li className="special-link" onClick={setterCartOpened} style={CartOpened === 'open' ? { height: '446px', padding: '0.5em' } : { height: '36px' }}>
+                <li className="special-link" onClick={setterCartOpened} style={CartOpened === 'open' ? { height: '396px', padding: '0.5em' } : { height: '36px' }}>
 
                   <div className="wrapper-1">
                     <a

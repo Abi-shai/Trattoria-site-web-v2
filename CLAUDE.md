@@ -2,6 +2,4 @@
 
 ## Branching & Deployment
 
-- **All changes** should be committed and pushed **directly to the `main`
-  branch**, not to a feature branch. This applies to every task in this
-  repository until the user explicitly states otherwise.
+- **All changes** should go through a **feature branch and a pull request** on the remote repository. Never push directly to `main`.
