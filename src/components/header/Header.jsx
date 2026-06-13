@@ -51,7 +51,8 @@ const MenuPopOver = () => {
       <ListNavOption navLink='/carte/desserts' navContent={'Desserts'} showDivider={true} />
       <ListNavOption navLink='/carte/aperitifs' navContent={'Apéritifs'} />
       <ListNavOption navLink='/carte/cocktails' navContent={'Cocktails'} />
-      <ListNavOption navLink='/carte/vins' navContent={'Vins'} />
+      <ListNavOption navLink='/carte/vins' navContent={'Vins'} showDivider={true} />
+      <ListNavOption navLink='/propositions-du-mois' navContent={'Propositions du mois'} />
       {/* <ListNavOption navLink='/english-menu' navContent={'Menu en anglais'} /> */}
     </div>
   )
@@ -143,17 +144,6 @@ const Header = () => {
                     >
                       Pizza
                     </NavLink></li>
-                  <li>
-                    <NavLink
-                      to="/propositions-du-mois"
-                      end
-                      className={({ isActive }) =>
-                        isActive ? "nav-active" : "nav-link"
-                      }
-                    >
-                      Propositions du mois
-                    </NavLink>
-                  </li>
                   <li className="special-link">
                     <NavLink
                       to="/carte"
@@ -250,18 +240,7 @@ const Header = () => {
                   >
                     Pizza
                   </NavLink></li>
-                <li>
-                  <NavLink
-                    to="/propositions-du-mois"
-                    end
-                    className={({ isActive }) =>
-                      isActive ? "nav-active" : "nav-link"
-                    }
-                  >
-                    Propositions du mois
-                  </NavLink>
-                </li>
-                <li className="special-link" onClick={setterCartOpened} style={CartOpened === 'open' ? { height: '396px', padding: '0.5em' } : { height: '36px' }}>
+                <li className="special-link" onClick={setterCartOpened} style={CartOpened === 'open' ? { height: '440px', padding: '0.5em' } : { height: '36px' }}>
 
                   <div className="wrapper-1">
                     <a
@@ -376,6 +355,18 @@ const Header = () => {
                               Vins
                             </NavLink>
                           </li>
+                          <div className="divider"></div>
+                          <li>
+                            <NavLink
+                              to="/propositions-du-mois"
+                              end
+                              className={({ isActive }) =>
+                                isActive ? "nav-active" : "nav-link"
+                              }
+                            >
+                              Propositions du mois
+                            </NavLink>
+                          </li>
                           {/* <li>
                       <NavLink
                         to="/english-menu"
@@ -467,17 +458,6 @@ const Header = () => {
                     >
                       Pizza
                     </NavLink></li>
-                  <li>
-                    <NavLink
-                      to="/propositions-du-mois"
-                      end
-                      className={({ isActive }) =>
-                        isActive ? "nav-active" : "nav-link"
-                      }
-                    >
-                      Propositions du mois
-                    </NavLink>
-                  </li>
                   <li className="special-link">
                     <NavLink
                       to="/carte"
@@ -574,18 +554,7 @@ const Header = () => {
                   >
                     Pizza
                   </NavLink></li>
-                <li>
-                  <NavLink
-                    to="/propositions-du-mois"
-                    end
-                    className={({ isActive }) =>
-                      isActive ? "nav-active" : "nav-link"
-                    }
-                  >
-                    Propositions du mois
-                  </NavLink>
-                </li>
-                <li className="special-link" onClick={setterCartOpened} style={CartOpened === 'open' ? { height: '396px', padding: '0.5em' } : { height: '36px' }}>
+                <li className="special-link" onClick={setterCartOpened} style={CartOpened === 'open' ? { height: '440px', padding: '0.5em' } : { height: '36px' }}>
 
                   <div className="wrapper-1">
                     <a
@@ -698,6 +667,18 @@ const Header = () => {
                               }
                             >
                               Vins
+                            </NavLink>
+                          </li>
+                          <div className="divider"></div>
+                          <li>
+                            <NavLink
+                              to="/propositions-du-mois"
+                              end
+                              className={({ isActive }) =>
+                                isActive ? "nav-active" : "nav-link"
+                              }
+                            >
+                              Propositions du mois
                             </NavLink>
                           </li>
                           {/* <li>
