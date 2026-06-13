@@ -25,19 +25,13 @@ const PropositionDuMois = () => {
 
   useEffect(() => {
 
-    document.title = 'Propositions du mois | Trattoria Da Alex';
+    document.title = 'Propositions du mois de Juin | Trattoria Da Alex';
   }, []);
 
   return (
     <>
       <PageHeader img={PropositionsDuMoisImage} title="Propositions du mois" />
       <main className="menu-body-main-wrapper">
-
-        <div className="menu-more-infos-wrapper">
-          <p>Les propositions du mois de Mai arrivent bientôt. Revenez nous voir !</p>
-        </div>
-
-        {/* Contenu d'Avril masqué en attendant les infos de Mai
 
         <MenuSectionHeader title="Propositions du chef" />
         <section className="menu-group-wrapper">
@@ -82,8 +76,6 @@ const PropositionDuMois = () => {
             isCentered
           />
         </section>
-
-        */}
 
       </main>
     </>
