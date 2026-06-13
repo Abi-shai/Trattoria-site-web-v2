@@ -10,7 +10,6 @@ import MenuItem from "../../../components/MenuItem/MenuItem";
 import { pizzaGlobalData, provolaData, specialiData, pizzaMoreInfos, propositionsDuMois } from "../../../menu-data";
 
 import PizzaImage from '../../../assets/images/carte/pizze-page.png';
-import PropositionDuMois from "../proposition-du-mois/PropositionDuMois";
 
 const Pizza = () => {
 
@@ -34,7 +33,6 @@ const Pizza = () => {
       <main className="menu-body-main-wrapper">
 
 
-        {/* PIZZA DU MOIS — masquée en attendant les infos de Mai
         <MenuSectionHeader title="PIZZA DU MOIS" />
 
         <section className="menu-group-wrapper">
@@ -47,7 +45,6 @@ const Pizza = () => {
         </section>
 
         <DividerOnOtherPages />
-        */}
 
         <section className="menu-group-wrapper">
           {
