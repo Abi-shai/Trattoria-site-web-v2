@@ -49,7 +49,6 @@ const PageLayout = () => {
         <UtilityBar />
         <Header />
       </div>
-      {/* <EventModal /> */}
       <Routes>
 
         <Route path="/" element={<Home />} />
