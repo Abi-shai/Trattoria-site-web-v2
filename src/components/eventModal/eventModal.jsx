@@ -9,15 +9,23 @@ import EventImage from '../../assets/images/current-event.jpeg';
 import './eventModal.css';
 
 
-const CURRENT_EVENT_ID = 'propositions-du-mois-avril-2026';
+const CURRENT_EVENT_ID = 'propositions-du-mois-juin-2026';
 const DISPLAY_DELAY = 3000;
 
 const EventModal = () => {
   const { eventModal, openEventModal, closeEventModal } = useContext(FullScreenStateContext);
   const [shouldAnimateIn, setShouldAnimateIn] = useState(false);
 
-  // Modale désactivée en attendant les propositions de Mai
-  useEffect(() => {}, [openEventModal]);
+  useEffect(() => {
+    const hasSeenEvent = localStorage.getItem(CURRENT_EVENT_ID);
+    if (!hasSeenEvent) {
+      const timer = setTimeout(() => {
+        openEventModal();
+        setShouldAnimateIn(true);
+      }, DISPLAY_DELAY);
+      return () => clearTimeout(timer);
+    }
+  }, [openEventModal]);
 
 
   // Fonction pour gérer la fermeture
@@ -58,7 +66,7 @@ const EventModal = () => {
 
                 <div className="event-cta-wrapper">
                   <ButtonNavLink
-                    link="/carte/propositions-du-mois"
+                    link="/propositions-du-mois"
                     content="Découvrir les propositions"
                     onClick={handleClose}
                   />
