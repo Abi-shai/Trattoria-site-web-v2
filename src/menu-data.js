@@ -1457,15 +1457,15 @@ export const propositionsDuMois = {
   propositionsDuChef: [
     {
       title: "Entrée",
-      description: "Carpaccio de thiof au radis"
+      description: "Montanarine : pizza fritta, stracciatella, mortadelle"
     },
     {
-      title: "Plats",
-      description: ["Linguine aux courgettes de langoustines", "Filet de thiof en guazzetto méditerranéen"]
+      title: "Nos pâtes",
+      description: "Orecchiette, espadon, tomates cerises"
     },
     {
       title: "Dessert",
-      description: "Semifreddo à la mangue"
+      description: "Panna cotta au basilic et mirtilles"
     },
     {
       title: "",
@@ -1481,16 +1481,9 @@ export const propositionsDuMois = {
   // ],
   pizzaDuMois: [
     {
-      mois: "Avril",
-      title: "Provola Pancetta",
-      // moreInfo: "*",
-      description: "Crème de mangue pimentée, lime",
-      // moreInfos: {
-      //   notes: [
-      //     "Disponible en stock selon arrivage",
-      //     "*Disponible en stock selon arrivage",
-      //   ]
-      // }
+      mois: "Juin",
+      title: "",
+      description: "Crème fraîche, mascarpone, poires caramélisées, speck"
     }
   ]
 };

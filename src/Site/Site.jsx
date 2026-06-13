@@ -26,6 +26,7 @@ import Vins from "./pages/vins/Vins";
 import Lagallery from "./pages/laGallery/Lagallery";
 import Contacts from "./pages/contacts/Contacts";
 import Pizza from "./pages/pizza/Pizza";
+import PropositionDuMois from "./pages/proposition-du-mois/PropositionDuMois";
 import EnglishMenu from "./pages/englishMenu/englishMenu";
 
 
@@ -54,6 +55,7 @@ const PageLayout = () => {
         <Route path="/" element={<Home />} />
         <Route path="/restaurant" element={<Restaurant />} />
         <Route path="/pizza" element={<Pizza />} />
+        <Route path="/propositions-du-mois" element={<PropositionDuMois />} />
 
         <Route path="/carte" element={<Outlet />}>
           <Route index element={<Navigate to="/carte/cicchetti" replace />} />
