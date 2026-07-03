@@ -1457,33 +1457,33 @@ export const propositionsDuMois = {
   propositionsDuChef: [
     {
       title: "Entrée",
-      description: "Montanarine : pizza fritta, stracciatella, mortadelle"
+      description: "Tartare de thon"
     },
     {
-      title: "Nos pâtes",
-      description: "Orecchiette, espadon, tomates cerises"
+      title: "Plat",
+      description: "Penne aux aubergines, thiof et menthe"
     },
     {
       title: "Dessert",
-      description: "Panna cotta au basilic et mirtilles"
+      description: "Cheesecake au madd"
     },
     {
       title: "",
       description: ""
     }
   ],
-  // cocktailDuJeudi: [
-  //   {
-  //     title: "Cocktail du jeudi",
-  //     ingredients: "Kiwi, Concombre, Ananas, Citron, Soda ou Gin",
-  //     promoDetails: "PROMO — 2 Cocktails achetés = 1 assiette de TAPAS OFFERTE !",
-  //   }
-  // ],
+  cocktailDuJeudi: [
+    {
+      title: "Cocktail du jeudi",
+      cocktails: ["Italian Highball", "Red Summer (virgin)"],
+      promoDetails: "2 cocktails achetés = 1 assiette de TAPAS OFFERTE !",
+    }
+  ],
   pizzaDuMois: [
     {
-      mois: "Juin",
+      mois: "Juillet",
       title: "",
-      description: "Crème fraîche, mascarpone, poires caramélisées, speck"
+      description: "Sauce tomate, mozzarella, champignons, crudo"
     }
   ]
 };

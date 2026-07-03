@@ -18,14 +18,14 @@ const PropositionDuMois = () => {
   const currentWith = UseWindowSize().width;
 
   const propositionDuChefData = propositionsDuMois.propositionsDuChef;
-  // const cocktailDuJeudiData = propositionsDuMois.cocktailDuJeudi[0];
+  const cocktailDuJeudiData = propositionsDuMois.cocktailDuJeudi[0];
   const pizzaDuMoisData = propositionsDuMois.pizzaDuMois[0];
 
   const removedPropositionDuChefLastItem = propositionDuChefData.slice(0, -1);
 
   useEffect(() => {
 
-    document.title = 'Propositions du mois de Juin | Trattoria Da Alex';
+    document.title = 'Propositions du mois de Juillet | Trattoria Da Alex';
   }, []);
 
   return (
@@ -63,6 +63,27 @@ const PropositionDuMois = () => {
 
           }
         </section>
+
+        <DividerOnOtherPages />
+
+        <MenuSectionHeader title="Cocktails du jeudi" />
+
+        <section className="menu-group-wrapper cocktail-du-jeudi-group">
+          {
+            cocktailDuJeudiData.cocktails.map((cocktail, i) => {
+              return (
+                <MenuItem
+                  key={i}
+                  menuTitle={cocktail}
+                  isCentered
+                />)
+            })
+          }
+        </section>
+
+        <div className="promo-banner">
+          <p>{cocktailDuJeudiData.promoDetails}</p>
+        </div>
 
         <DividerOnOtherPages />
 

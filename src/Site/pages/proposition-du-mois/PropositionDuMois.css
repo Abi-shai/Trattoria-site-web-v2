@@ -1,3 +1,9 @@
+/* Les blocs cocktails n'ont qu'un titre : on réduit l'espace réservé sous chacun */
+.cocktail-du-jeudi-group .menu-item-wrapper {
+  min-height: unset;
+  padding-bottom: 0;
+}
+
 .promo-banner {
   display: flex;
   justify-content: center;
