@@ -9,7 +9,7 @@ import EventImage from '../../assets/images/current-event.jpeg';
 import './eventModal.css';
 
 
-const CURRENT_EVENT_ID = 'propositions-du-mois-juin-2026';
+const CURRENT_EVENT_ID = 'propositions-du-mois-juillet-2026';
 const DISPLAY_DELAY = 3000;
 
 const EventModal = () => {
