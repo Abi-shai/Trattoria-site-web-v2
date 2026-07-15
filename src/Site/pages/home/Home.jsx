@@ -256,7 +256,7 @@ const Home = () => {
             >
               Commander en ligne / Réserver une place
             </a>
-            <ButtonSecondary content="Tenter de gagner un bon d'achat" hasHref={lotsGameLink} target="blank" />
+            {/* <ButtonSecondary content="Tenter de gagner un bon d'achat" hasHref={lotsGameLink} target="blank" /> */}
           </div>
         </div>
 
