@@ -44,7 +44,7 @@ const AnnoncementBar = () => {
       <div
         className={`annoncement-wrapper ${scrollDirection === 'down' ? 'hidden-and-banner-open' : ''}`}
       >
-        <p className="body2">Votre restaurant est à nouveau ouvert, et prêt à vous accueillir !</p>
+        <p className="body2">La Trattoria Da Alex est de nouveau ouvert !</p>
         <div className="annonc-icon-wrapper" onClick={setterCarteBanner}>
           <CloseICon />
         </div>
