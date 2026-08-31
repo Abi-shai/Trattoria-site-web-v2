@@ -7,14 +7,14 @@ import CloseICon from '../../assets/icons/close.svg?react';
 
 import './AnnoncementBar.css';
 
-const NEW_CARTA = 'carte-official_2026';
+const REOPENING = 'reouverture-restaurant_2026';
 
 const AnnoncementBar = () => {
   const { isBannerOpen, closeBanner } = useContext(FullScreenStateContext)
   const scrollDirection = useScrollDirection();
 
   useEffect(() => {
-    const hasSeenBanner = localStorage.getItem(NEW_CARTA);
+    const hasSeenBanner = localStorage.getItem(REOPENING);
 
     console.log(hasSeenBanner);
 
@@ -27,12 +27,12 @@ const AnnoncementBar = () => {
 
   const setterCarteBanner = () => {
     try {
-      localStorage.setItem(NEW_CARTA, 'true');
+      localStorage.setItem(REOPENING, 'true');
     } catch (error) {
       console.error("Impossible de sauvegarder le choix", error);
     }
 
-    console.log(localStorage.getItem(NEW_CARTA));
+    console.log(localStorage.getItem(REOPENING));
 
     closeBanner();
   }
@@ -44,7 +44,7 @@ const AnnoncementBar = () => {
       <div
         className={`annoncement-wrapper ${scrollDirection === 'down' ? 'hidden-and-banner-open' : ''}`}
       >
-        <p className="body2">LA CARTE 2026 EST DISPONIBLE !</p>
+        <p className="body2">Votre restaurant est à nouveau ouvert, et prêt à vous accueillir !</p>
         <div className="annonc-icon-wrapper" onClick={setterCarteBanner}>
           <CloseICon />
         </div>
