@@ -77,8 +77,8 @@
         { "day": "Lundi", "mainDish": "Piccata Milanese", "secondDish": "Spaghetti à la sauce tomate" },
         { "day": "Mardi", "mainDish": "Lotte à la crème d'épinards", "secondDish": "Purée" },
         { "day": "Mercredi", "mainDish": "Poulet à la sicilienne", "secondDish": "Polenta" },
-        { "day": "Jeudi", "mainDish": "Brochettes de poissons", "secondDish": "Frittes" },
-        { "day": "Vendredi", "mainDish": "Paella", "secondDish": "Emincé de boeuf", "thirdDish": "Tagliatelle" }
+        { "day": "Jeudi", "mainDish": "Brochettes de poissons", "secondDish": "Frites" },
+        { "day": "Vendredi", "mainDish": "Paella", "secondDish": "Émincé de boeuf", "thirdDish": "Tagliatelle" }
       ]
     }
   ]
