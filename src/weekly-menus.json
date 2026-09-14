@@ -8,7 +8,7 @@
         { "day": "Mardi", "mainDish": "Salade de poulpe, p. de terre et courgettes" },
         { "day": "Mercredi", "mainDish": "Poulet à la diavola", "secondDish": "Polenta" },
         { "day": "Jeudi", "mainDish": "Ragoût de calamars", "secondDish": "Spaghetti" },
-        { "day": "Vendredi", "mainDish": "Paella", "secondDish": "Gratin de pattes à la viande", "thirdDish": "Crudités" }
+        { "day": "Vendredi", "mainDish": "Paella", "secondDish": "Gratin de pâtes à la viande", "thirdDish": "Crudités" }
       ]
     },
     {
@@ -66,7 +66,7 @@
       "days": [
         { "day": "Lundi", "mainDish": "Émincé de poulet à la crème citronnée", "secondDish": "Tagliatelle" },
         { "day": "Mardi", "mainDish": "Filet de cabillaud poché", "secondDish": "Pommes de terre, carottes, petits pois" },
-        { "day": "Mercredi", "mainDish": "Poulet à la sauce BBC", "secondDish": "Pommes au four" },
+        { "day": "Mercredi", "mainDish": "Poulet à la sauce BBQ", "secondDish": "Pommes au four" },
         { "day": "Jeudi", "mainDish": "Salade de crevettes et p. de terre" },
         { "day": "Vendredi", "mainDish": "Paella", "secondDish": "Courgettes à la parmigiana au jambon" }
       ]
@@ -78,7 +78,7 @@
         { "day": "Mardi", "mainDish": "Lotte à la crème d'épinards", "secondDish": "Purée" },
         { "day": "Mercredi", "mainDish": "Poulet à la sicilienne", "secondDish": "Polenta" },
         { "day": "Jeudi", "mainDish": "Brochettes de poissons", "secondDish": "Frites" },
-        { "day": "Vendredi", "mainDish": "Paella", "secondDish": "Émincé de boeuf", "thirdDish": "Tagliatelle" }
+        { "day": "Vendredi", "mainDish": "Paella", "secondDish": "Émincé de bœuf", "thirdDish": "Tagliatelle" }
       ]
     }
   ]
