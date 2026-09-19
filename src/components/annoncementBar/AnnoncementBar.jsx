@@ -46,14 +46,13 @@ const AnnoncementBar = () => {
         className={`annoncement-wrapper ${scrollDirection === 'down' ? 'hidden-and-banner-open' : ''}`}
       >
         <p className="body2">
-          Suivez la Trattoria Da Alex sur WhatsApp :{" "}
           <a
             className="annonc-link"
             href={WHATSAPP_CHANNEL_URL}
             target="_blank"
             rel="noopener noreferrer"
           >
-            rejoindre la chaîne
+            Suivez la Trattoria Da Alex sur WhatsApp
           </a>
         </p>
         <div className="annonc-icon-wrapper" onClick={dismissBanner}>
