@@ -7,14 +7,15 @@ import CloseICon from '../../assets/icons/close.svg?react';
 
 import './AnnoncementBar.css';
 
-const REOPENING = 'reouverture-restaurant_2026';
+const WHATSAPP_BANNER_KEY = 'canal-whatsapp_2026';
+const WHATSAPP_CHANNEL_URL = 'https://whatsapp.com/channel/0029Vb8L7xl89inoCRMyJl2g';
 
 const AnnoncementBar = () => {
   const { isBannerOpen, closeBanner } = useContext(FullScreenStateContext)
   const scrollDirection = useScrollDirection();
 
   useEffect(() => {
-    const hasSeenBanner = localStorage.getItem(REOPENING);
+    const hasSeenBanner = localStorage.getItem(WHATSAPP_BANNER_KEY);
 
     console.log(hasSeenBanner);
 
@@ -25,14 +26,14 @@ const AnnoncementBar = () => {
   });
 
 
-  const setterCarteBanner = () => {
+  const dismissBanner = () => {
     try {
-      localStorage.setItem(REOPENING, 'true');
+      localStorage.setItem(WHATSAPP_BANNER_KEY, 'true');
     } catch (error) {
       console.error("Impossible de sauvegarder le choix", error);
     }
 
-    console.log(localStorage.getItem(REOPENING));
+    console.log(localStorage.getItem(WHATSAPP_BANNER_KEY));
 
     closeBanner();
   }
@@ -44,8 +45,18 @@ const AnnoncementBar = () => {
       <div
         className={`annoncement-wrapper ${scrollDirection === 'down' ? 'hidden-and-banner-open' : ''}`}
       >
-        <p className="body2">La Trattoria Da Alex est de nouveau ouvert !</p>
-        <div className="annonc-icon-wrapper" onClick={setterCarteBanner}>
+        <p className="body2">
+          Suivez la Trattoria Da Alex sur WhatsApp :{" "}
+          <a
+            className="annonc-link"
+            href={WHATSAPP_CHANNEL_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            rejoindre la chaîne
+          </a>
+        </p>
+        <div className="annonc-icon-wrapper" onClick={dismissBanner}>
           <CloseICon />
         </div>
       </div >
