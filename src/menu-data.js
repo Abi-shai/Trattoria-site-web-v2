@@ -1457,15 +1457,15 @@ export const propositionsDuMois = {
   propositionsDuChef: [
     {
       title: "Entrée",
-      description: "Tartare de thon"
+      description: "Tartare melon et jambon"
     },
     {
       title: "Plat",
-      description: "Penne aux aubergines, thiof et menthe"
+      description: "T-bone au vin rouge"
     },
     {
       title: "Dessert",
-      description: "Cheesecake au madd"
+      description: "Crème de mascarpone à l'orange"
     },
     {
       title: "",
@@ -1475,15 +1475,15 @@ export const propositionsDuMois = {
   cocktailDuJeudi: [
     {
       title: "Cocktail du jeudi",
-      cocktails: ["Italian Highball", "Red Summer (virgin)"],
+      cocktails: ["Rouge Rustique"],
       promoDetails: "2 cocktails achetés = 1 assiette de TAPAS OFFERTE !",
     }
   ],
   pizzaDuMois: [
     {
-      mois: "Juillet",
+      mois: "Octobre",
       title: "",
-      description: "Sauce tomate, mozzarella, champignons, crudo"
+      description: "Crème de courgettes, courgettes frites, provola"
     }
   ]
 };

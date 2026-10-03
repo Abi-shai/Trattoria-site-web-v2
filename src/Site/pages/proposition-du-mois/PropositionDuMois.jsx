@@ -25,7 +25,7 @@ const PropositionDuMois = () => {
 
   useEffect(() => {
 
-    document.title = 'Propositions du mois de Juillet | Trattoria Da Alex';
+    document.title = "Propositions du mois d'Octobre | Trattoria Da Alex";
   }, []);
 
   return (

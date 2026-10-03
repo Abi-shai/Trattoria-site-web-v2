@@ -9,7 +9,7 @@ import EventImage from '../../assets/images/current-event.jpeg';
 import './eventModal.css';
 
 
-const CURRENT_EVENT_ID = 'propositions-du-mois-juillet-2026';
+const CURRENT_EVENT_ID = 'propositions-du-mois-octobre-2026';
 const DISPLAY_DELAY = 3000;
 
 const EventModal = () => {
@@ -61,7 +61,7 @@ const EventModal = () => {
                   {/* <p className="body1 day">Mercredi 12 Novembre</p> */}
                   <div className="event-divider"></div>
                   <h3>Nouvelles propositions du mois</h3>
-                  <p className="body1 infos-of-the-event">Il y'a des nouveautés à la Trattoria Da Alex en ce moment...découvrez les nouvelles propositions du mois !</p>
+                  <p className="body1 infos-of-the-event">Il y a des nouveautés à la Trattoria Da Alex en ce moment... découvrez les propositions du mois d'octobre !</p>
                 </div>
 
                 <div className="event-cta-wrapper">
