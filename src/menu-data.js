@@ -1483,7 +1483,7 @@ export const propositionsDuMois = {
     {
       mois: "Octobre",
       title: "",
-      description: "Crème de courgettes, courgettes frites, provola"
+      description: "Crème de courgettes, courgettes fries, provola"
     }
   ]
 };
