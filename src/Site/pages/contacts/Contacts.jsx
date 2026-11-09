@@ -10,6 +10,9 @@ import { DividerOnOtherPages } from "../../../components/divider/Divider";
 
 import ContactsPage from '../../../assets/images/restaurant-on-page.jpg';
 
+import OrderIcon from '../../../assets/icons/order-bag.svg?react';
+import TableIcon from '../../../assets/icons/table-setting.svg?react';
+
 import './Contacts.css';
 
 const Contacts = () => {
@@ -87,6 +90,34 @@ const Contacts = () => {
 
           <div className="right-content">
 
+            <div className="tel-row">
+              <div className="contact-content-wrapper">
+                <a
+                  href="tel:+221766446404"
+                  className="content"
+                  title="Passez une commande"
+                  aria-label="Passez une commande au 76 644 64 04"
+                >
+                  <OrderIcon className="contact-icon" aria-hidden="true" focusable="false" />
+                  <span>76 644 64 04</span>
+                </a>
+              </div>
+
+              <div className="contact-content-wrapper">
+                <a
+                  href="tel:+221766446405"
+                  className="content"
+                  title="Réservez votre table"
+                  aria-label="Réservez votre table au 76 644 64 05"
+                >
+                  <TableIcon className="contact-icon" aria-hidden="true" focusable="false" />
+                  <span>76 644 64 05</span>
+                </a>
+              </div>
+            </div>
+
+            <DividerOnOtherPages />
+
             <div className="contact-content-wrapper">
               <p className="heading">Localisez le restaurant</p>
               <a
@@ -96,15 +127,7 @@ const Contacts = () => {
               >Point E Boulevard de l'Est, Dakar Sénégal</a>
             </div>
 
-            <div className="contact-content-wrapper">
-              <p className="heading">Passez une commande</p>
-              <a href="tel:+221766446404" className="content">76 644 64 04</a>
-            </div>
-
-            <div className="contact-content-wrapper">
-              <p className="heading">Réservez votre table</p>
-              <a href="tel:+221766446405" className="content">76 644 64 05</a>
-            </div>
+            <DividerOnOtherPages />
 
             <div className="contact-content-wrapper">
               <p className="heading">Email et réseaux sociaux</p>

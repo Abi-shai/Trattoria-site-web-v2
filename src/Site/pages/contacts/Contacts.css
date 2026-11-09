@@ -42,9 +42,34 @@
     align-items: flex-start;
     align-content: flex-start;
     flex-direction: column;
-    gap: 1.5rem 2rem;
+    gap: 1rem 2rem;
     align-self: stretch;
     flex-wrap: wrap;
+
+    /* Les deux numéros, côte à côte, chacun sous son icône */
+    .tel-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 2.5rem;
+      align-self: stretch;
+      flex-wrap: wrap;
+
+      .contact-content-wrapper {
+        align-self: auto;
+      }
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+      }
+
+      .contact-icon {
+        width: 1.75rem;
+        height: 1.75rem;
+      }
+    }
 
     .contact-content-wrapper {
       display: flex;
