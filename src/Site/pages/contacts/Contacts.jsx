@@ -10,8 +10,8 @@ import { DividerOnOtherPages } from "../../../components/divider/Divider";
 
 import ContactsPage from '../../../assets/images/restaurant-on-page.jpg';
 
-import OrderIcon from '../../../assets/icons/order-bag.svg?react';
-import TableIcon from '../../../assets/icons/table-setting.svg?react';
+import DeliveryIcon from '../../../assets/icons/delivery-dining.svg?react';
+import TableIcon from '../../../assets/icons/table-restaurant.svg?react';
 
 import './Contacts.css';
 
@@ -98,20 +98,20 @@ const Contacts = () => {
                   title="Passez une commande"
                   aria-label="Passez une commande au 76 644 64 04"
                 >
-                  <OrderIcon className="contact-icon" aria-hidden="true" focusable="false" />
+                  <DeliveryIcon className="contact-icon" aria-hidden="true" focusable="false" />
                   <span>76 644 64 04</span>
                 </a>
               </div>
 
               <div className="contact-content-wrapper">
                 <a
-                  href="tel:+221766446405"
+                  href="tel:+221338642619"
                   className="content"
                   title="Réservez votre table"
-                  aria-label="Réservez votre table au 76 644 64 05"
+                  aria-label="Réservez votre table au 33 864 26 19"
                 >
                   <TableIcon className="contact-icon" aria-hidden="true" focusable="false" />
-                  <span>76 644 64 05</span>
+                  <span>33 864 26 19</span>
                 </a>
               </div>
             </div>
