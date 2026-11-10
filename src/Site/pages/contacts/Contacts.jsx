@@ -105,13 +105,13 @@ const Contacts = () => {
 
               <div className="contact-content-wrapper">
                 <a
-                  href="tel:+221338642619"
+                  href="tel:+221766446405"
                   className="content"
                   title="Réservez votre table"
-                  aria-label="Réservez votre table au 33 864 26 19"
+                  aria-label="Réservez votre table au 76 644 64 05"
                 >
                   <TableIcon className="contact-icon" aria-hidden="true" focusable="false" />
-                  <span>33 864 26 19</span>
+                  <span>76 644 64 05</span>
                 </a>
               </div>
             </div>
