@@ -7,7 +7,7 @@ import MenuSectionHeader from "../../../components/menuSectionHeader/MenuSection
 import { DividerOnOtherPages } from "../../../components/divider/Divider";
 import MenuItem from "../../../components/MenuItem/MenuItem";
 
-import { pizzaGlobalData, provolaData, specialiData, pizzaMoreInfos, propositionsDuMois } from "../../../menu-data";
+import { pizzaGlobalData, provolaData, specialiData, pizzaMoreInfos } from "../../../menu-data";
 
 import PizzaImage from '../../../assets/images/carte/pizze-page.png';
 
@@ -23,8 +23,6 @@ const Pizza = () => {
 
   const currentWith = UseWindowSize().width;
 
-  const pizzaDuMoisData = propositionsDuMois.pizzaDuMois[0];
-
   return (
     <>
 
@@ -32,19 +30,6 @@ const Pizza = () => {
       <PageHeader img={PizzaImage} title='PIZZA' />
       <main className="menu-body-main-wrapper">
 
-
-        <MenuSectionHeader title="PIZZA DU MOIS" />
-
-        <section className="menu-group-wrapper">
-          <MenuItem
-            menuTitle={pizzaDuMoisData.title}
-            moreInfo={pizzaDuMoisData.moreInfo}
-            menuDescription={pizzaDuMoisData.description}
-            isCentered
-          />
-        </section>
-
-        <DividerOnOtherPages />
 
         <section className="menu-group-wrapper">
           {

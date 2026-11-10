@@ -5,13 +5,11 @@ import FullScreenStateContext from "../context/FullscreenContext";
 import ScrollToTop from "../utility/ScrollToTop";
 import { BrowserRouter, Routes, Route, useLocation, Outlet, Navigate } from "react-router-dom";
 import RouteChangeTracker from "../utility/RouteChangeTracker";
-import { RemoveScroll } from "react-remove-scroll";
 
 import Header from "../components/header/Header";
 import UtilityBar from "../components/utilityBar/UtilityBar";
 import AnnoncementBar from "../components/annoncementBar/AnnoncementBar";
 import Footer from '../components/footer/Footer';
-import EventModal from '../components/eventModal/eventModal';
 
 import Home from "./pages/home/Home";
 import Restaurant from "./pages/restaurant/Restaurant";
@@ -26,7 +24,6 @@ import Vins from "./pages/vins/Vins";
 import Lagallery from "./pages/laGallery/Lagallery";
 import Contacts from "./pages/contacts/Contacts";
 import Pizza from "./pages/pizza/Pizza";
-import PropositionDuMois from "./pages/proposition-du-mois/PropositionDuMois";
 import EnglishMenu from "./pages/englishMenu/englishMenu";
 
 
@@ -54,7 +51,11 @@ const PageLayout = () => {
         <Route path="/" element={<Home />} />
         <Route path="/restaurant" element={<Restaurant />} />
         <Route path="/pizza" element={<Pizza />} />
-        <Route path="/propositions-du-mois" element={<PropositionDuMois />} />
+
+        {/* L'ancienne page Propositions du mois a été retirée : on redirige
+            les liens et favoris existants vers l'accueil plutôt que d'afficher
+            une page vide. */}
+        <Route path="/propositions-du-mois" element={<Navigate to="/" replace />} />
 
         <Route path="/carte" element={<Outlet />}>
           <Route index element={<Navigate to="/carte/cicchetti" replace />} />
@@ -79,21 +80,12 @@ const PageLayout = () => {
 
 const Site = () => {
   const [state, setState] = useState('closed');
-  const [eventModalState, setEventModalState] = useState(false);
 
   const [isBannerOpen, setIsBannerOpen] = useState(true);
 
   const toggleState = () => {
     return setState(currentState => (currentState === 'opened' ? 'closed' : 'opened'));
   };
-
-  const openEventModal = () => {
-    setEventModalState(true);
-  }
-
-  const closeEventModal = () => {
-    setEventModalState(false);
-  }
 
   const closeBanner = () => {
     setIsBannerOpen(false);
@@ -102,9 +94,6 @@ const Site = () => {
   const contextValue = {
     state: state,
     toggleState: toggleState,
-    eventModal: eventModalState,
-    openEventModal: openEventModal,
-    closeEventModal: closeEventModal,
     isBannerOpen: isBannerOpen,
     closeBanner: closeBanner
   };
@@ -112,9 +101,6 @@ const Site = () => {
   return (
     <FullScreenStateContext.Provider value={contextValue} >
       <BrowserRouter>
-        <RemoveScroll enabled={eventModalState}>
-          <EventModal />
-        </RemoveScroll>
         <PageLayout />
       </BrowserRouter>
     </FullScreenStateContext.Provider>

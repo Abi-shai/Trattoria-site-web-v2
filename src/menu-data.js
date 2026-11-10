@@ -1451,39 +1451,3 @@ export const pizzaMoreInfos = {
     "* Possibilité halal", "** Disponible en stock selon arrivage"
   ]
 };
-
-
-export const propositionsDuMois = {
-  propositionsDuChef: [
-    {
-      title: "Entrée",
-      description: "Tartare melon et jambon"
-    },
-    {
-      title: "Plat",
-      description: "T-bone au vin rouge"
-    },
-    {
-      title: "Dessert",
-      description: "Crème de mascarpone à l'orange"
-    },
-    {
-      title: "",
-      description: ""
-    }
-  ],
-  cocktailDuJeudi: [
-    {
-      title: "Cocktail du jeudi",
-      cocktails: ["Rouge Rustique"],
-      promoDetails: "2 cocktails achetés = 1 assiette de TAPAS OFFERTE !",
-    }
-  ],
-  pizzaDuMois: [
-    {
-      mois: "Octobre",
-      title: "",
-      description: "Crème de courgettes, courgettes fries, provola"
-    }
-  ]
-};

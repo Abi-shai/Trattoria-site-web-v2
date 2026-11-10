@@ -44,7 +44,6 @@ const ListNavOption = ({ navContent, showDivider, navLink }) => {
 const MenuPopOver = () => {
   return (
     <div className="menu-popover">
-      <ListNavOption navLink='/propositions-du-mois' navContent={'Propositions du mois'} showDivider={true} />
       <ListNavOption navLink='/carte/cicchetti' navContent={'Cicchetti'} />
       <ListNavOption navLink='/carte/antipasti' navContent={'Antipasti'} />
       <ListNavOption navLink='/carte/primi' navContent={'Primi'} />
@@ -240,7 +239,7 @@ const Header = () => {
                   >
                     Pizza
                   </NavLink></li>
-                <li className="special-link" onClick={setterCartOpened} style={CartOpened === 'open' ? { height: '462px', padding: '0.5em' } : { height: '36px' }}>
+                <li className="special-link" onClick={setterCartOpened} style={CartOpened === 'open' ? { height: '390px', padding: '0.5em' } : { height: '36px' }}>
 
                   <div className="wrapper-1">
                     <a
@@ -266,18 +265,6 @@ const Header = () => {
                     CartOpened === 'open'
                       ? <div className="wrapper-2">
                         <ul>
-                          <li>
-                            <NavLink
-                              to="/propositions-du-mois"
-                              end
-                              className={({ isActive }) =>
-                                isActive ? "nav-active" : "nav-link"
-                              }
-                            >
-                              Propositions du mois
-                            </NavLink>
-                          </li>
-                          <div className="divider"></div>
                           <li>
                             <NavLink
                               to="/carte/cicchetti"
@@ -554,7 +541,7 @@ const Header = () => {
                   >
                     Pizza
                   </NavLink></li>
-                <li className="special-link" onClick={setterCartOpened} style={CartOpened === 'open' ? { height: '462px', padding: '0.5em' } : { height: '36px' }}>
+                <li className="special-link" onClick={setterCartOpened} style={CartOpened === 'open' ? { height: '390px', padding: '0.5em' } : { height: '36px' }}>
 
                   <div className="wrapper-1">
                     <a
@@ -580,18 +567,6 @@ const Header = () => {
                     CartOpened === 'open'
                       ? <div className="wrapper-2">
                         <ul>
-                          <li>
-                            <NavLink
-                              to="/propositions-du-mois"
-                              end
-                              className={({ isActive }) =>
-                                isActive ? "nav-active" : "nav-link"
-                              }
-                            >
-                              Propositions du mois
-                            </NavLink>
-                          </li>
-                          <div className="divider"></div>
                           <li>
                             <NavLink
                               to="/carte/cicchetti"
